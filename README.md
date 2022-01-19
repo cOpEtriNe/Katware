@@ -10,4 +10,4 @@ This script will not get you banned from now.
 One of my accounts has been up to Level 85 with this script!
 
 
-Will recode later..
+Will recode later.. (script has been coded)
