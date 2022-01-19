@@ -1,0 +1,1070 @@
+-- made by cOpEtriNe new ui update
+wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Kat GUI"; -- the title (ofc)
+	Text = "The Script has Loaded, - Enjoy Exploiting! (Made by cOpEtriNe)"; -- what the text says (ofc)
+	Icon = "rbxassetid://57254792"; -- the image if u want. 
+	Duration = 5; -- how long the notification should in secounds
+})
+
+wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Alert!"; -- the title (ofc)
+	Text = "The GUI Is Safe To Use, - Script is safe to use and will NOT ban you. Enjoy! "; -- what the text says (ofc)
+	Icon = "rbxassetid://57254792"; -- the image if u want. 
+	Duration = 5; -- how long the notification should in secounds
+})
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local WelcomeTitle = Instance.new("TextLabel")
+local Aimbot = Instance.new("TextButton")
+local Visuals = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local AimbotTab = Instance.new("Frame")
+local SilentAimButton = Instance.new("TextButton")
+local HitboxExtended = Instance.new("TextButton")
+local HitboxExtended2 = Instance.new("TextButton")
+local TitleAimbot = Instance.new("TextLabel")
+local VisualsTab = Instance.new("Frame")
+local TitleVisual = Instance.new("TextLabel")
+local ESPButton = Instance.new("TextButton")
+local FOV100Button = Instance.new("TextButton")
+local NoLagButton = Instance.new("TextButton")
+local MaterialBodyParts = Instance.new("TextButton")
+local Credits_2 = Instance.new("Frame")
+local TitleCredit = Instance.new("TextLabel")
+local CreditMaker = Instance.new("TextLabel")
+local MiscTab = Instance.new("Frame")
+local TitleMisc = Instance.new("TextLabel")
+local OldGui = Instance.new("TextButton")
+local Miscellaneous = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Frame.Position = UDim2.new(0.205621362, 0, 0.536764681, 0)
+Frame.Size = UDim2.new(0, 598, 0, 282)
+Frame.Active = true
+Frame.Draggable = true
+Frame.Visible = true
+
+
+WelcomeTitle.Name = "WelcomeTitle"
+WelcomeTitle.Parent = Frame
+WelcomeTitle.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+WelcomeTitle.Size = UDim2.new(0, 200, 0, 50)
+WelcomeTitle.Font = Enum.Font.SourceSans
+WelcomeTitle.Text = "Kat GUI V2.0"
+WelcomeTitle.TextColor3 = Color3.fromRGB(255, 15, 231)
+WelcomeTitle.TextScaled = true
+WelcomeTitle.TextSize = 14.000
+WelcomeTitle.TextWrapped = true
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Frame
+Aimbot.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Aimbot.Position = UDim2.new(0, 0, 0.205673754, 0)
+Aimbot.Size = UDim2.new(0, 200, 0, 50)
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 15, 231)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14.000
+Aimbot.TextWrapped = true
+
+Visuals.Name = "Visuals"
+Visuals.Parent = Frame
+Visuals.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Visuals.Position = UDim2.new(0, 0, 0.411347508, 0)
+Visuals.Size = UDim2.new(0, 200, 0, 50)
+Visuals.Font = Enum.Font.SourceSans
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(255, 15, 231)
+Visuals.TextScaled = true
+Visuals.TextSize = 14.000
+Visuals.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Credits.Position = UDim2.new(0, 0, 0.822695076, 0)
+Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 15, 231)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+AimbotTab.Name = "AimbotTab"
+AimbotTab.Parent = Frame
+AimbotTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AimbotTab.Position = UDim2.new(0.334448159, 0, 0.109929077, 0)
+AimbotTab.Size = UDim2.new(0, 398, 0, 251)
+AimbotTab.Visible = false
+
+SilentAimButton.Name = "SilentAimButton"
+SilentAimButton.Parent = AimbotTab
+SilentAimButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+SilentAimButton.Position = UDim2.new(0.0530973449, 0, 0.0734231919, 0)
+SilentAimButton.Size = UDim2.new(0, 135, 0, 32)
+SilentAimButton.Font = Enum.Font.SourceSans
+SilentAimButton.Text = "Silent Aim"
+SilentAimButton.TextColor3 = Color3.fromRGB(255, 15, 231)
+SilentAimButton.TextScaled = true
+SilentAimButton.TextSize = 14.000
+SilentAimButton.TextWrapped = true
+SilentAimButton.MouseButton1Down:connect(function()
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kat GUI"; -- the title (ofc)
+		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
+
+	getgenv().silentaim_settings = {
+		fov = 150,
+		hitbox = "Head",
+		fovcircle = true,
+	}
+	-- Services
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+
+	-- Player
+	local Player = Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	local CurrentCamera = workspace.CurrentCamera
+
+	local function GetClosest(Fov)
+		local Target, Closest = nil, Fov or math.huge
+
+		for i,v in pairs(Players:GetPlayers()) do
+			if (v.Character and v ~= Player and v.Character:FindFirstChild(getgenv().silentaim_settings.hitbox)) then
+				local Position, OnScreen = CurrentCamera:WorldToScreenPoint(v.Character[getgenv().silentaim_settings.hitbox].Position)
+				local Distance = (Vector2.new(Position.X, Position.Y) - Vector2.new(Mouse.X, Mouse.Y)).Magnitude
+
+				if (Distance < Closest and OnScreen) then
+					Closest = Distance
+					Target = v
+				end
+			end
+		end
+
+		return Target
+	end
+
+	local Target
+	local CircleInline = Drawing.new("Circle")
+	local CircleOutline = Drawing.new("Circle")
+	RunService.Stepped:Connect(function()
+		CircleInline.Radius = getgenv().silentaim_settings.fov
+		CircleInline.Thickness = 2
+		CircleInline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
+		CircleInline.Transparency = 1
+		CircleInline.Color = Color3.fromRGB(255, 255, 255)
+		CircleInline.Visible = getgenv().silentaim_settings.fovcircle
+		CircleInline.ZIndex = 2
+
+		CircleOutline.Radius = getgenv().silentaim_settings.fov
+		CircleOutline.Thickness = 4
+		CircleOutline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
+		CircleOutline.Transparency = 1
+		CircleOutline.Color = Color3.new()
+		CircleOutline.Visible = getgenv().silentaim_settings.fovcircle
+		CircleOutline.ZIndex = 1
+
+		Target = GetClosest(getgenv().silentaim_settings.fov)
+	end)
+
+	local Old; Old = hookmetamethod(game, "__namecall", function(Self, ...)
+		local Args = {...}
+
+		if (not checkcaller() and getnamecallmethod() == "FindPartOnRayWithIgnoreList") then
+			if (table.find(Args[2], workspace.WorldIgnore.Ignore) and Target and Target.Character) then
+				local Origin = Args[1].Origin
+
+				Args[1] = Ray.new(Origin, Target.Character[getgenv().silentaim_settings.hitbox].Position - Origin)
+			end
+		end
+
+		return Old(Self, unpack(Args))
+	end)
+end)
+
+HitboxExtended.Name = "HitboxExtended"
+HitboxExtended.Parent = AimbotTab
+HitboxExtended.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+HitboxExtended.Position = UDim2.new(0.548235297, 0, 0.0734231919, 0)
+HitboxExtended.Size = UDim2.new(0, 135, 0, 32)
+HitboxExtended.Font = Enum.Font.SourceSans
+HitboxExtended.Text = "Extended Hitbox"
+HitboxExtended.TextColor3 = Color3.fromRGB(255, 15, 231)
+HitboxExtended.TextScaled = true
+HitboxExtended.TextSize = 14.000
+HitboxExtended.TextWrapped = true
+HitboxExtended.MouseButton1Down:connect(function()
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kat GUI"; -- the title (ofc)
+		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
+
+	print("Hitboxes Has been extended")
+	local Players = game:GetService("Players")
+	for _, player in pairs(Players:GetPlayers()) do
+		local charpre = player.Character or player.CharacterAdded:Wait()
+		if player.UserId == game.Players.LocalPlayer.UserId then
+		else
+			for i,v in pairs(charpre:WaitForChild("CollisionParts",60):GetChildren()) do
+				v.Transparency = 0.8
+				v.Size = Vector3.new(2.82, 2.82, 1.41)
+				v.Color = Color3.fromRGB(170, 255, 0)
+				v.Material = 'Neon'
+			end
+		end
+		player.CharacterAdded:Connect(function(chart)
+			chart:WaitForChild("HumanoidRootPart"):GetPropertyChangedSignal("Position"):Connect(function()
+				if player.UserId == game.Players.LocalPlayer.UserId then
+				else
+					for i,v in pairs(chart:WaitForChild("CollisionParts",60):GetChildren()) do
+						v.Transparency = 0.8
+						v.Size = Vector3.new(2.82, 2.82, 1.41)
+						v.Color = Color3.fromRGB(170, 255, 0)
+						v.Material = 'Neon'
+					end
+				end
+			end)
+		end)
+	end
+end)
+
+HitboxExtended2.Name = "HitboxExtended2"
+HitboxExtended2.Parent = AimbotTab
+HitboxExtended2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+HitboxExtended2.Position = UDim2.new(0.05309733, 0, 0.305717736, 0)
+HitboxExtended2.Size = UDim2.new(0, 135, 0, 32)
+HitboxExtended2.Font = Enum.Font.SourceSans
+HitboxExtended2.Text = "Extended Hitbox 2"
+HitboxExtended2.TextColor3 = Color3.fromRGB(255, 15, 231)
+HitboxExtended2.TextScaled = true
+HitboxExtended2.TextSize = 14.000
+HitboxExtended2.TextWrapped = true
+HitboxExtended2.MouseButton1Down:connect(function()
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kat GUI"; -- the title (ofc)
+		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})	
+
+	-- Variables
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+
+	-- Settings
+
+	bind = "" 
+	bind2 = "t"
+
+	-- Script
+
+	mouse.KeyDown:connect(function(key)
+		if key == bind then
+			player.Character.HumanoidRootPart.CFrame = CFrame.new(1254.09656, 137.906067, -172.128204)
+		end
+	end)
+
+	mouse.KeyDown:connect(function(key2)
+		if key2 == bind2 then
+			_G.HeadSize = 20
+			_G.Disabled = true
+
+
+			if _G.Disabled then
+				for i,v in next, game:GetService('Players'):GetPlayers() do
+					if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+							v.Character.HumanoidRootPart.Transparency = 0.7
+							v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+							v.Character.HumanoidRootPart.Material = "Neon"
+							v.Character.HumanoidRootPart.CanCollide = false
+						end)
+					end
+				end
+			end
+		end
+	end)
+end)
+
+TitleAimbot.Name = "TitleAimbot"
+TitleAimbot.Parent = AimbotTab
+TitleAimbot.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TitleAimbot.Position = UDim2.new(0, 0, -0.12350598, 0)
+TitleAimbot.Size = UDim2.new(0, 398, 0, 30)
+TitleAimbot.Font = Enum.Font.SourceSans
+TitleAimbot.Text = "Aimbot Tab"
+TitleAimbot.TextColor3 = Color3.fromRGB(255, 15, 231)
+TitleAimbot.TextScaled = true
+TitleAimbot.TextSize = 14.000
+TitleAimbot.TextWrapped = true
+
+VisualsTab.Name = "VisualsTab"
+VisualsTab.Parent = Frame
+VisualsTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VisualsTab.Position = UDim2.new(0.334448159, 0, 0.138297871, 0)
+VisualsTab.Size = UDim2.new(0, 398, 0, 243)
+VisualsTab.Visible = false
+
+TitleVisual.Name = "TitleVisual"
+TitleVisual.Parent = VisualsTab
+TitleVisual.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TitleVisual.Position = UDim2.new(-0.000534287654, 0, -0.160493821, 0)
+TitleVisual.Size = UDim2.new(0, 398, 0, 38)
+TitleVisual.Font = Enum.Font.SourceSans
+TitleVisual.Text = "Visuals Tab"
+TitleVisual.TextColor3 = Color3.fromRGB(255, 15, 231)
+TitleVisual.TextScaled = true
+TitleVisual.TextSize = 14.000
+TitleVisual.TextWrapped = true
+
+ESPButton.Name = "ESPButton"
+ESPButton.Parent = VisualsTab
+ESPButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ESPButton.Position = UDim2.new(0.029498525, 0, 0.0779074281, 0)
+ESPButton.Size = UDim2.new(0, 135, 0, 32)
+ESPButton.Font = Enum.Font.SourceSans
+ESPButton.Text = "ESP"
+ESPButton.TextColor3 = Color3.fromRGB(255, 15, 231)
+ESPButton.TextScaled = true
+ESPButton.TextSize = 14.000
+ESPButton.TextWrapped = true
+ESPButton.MouseButton1Down:connect(function()
+
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kat GUI"; -- the title (ofc)
+		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
+
+	--- Tut
+
+	local esp_settings = { ---- table for esp settings 
+		textsize = 20,
+		colour = 255,255,255
+	}
+
+	local gui = Instance.new("BillboardGui")
+	local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
+
+
+
+	gui.Name = "Cracked esp"; ---- properties of the esp
+	gui.ResetOnSpawn = false
+	gui.AlwaysOnTop = true;
+	gui.LightInfluence = 0;
+	gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+	esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+	esp.Text = ""
+	esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+	esp.BorderSizePixel = 4;
+	esp.BorderColor3 = Color3.new(esp_settings.colour)
+	esp.BorderSizePixel = 0
+	esp.Font = "Ubuntu"
+	esp.TextSize = esp_settings.textsize
+	esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+
+	game:GetService("RunService").RenderStepped:Connect(function() ---- loops faster than a while loop :)
+		for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+			if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
+				esp.Text = "{"..v.Name.."}"
+				gui:Clone().Parent = v.Character.Head
+			end
+		end
+	end)
+end)
+
+FOV100Button.Name = "FOV100Button"
+FOV100Button.Parent = VisualsTab
+FOV100Button.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+FOV100Button.Position = UDim2.new(0.548672557, 0, 0.0779074281, 0)
+FOV100Button.Size = UDim2.new(0, 135, 0, 32)
+FOV100Button.Font = Enum.Font.SourceSans
+FOV100Button.Text = "Fov 100"
+FOV100Button.TextColor3 = Color3.fromRGB(255, 15, 231)
+FOV100Button.TextScaled = true
+FOV100Button.TextSize = 14.000
+FOV100Button.TextWrapped = true
+FOV100Button.MouseButton1Down:connect(function()
+
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kat GUI"; -- the title (ofc)
+		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
+
+	workspace.CurrentCamera.FieldOfView = 100
+end)
+
+NoLagButton.Name = "NoLagButton"
+NoLagButton.Parent = VisualsTab
+NoLagButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+NoLagButton.Position = UDim2.new(0.0294985175, 0, 0.2929703, 0)
+NoLagButton.Size = UDim2.new(0, 135, 0, 32)
+NoLagButton.Visible = false
+NoLagButton.Font = Enum.Font.SourceSans
+NoLagButton.Text = "No Lag"
+NoLagButton.TextColor3 = Color3.fromRGB(255, 15, 231)
+NoLagButton.TextScaled = true
+NoLagButton.TextSize = 14.000
+NoLagButton.TextWrapped = true
+NoLagButton.MouseButton1Down:connect(function()
+
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kat GUI"; -- the title (ofc)
+		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
+
+	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+	local g = game
+	local w = g.Workspace
+	local l = g.Lighting
+	local t = w.Terrain
+	t.WaterWaveSize = 0
+	t.WaterWaveSpeed = 0
+	t.WaterReflectance = 0
+	t.WaterTransparency = 0
+	l.GlobalShadows = false
+	l.FogEnd = 9e9
+	l.Brightness = 0
+	settings().Rendering.QualityLevel = "Level01"
+	for i, v in pairs(g:GetDescendants()) do
+		if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+		elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+			v.Transparency = 0.50
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Lifetime = NumberRange.new(0)
+		elseif v:IsA("Explosion") then
+			v.BlastPressure = 1
+			v.BlastRadius = 1
+		elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+			v.Enabled = false
+		elseif v:IsA("MeshPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+			v.TextureID = 10385902758728957
+		end
+	end
+	for i, e in pairs(l:GetChildren()) do
+		if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+			e.Enabled = false
+		end
+	end
+end)
+
+MaterialBodyParts.Name = "MaterialBodyParts"
+MaterialBodyParts.Parent = VisualsTab
+MaterialBodyParts.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+MaterialBodyParts.Position = UDim2.new(0.546159983, 0, 0.2929703, 0)
+MaterialBodyParts.Size = UDim2.new(0, 135, 0, 32)
+MaterialBodyParts.Font = Enum.Font.SourceSans
+MaterialBodyParts.Text = "Change Body Parts"
+MaterialBodyParts.TextColor3 = Color3.fromRGB(255, 15, 231)
+MaterialBodyParts.TextScaled = true
+MaterialBodyParts.TextSize = 14.000
+MaterialBodyParts.TextWrapped = true
+MaterialBodyParts.MouseButton1Down:connect(function()
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kat GUI"; -- the title (ofc)
+		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
+
+	game.Players.LocalPlayer.Head.Transparency = 0.50
+	game.Players.LocalPlayer.Torso.Transparency = 0.50
+
+end)
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = Frame
+Credits_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Credits_2.BorderSizePixel = 0
+Credits_2.Position = UDim2.new(0.334448159, 0, 0.124113478, 0)
+Credits_2.Size = UDim2.new(0, 398, 0, 247)
+Credits_2.Visible = false
+
+TitleCredit.Name = "TitleCredit"
+TitleCredit.Parent = Credits_2
+TitleCredit.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TitleCredit.Position = UDim2.new(-0.000688562461, 0, -0.141700402, 0)
+TitleCredit.Size = UDim2.new(0, 398, 0, 34)
+TitleCredit.Font = Enum.Font.SourceSans
+TitleCredit.Text = "Credits Tab"
+TitleCredit.TextColor3 = Color3.fromRGB(255, 15, 231)
+TitleCredit.TextScaled = true
+TitleCredit.TextSize = 14.000
+TitleCredit.TextWrapped = true
+
+CreditMaker.Name = "CreditMaker"
+CreditMaker.Parent = Credits_2
+CreditMaker.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CreditMaker.BorderSizePixel = 0
+CreditMaker.Position = UDim2.new(0, 0, -0.00160816521, 0)
+CreditMaker.Size = UDim2.new(0, 398, 0, 73)
+CreditMaker.Font = Enum.Font.SourceSans
+CreditMaker.Text = "Script made by cOpEtriNe"
+CreditMaker.TextColor3 = Color3.fromRGB(255, 15, 231)
+CreditMaker.TextScaled = true
+CreditMaker.TextSize = 14.000
+CreditMaker.TextWrapped = true
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = Frame
+MiscTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MiscTab.Position = UDim2.new(0.334448159, 0, 0, 0)
+MiscTab.Size = UDim2.new(0, 398, 0, 282)
+MiscTab.Visible = false
+
+TitleMisc.Name = "TitleMisc"
+TitleMisc.Parent = MiscTab
+TitleMisc.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TitleMisc.Size = UDim2.new(0, 397, 0, 36)
+TitleMisc.Font = Enum.Font.SourceSans
+TitleMisc.Text = "Miscellaneous Tab"
+TitleMisc.TextColor3 = Color3.fromRGB(255, 15, 231)
+TitleMisc.TextScaled = true
+TitleMisc.TextSize = 14.000
+TitleMisc.TextWrapped = true
+
+OldGui.Name = "OldGui"
+OldGui.Parent = MiscTab
+OldGui.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+OldGui.Position = UDim2.new(0.0267722607, 0, 0.205417737, 0)
+OldGui.Size = UDim2.new(0, 135, 0, 32)
+OldGui.Font = Enum.Font.SourceSans
+OldGui.Text = "Old UI"
+OldGui.TextColor3 = Color3.fromRGB(255, 15, 231)
+OldGui.TextScaled = true
+OldGui.TextSize = 14.000
+OldGui.TextWrapped = true
+OldGui.MouseButton1Down:connect(function()
+	-- Gui to Lua
+	-- Version: 3.2
+
+	-- Instances:
+
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local Title = Instance.new("TextLabel")
+	local ESP = Instance.new("TextButton")
+	local SilentAim = Instance.new("TextButton")
+	local BiggerHitbox = Instance.new("TextButton")
+	local _100fov = Instance.new("TextButton")
+	local ForceField = Instance.new("TextButton")
+	local BorderBottom = Instance.new("TextLabel")
+	local NoLag = Instance.new("TextButton")
+	local ShowBinds = Instance.new("TextButton")
+	local BiggerHitbox2 = Instance.new("TextButton")
+	local BindsFrame = Instance.new("Frame")
+	local BindsTitle = Instance.new("TextLabel")
+	local TextLabel = Instance.new("TextLabel")
+	local TitleLoad = Instance.new("TextLabel")
+
+	--Properties:
+
+	ScreenGui.Parent = game.CoreGui
+
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Frame.Position = UDim2.new(0.194545463, 0, 0.436274499, 0)
+	Frame.Size = UDim2.new(0, 382, 0, 309)
+	Frame.Active = true
+	Frame.Draggable = true
+	Frame.Visible = true
+
+	Title.Name = "Title"
+	Title.Parent = Frame
+	Title.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	Title.Size = UDim2.new(0, 382, 0, 50)
+	Title.Font = Enum.Font.SourceSans
+	Title.Text = "Kat GUI"
+	Title.TextColor3 = Color3.fromRGB(255, 15, 231)
+	Title.TextScaled = true
+	Title.TextSize = 14.000
+	Title.TextWrapped = true
+
+	ESP.Name = "ESP"
+	ESP.Parent = Frame
+	ESP.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	ESP.Position = UDim2.new(0.045748964, 0, 0.193718433, 0)
+	ESP.Size = UDim2.new(0, 150, 0, 37)
+	ESP.Font = Enum.Font.SourceSans
+	ESP.Text = "ESP"
+	ESP.TextColor3 = Color3.fromRGB(255, 15, 231)
+	ESP.TextScaled = true
+	ESP.TextSize = 14.000
+	ESP.TextWrapped = true
+	ESP.MouseButton1Down:connect(function()
+
+		wait(1.2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Kat GUI"; -- the title (ofc)
+			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+			Icon = "rbxassetid://57254792"; -- the image if u want. 
+			Duration = 5; -- how long the notification should in secounds
+		})
+
+		--- Tut
+
+		local esp_settings = { ---- table for esp settings 
+			textsize = 20,
+			colour = 255,255,255
+		}
+
+		local gui = Instance.new("BillboardGui")
+		local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
+
+
+
+		gui.Name = "Cracked esp"; ---- properties of the esp
+		gui.ResetOnSpawn = false
+		gui.AlwaysOnTop = true;
+		gui.LightInfluence = 0;
+		gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+		esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+		esp.Text = ""
+		esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+		esp.BorderSizePixel = 4;
+		esp.BorderColor3 = Color3.new(esp_settings.colour)
+		esp.BorderSizePixel = 0
+		esp.Font = "GothamSemibold"
+		esp.TextSize = esp_settings.textsize
+		esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+
+		game:GetService("RunService").RenderStepped:Connect(function() ---- loops faster than a while loop :)
+			for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+				if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
+					esp.Text = "{"..v.Name.."}"
+					gui:Clone().Parent = v.Character.Head
+				end
+			end
+		end)
+	end)
+
+	SilentAim.Name = "SilentAim"
+	SilentAim.Parent = Frame
+	SilentAim.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	SilentAim.Position = UDim2.new(0.55460161, 0, 0.193718478, 0)
+	SilentAim.Size = UDim2.new(0, 153, 0, 36)
+	SilentAim.Font = Enum.Font.SourceSans
+	SilentAim.Text = "Slient Aim"
+	SilentAim.TextColor3 = Color3.fromRGB(255, 15, 231)
+	SilentAim.TextScaled = true
+	SilentAim.TextSize = 14.000
+	SilentAim.TextWrapped = true
+	SilentAim.MouseButton1Down:connect(function()
+		wait(1.2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Kat GUI"; -- the title (ofc)
+			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+			Icon = "rbxassetid://57254792"; -- the image if u want. 
+			Duration = 5; -- how long the notification should in secounds
+		})
+
+		getgenv().silentaim_settings = {
+			fov = 150,
+			hitbox = "Head",
+			fovcircle = true,
+		}
+		-- Services
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+
+		-- Player
+		local Player = Players.LocalPlayer
+		local Mouse = Player:GetMouse()
+		local CurrentCamera = workspace.CurrentCamera
+
+		local function GetClosest(Fov)
+			local Target, Closest = nil, Fov or math.huge
+
+			for i,v in pairs(Players:GetPlayers()) do
+				if (v.Character and v ~= Player and v.Character:FindFirstChild(getgenv().silentaim_settings.hitbox)) then
+					local Position, OnScreen = CurrentCamera:WorldToScreenPoint(v.Character[getgenv().silentaim_settings.hitbox].Position)
+					local Distance = (Vector2.new(Position.X, Position.Y) - Vector2.new(Mouse.X, Mouse.Y)).Magnitude
+
+					if (Distance < Closest and OnScreen) then
+						Closest = Distance
+						Target = v
+					end
+				end
+			end
+
+			return Target
+		end
+
+		local Target
+		local CircleInline = Drawing.new("Circle")
+		local CircleOutline = Drawing.new("Circle")
+		RunService.Stepped:Connect(function()
+			CircleInline.Radius = getgenv().silentaim_settings.fov
+			CircleInline.Thickness = 2
+			CircleInline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
+			CircleInline.Transparency = 1
+			CircleInline.Color = Color3.fromRGB(255, 255, 255)
+			CircleInline.Visible = getgenv().silentaim_settings.fovcircle
+			CircleInline.ZIndex = 2
+
+			CircleOutline.Radius = getgenv().silentaim_settings.fov
+			CircleOutline.Thickness = 4
+			CircleOutline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
+			CircleOutline.Transparency = 1
+			CircleOutline.Color = Color3.new()
+			CircleOutline.Visible = getgenv().silentaim_settings.fovcircle
+			CircleOutline.ZIndex = 1
+
+			Target = GetClosest(getgenv().silentaim_settings.fov)
+		end)
+
+		local Old; Old = hookmetamethod(game, "__namecall", function(Self, ...)
+			local Args = {...}
+
+			if (not checkcaller() and getnamecallmethod() == "FindPartOnRayWithIgnoreList") then
+				if (table.find(Args[2], workspace.WorldIgnore.Ignore) and Target and Target.Character) then
+					local Origin = Args[1].Origin
+
+					Args[1] = Ray.new(Origin, Target.Character[getgenv().silentaim_settings.hitbox].Position - Origin)
+				end
+			end
+
+			return Old(Self, unpack(Args))
+		end)
+	end)
+
+	BiggerHitbox.Name = "BiggerHitbox"
+	BiggerHitbox.Parent = Frame
+	BiggerHitbox.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	BiggerHitbox.Position = UDim2.new(0.0483667664, 0, 0.345822036, 0)
+	BiggerHitbox.Size = UDim2.new(0, 149, 0, 39)
+	BiggerHitbox.Font = Enum.Font.SourceSans
+	BiggerHitbox.Text = "Extended Hitbox"
+	BiggerHitbox.TextColor3 = Color3.fromRGB(255, 15, 231)
+	BiggerHitbox.TextScaled = true
+	BiggerHitbox.TextSize = 14.000
+	BiggerHitbox.TextWrapped = true
+	BiggerHitbox.MouseButton1Down:connect(function()
+		wait(1.2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Kat GUI"; -- the title (ofc)
+			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+			Icon = "rbxassetid://57254792"; -- the image if u want. 
+			Duration = 5; -- how long the notification should in secounds
+		})
+
+		print("Hitboxes Has been extended")
+		local Players = game:GetService("Players")
+		for _, player in pairs(Players:GetPlayers()) do
+			local charpre = player.Character or player.CharacterAdded:Wait()
+			if player.UserId == game.Players.LocalPlayer.UserId then
+			else
+				for i,v in pairs(charpre:WaitForChild("CollisionParts",60):GetChildren()) do
+					v.Transparency = 0.8
+					v.Size = Vector3.new(2.82, 2.82, 1.41)
+					v.Color = Color3.fromRGB(170, 255, 0)
+					v.Material = 'Neon'
+				end
+			end
+			player.CharacterAdded:Connect(function(chart)
+				chart:WaitForChild("HumanoidRootPart"):GetPropertyChangedSignal("Position"):Connect(function()
+					if player.UserId == game.Players.LocalPlayer.UserId then
+					else
+						for i,v in pairs(chart:WaitForChild("CollisionParts",60):GetChildren()) do
+							v.Transparency = 0.8
+							v.Size = Vector3.new(2.82, 2.82, 1.41)
+							v.Color = Color3.fromRGB(170, 255, 0)
+							v.Material = 'Neon'
+						end
+					end
+				end)
+			end)
+		end	
+	end)
+
+	_100fov.Name = "100fov"
+	_100fov.Parent = Frame
+	_100fov.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	_100fov.Position = UDim2.new(0.55460161, 0, 0.347566575, 0)
+	_100fov.Size = UDim2.new(0, 153, 0, 39)
+	_100fov.Font = Enum.Font.SourceSans
+	_100fov.Text = "100 Fov"
+	_100fov.TextColor3 = Color3.fromRGB(255, 15, 231)
+	_100fov.TextScaled = true
+	_100fov.TextSize = 14.000
+	_100fov.TextWrapped = true
+	_100fov.MouseButton1Down:connect(function()
+
+		wait(1.2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Kat GUI"; -- the title (ofc)
+			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+			Icon = "rbxassetid://57254792"; -- the image if u want. 
+			Duration = 5; -- how long the notification should in secounds
+		})
+
+		workspace.CurrentCamera.FieldOfView = 100
+	end)
+
+	ForceField.Name = "ForceField"
+	ForceField.Parent = Frame
+	ForceField.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	ForceField.Position = UDim2.new(0.0467482172, 0, 0.505946457, 0)
+	ForceField.Size = UDim2.new(0, 150, 0, 37)
+	ForceField.Font = Enum.Font.SourceSans
+	ForceField.Text = "ForceField BodyParts"
+	ForceField.TextColor3 = Color3.fromRGB(255, 15, 231)
+	ForceField.TextScaled = true
+	ForceField.TextSize = 14.000
+	ForceField.TextWrapped = true
+	ForceField.MouseButton1Down:connect(function()
+		wait(1.2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Kat GUI"; -- the title (ofc)
+			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+			Icon = "rbxassetid://57254792"; -- the image if u want. 
+			Duration = 5; -- how long the notification should in secounds
+		})
+
+		game.Players.LocalPlayer.Head.Material = ForceField
+		game.Players.LocalPlayer.Torso.Material = ForceField
+
+	end)
+
+	BorderBottom.Name = "BorderBottom"
+	BorderBottom.Parent = Frame
+	BorderBottom.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	BorderBottom.Position = UDim2.new(0, 0, 0.838187695, 0)
+	BorderBottom.Size = UDim2.new(0, 161, 0, 50)
+	BorderBottom.Font = Enum.Font.SourceSans
+	BorderBottom.Text = "Developer UI"
+	BorderBottom.TextColor3 = Color3.fromRGB(255, 15, 231)
+	BorderBottom.TextScaled = true
+	BorderBottom.TextSize = 14.000
+	BorderBottom.TextWrapped = true
+
+	NoLag.Name = "NoLag"
+	NoLag.Parent = Frame
+	NoLag.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	NoLag.Position = UDim2.new(0.55460161, 0, 0.505946457, 0)
+	NoLag.Size = UDim2.new(0, 153, 0, 37)
+	NoLag.Font = Enum.Font.SourceSans
+	NoLag.Text = "NoLag"
+	NoLag.TextColor3 = Color3.fromRGB(255, 15, 231)
+	NoLag.TextScaled = true
+	NoLag.TextSize = 14.000
+	NoLag.TextWrapped = true
+	NoLag.MouseButton1Down:connect(function()
+
+		wait(1.2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Kat GUI"; -- the title (ofc)
+			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+			Icon = "rbxassetid://57254792"; -- the image if u want. 
+			Duration = 5; -- how long the notification should in secounds
+		})
+
+		local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = false
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i, v in pairs(g:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+				v.Transparency = 0.50
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			end
+		end
+		for i, e in pairs(l:GetChildren()) do
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+	end)
+
+
+	ShowBinds.Name = "ShowBinds"
+	ShowBinds.Parent = Frame
+	ShowBinds.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	ShowBinds.Position = UDim2.new(0.578161836, 0, 0.858697295, 0)
+	ShowBinds.Size = UDim2.new(0, 153, 0, 37)
+	ShowBinds.Font = Enum.Font.SourceSans
+	ShowBinds.Text = "Show Binds"
+	ShowBinds.TextColor3 = Color3.fromRGB(255, 15, 231)
+	ShowBinds.TextScaled = true
+	ShowBinds.TextSize = 14.000
+	ShowBinds.TextWrapped = true
+
+	BiggerHitbox2.Name = "BiggerHitbox2"
+	BiggerHitbox2.Parent = Frame
+	BiggerHitbox2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	BiggerHitbox2.Position = UDim2.new(0.0467482172, 0, 0.661286235, 0)
+	BiggerHitbox2.Size = UDim2.new(0, 150, 0, 37)
+	BiggerHitbox2.Font = Enum.Font.SourceSans
+	BiggerHitbox2.Text = "Extended Hitbox 2"
+	BiggerHitbox2.TextColor3 = Color3.fromRGB(255, 15, 231)
+	BiggerHitbox2.TextScaled = true
+	BiggerHitbox2.TextSize = 14.000
+	BiggerHitbox2.TextWrapped = true
+	BiggerHitbox2.MouseButton1Down:connect(function()
+		wait(1.2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Kat GUI"; -- the title (ofc)
+			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+			Icon = "rbxassetid://57254792"; -- the image if u want. 
+			Duration = 5; -- how long the notification should in secounds
+		})	
+
+		-- Variables
+		local player = game.Players.LocalPlayer
+		local mouse = player:GetMouse()
+
+		-- Settings
+
+		bind = "" 
+		bind2 = "t"
+
+		-- Script
+
+		mouse.KeyDown:connect(function(key)
+			if key == bind then
+				player.Character.HumanoidRootPart.CFrame = CFrame.new(1254.09656, 137.906067, -172.128204)
+			end
+		end)
+
+		mouse.KeyDown:connect(function(key2)
+			if key2 == bind2 then
+				_G.HeadSize = 20
+				_G.Disabled = true
+
+
+				if _G.Disabled then
+					for i,v in next, game:GetService('Players'):GetPlayers() do
+						if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+							pcall(function()
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = 0.7
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+							end)
+						end
+					end
+				end
+			end
+		end)
+	end)
+
+
+
+
+end)
+
+Miscellaneous.Name = "Miscellaneous"
+Miscellaneous.Parent = Frame
+Miscellaneous.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Miscellaneous.Position = UDim2.new(0, 0, 0.617021263, 0)
+Miscellaneous.Size = UDim2.new(0, 200, 0, 50)
+Miscellaneous.Font = Enum.Font.SourceSans
+Miscellaneous.Text = "Misc"
+Miscellaneous.TextColor3 = Color3.fromRGB(255, 15, 231)
+Miscellaneous.TextScaled = true
+Miscellaneous.TextSize = 14.000
+Miscellaneous.TextWrapped = true
+
+-- Scripts:
+
+local function ZGVXUR_fake_script() -- Aimbot.LocalScript 
+	local script = Instance.new('LocalScript', Aimbot)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.AimbotTab.Visible = true
+		script.Parent.Parent.VisualsTab.Visible = false
+		script.Parent.Parent.CreditsTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = false
+	end)
+end
+coroutine.wrap(ZGVXUR_fake_script)()
+local function FWLMYF_fake_script() -- Visuals.LocalScript 
+	local script = Instance.new('LocalScript', Visuals)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.AimbotTab.Visible = false
+		script.Parent.Parent.VisualsTab.Visible = true
+		script.Parent.Parent.CreditsTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = false
+	end)
+end
+coroutine.wrap(FWLMYF_fake_script)()
+local function JFLYZN_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.AimbotTab.Visible = false
+		script.Parent.Parent.VisualsTab.Visible = false
+		script.Parent.Parent.CreditsTab.Visible = true
+		script.Parent.Parent.MiscTab.Visible = false
+	end)
+end
+coroutine.wrap(JFLYZN_fake_script)()
+local function ULUM_fake_script() -- Miscellaneous.LocalScript 
+	local script = Instance.new('LocalScript', Miscellaneous)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.AimbotTab.Visible = false
+		script.Parent.Parent.VisualsTab.Visible = false
+		script.Parent.Parent.CreditsTab.Visible = false
+		script.Parent.Parent.MiscTab.Visible = true
+	end)
+end
+coroutine.wrap(ULUM_fake_script)()
