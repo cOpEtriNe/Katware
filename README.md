@@ -10,4 +10,19 @@ This script will not get you banned from now.
 One of my accounts has been up to Level 85 with this script!
 
 
-Will recode later.. (script has been coded)
+
+## how to get developer build?
+
+you cant haha, but, there are new features with the developer builds though.
+
+## Things to be added next update'
+
+2.1 will have,
+
+* Working misc tab
+* Being able to use the old gui
+* Chams
+* Night mode
+* Airstuck
+* Make your body transparent
+* Fakelag
