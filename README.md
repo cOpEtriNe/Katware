@@ -15,7 +15,7 @@ One of my accounts has been up to Level 85 with this script!
 
 you cant haha, but, there are new features with the developer builds though.
 
-## Things to be added next update'
+## Things to be added next update
 
 2.1 will have,
 
