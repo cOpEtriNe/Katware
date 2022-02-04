@@ -167,7 +167,7 @@ SilentAimButton.MouseButton1Down:connect(function()
 		CircleInline.Radius = getgenv().silentaim_settings.fov
 		CircleInline.Thickness = 2
 		CircleInline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
-		CircleInline.Transparency = 1
+		CircleInline.Transparency = 0
 		CircleInline.Color = Color3.fromRGB(255, 255, 255)
 		CircleInline.Visible = getgenv().silentaim_settings.fovcircle
 		CircleInline.ZIndex = 2
@@ -175,7 +175,7 @@ SilentAimButton.MouseButton1Down:connect(function()
 		CircleOutline.Radius = getgenv().silentaim_settings.fov
 		CircleOutline.Thickness = 4
 		CircleOutline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
-		CircleOutline.Transparency = 1
+		CircleOutline.Transparency = 0
 		CircleOutline.Color = Color3.new()
 		CircleOutline.Visible = getgenv().silentaim_settings.fovcircle
 		CircleOutline.ZIndex = 1
