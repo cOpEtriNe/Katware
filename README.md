@@ -36,6 +36,10 @@ NewUI
 * Added Print Mouse Position (to combat the spam in console, if you have even looked in console before in this game. Its a complete mess.)
 * Added Knife Bot (Broken)
 * Added a keybind to open and close the script (insert)
+* Changed The Background Colour So Its Not Completely Black
+* Re-Positioned The Buttons In The Aimbot Tab
+* Re-Positioned The Buttons In The Misc Tab
+* Re-Positioned The Buttons In The Visuals Tab
 
 Probably one of the biggest updates yet!
 
