@@ -1,4 +1,4 @@
--- made by cOpEtriNe new ui update
+-- epic new update
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Kat GUI"; -- the title (ofc)
@@ -10,11 +10,10 @@ game.StarterGui:SetCore("SendNotification", {
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Alert!"; -- the title (ofc)
-	Text = "The GUI Is Safe To Use, - Script is safe to use and will NOT ban you. Enjoy! "; -- what the text says (ofc)
+	Text = "The GUI Is Safe To Use, - Script is safe to use and will NOT ban you. Enjoy! V2.1 Update "; -- what the text says (ofc)
 	Icon = "rbxassetid://57254792"; -- the image if u want. 
 	Duration = 5; -- how long the notification should in secounds
 })
-
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -27,39 +26,53 @@ local SilentAimButton = Instance.new("TextButton")
 local HitboxExtended = Instance.new("TextButton")
 local HitboxExtended2 = Instance.new("TextButton")
 local TitleAimbot = Instance.new("TextLabel")
+local KnifeBot = Instance.new("TextButton")
 local VisualsTab = Instance.new("Frame")
 local TitleVisual = Instance.new("TextLabel")
 local ESPButton = Instance.new("TextButton")
 local FOV100Button = Instance.new("TextButton")
 local NoLagButton = Instance.new("TextButton")
-local MaterialBodyParts = Instance.new("TextButton")
-local Credits_2 = Instance.new("Frame")
+local NightMode = Instance.new("TextButton")
+local NoobPack = Instance.new("TextButton")
+local Chams = Instance.new("TextButton")
+local Transparency = Instance.new("TextButton")
+local Fakelag = Instance.new("TextButton")
+local Headless = Instance.new("TextButton")
+local CreditsTab = Instance.new("Frame")
 local TitleCredit = Instance.new("TextLabel")
 local CreditMaker = Instance.new("TextLabel")
+local ChamsCredit = Instance.new("TextLabel")
+local EspCredit = Instance.new("TextLabel")
+local AimbotCredit = Instance.new("TextLabel")
+local AimbotCredit_2 = Instance.new("TextLabel")
 local MiscTab = Instance.new("Frame")
 local TitleMisc = Instance.new("TextLabel")
 local OldGui = Instance.new("TextButton")
+local Airstuck = Instance.new("TextButton")
+local ChatSpam = Instance.new("TextButton")
+local ChatSpam_2 = Instance.new("TextButton")
 local Miscellaneous = Instance.new("TextButton")
+local WaterMarkFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 Frame.Position = UDim2.new(0.205621362, 0, 0.536764681, 0)
 Frame.Size = UDim2.new(0, 598, 0, 282)
 Frame.Active = true
 Frame.Draggable = true
 Frame.Visible = true
 
-
 WelcomeTitle.Name = "WelcomeTitle"
 WelcomeTitle.Parent = Frame
 WelcomeTitle.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 WelcomeTitle.Size = UDim2.new(0, 200, 0, 50)
 WelcomeTitle.Font = Enum.Font.SourceSans
-WelcomeTitle.Text = "Kat GUI V2.0"
+WelcomeTitle.Text = "Kat GUI V2.1"
 WelcomeTitle.TextColor3 = Color3.fromRGB(255, 15, 231)
 WelcomeTitle.TextScaled = true
 WelcomeTitle.TextSize = 14.000
@@ -103,7 +116,7 @@ Credits.TextWrapped = true
 
 AimbotTab.Name = "AimbotTab"
 AimbotTab.Parent = Frame
-AimbotTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AimbotTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 AimbotTab.Position = UDim2.new(0.334448159, 0, 0.109929077, 0)
 AimbotTab.Size = UDim2.new(0, 398, 0, 251)
 AimbotTab.Visible = false
@@ -198,10 +211,11 @@ SilentAimButton.MouseButton1Down:connect(function()
 	end)
 end)
 
+
 HitboxExtended.Name = "HitboxExtended"
 HitboxExtended.Parent = AimbotTab
 HitboxExtended.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-HitboxExtended.Position = UDim2.new(0.548235297, 0, 0.0734231919, 0)
+HitboxExtended.Position = UDim2.new(0.482908666, 0, 0.0734231919, 0)
 HitboxExtended.Size = UDim2.new(0, 135, 0, 32)
 HitboxExtended.Font = Enum.Font.SourceSans
 HitboxExtended.Text = "Extended Hitbox"
@@ -319,9 +333,30 @@ TitleAimbot.TextScaled = true
 TitleAimbot.TextSize = 14.000
 TitleAimbot.TextWrapped = true
 
+KnifeBot.Name = "KnifeBot"
+KnifeBot.Parent = AimbotTab
+KnifeBot.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+KnifeBot.Position = UDim2.new(0.482745588, 0, 0.305717736, 0)
+KnifeBot.Size = UDim2.new(0, 135, 0, 32)
+KnifeBot.Font = Enum.Font.SourceSans
+KnifeBot.Text = "KnifeBot"
+KnifeBot.TextColor3 = Color3.fromRGB(255, 15, 231)
+KnifeBot.TextScaled = true
+KnifeBot.TextSize = 14.000
+KnifeBot.TextWrapped = true
+KnifeBot.MouseButton1Down:connect(function()
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Alert!"; -- the title (ofc)
+		Text = "Buggy, - Script is not currently working"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
+end)
+
 VisualsTab.Name = "VisualsTab"
 VisualsTab.Parent = Frame
-VisualsTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VisualsTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 VisualsTab.Position = UDim2.new(0.334448159, 0, 0.138297871, 0)
 VisualsTab.Size = UDim2.new(0, 398, 0, 243)
 VisualsTab.Visible = false
@@ -399,7 +434,7 @@ end)
 FOV100Button.Name = "FOV100Button"
 FOV100Button.Parent = VisualsTab
 FOV100Button.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-FOV100Button.Position = UDim2.new(0.548672557, 0, 0.0779074281, 0)
+FOV100Button.Position = UDim2.new(0.435607225, 0, 0.0779074281, 0)
 FOV100Button.Size = UDim2.new(0, 135, 0, 32)
 FOV100Button.Font = Enum.Font.SourceSans
 FOV100Button.Text = "Fov 100"
@@ -481,41 +516,266 @@ NoLagButton.MouseButton1Down:connect(function()
 	end
 end)
 
-MaterialBodyParts.Name = "MaterialBodyParts"
-MaterialBodyParts.Parent = VisualsTab
-MaterialBodyParts.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-MaterialBodyParts.Position = UDim2.new(0.546159983, 0, 0.2929703, 0)
-MaterialBodyParts.Size = UDim2.new(0, 135, 0, 32)
-MaterialBodyParts.Font = Enum.Font.SourceSans
-MaterialBodyParts.Text = "Change Body Parts"
-MaterialBodyParts.TextColor3 = Color3.fromRGB(255, 15, 231)
-MaterialBodyParts.TextScaled = true
-MaterialBodyParts.TextSize = 14.000
-MaterialBodyParts.TextWrapped = true
-MaterialBodyParts.MouseButton1Down:connect(function()
-	wait(1.2)
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Kat GUI"; -- the title (ofc)
-		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-		Icon = "rbxassetid://57254792"; -- the image if u want. 
-		Duration = 5; -- how long the notification should in secounds
-	})
-
-	game.Players.LocalPlayer.Head.Transparency = 0.50
-	game.Players.LocalPlayer.Torso.Transparency = 0.50
-
+NightMode.Name = "NightMode"
+NightMode.Parent = VisualsTab
+NightMode.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+NightMode.Position = UDim2.new(0.0285720229, 0, 0.280624628, 0)
+NightMode.Size = UDim2.new(0, 135, 0, 32)
+NightMode.Font = Enum.Font.SourceSans
+NightMode.Text = "NIght Mode"
+NightMode.TextColor3 = Color3.fromRGB(255, 15, 231)
+NightMode.TextScaled = true
+NightMode.TextSize = 14.000
+NightMode.TextWrapped = true
+NightMode.MouseButton1Down:connect(function()
+while true do
+wait(1)
+game.Lighting.TimeOfDay = 06
+end
 end)
 
-Credits_2.Name = "Credits"
-Credits_2.Parent = Frame
-Credits_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Credits_2.BorderSizePixel = 0
-Credits_2.Position = UDim2.new(0.334448159, 0, 0.124113478, 0)
-Credits_2.Size = UDim2.new(0, 398, 0, 247)
-Credits_2.Visible = false
+NoobPack.Name = "NoobPack"
+NoobPack.Parent = VisualsTab
+NoobPack.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+NoobPack.Position = UDim2.new(0.435607225, 0, 0.279553533, 0)
+NoobPack.Size = UDim2.new(0, 135, 0, 32)
+NoobPack.Font = Enum.Font.SourceSans
+NoobPack.Text = "Noob Skin And Knife"
+NoobPack.TextColor3 = Color3.fromRGB(255, 15, 231)
+NoobPack.TextScaled = true
+NoobPack.TextSize = 14.000
+NoobPack.TextWrapped = true
+NoobPack.MouseButton1Down:connect(function()
+	local args = {
+		[1] = "Equip",
+		[2] = "6",
+		[3] = 1
+	}
+
+	game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+
+	wait(1)
+
+	-- equip the noob pax
+
+	local args = {
+		[1] = "Equip",
+		[2] = "16",
+		[3] = 1
+	}
+
+	game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+end)
+
+Chams.Name = "Chams"
+Chams.Parent = VisualsTab
+Chams.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Chams.Position = UDim2.new(0.0285720229, 0, 0.486385942, 0)
+Chams.Size = UDim2.new(0, 135, 0, 32)
+Chams.Font = Enum.Font.SourceSans
+Chams.Text = "Chams"
+Chams.TextColor3 = Color3.fromRGB(255, 15, 231)
+Chams.TextScaled = true
+Chams.TextSize = 14.000
+Chams.TextWrapped = true
+Chams.MouseButton1Down:connect(function()
+	local dwEntities = game:GetService("Players")
+	local dwLocalPlayer = dwEntities.LocalPlayer 
+	local dwRunService = game:GetService("RunService")
+
+	local settings_tbl = {
+		ESP_Enabled = true,
+		ESP_TeamCheck = false,
+		Chams = true,
+		Chams_Color = Color3.fromRGB(134, 39, 165),
+		Chams_Transparency = 0.1,
+		Chams_Glow_Color = Color3.fromRGB(255, 255, 255)
+	}
+
+	function destroy_chams(char)
+
+		for k,v in next, char:GetChildren() do 
+
+			if v:IsA("BasePart") and v.Transparency ~= 1 then
+
+				if v:FindFirstChild("Glow") and 
+					v:FindFirstChild("Chams") then
+
+					v.Glow:Destroy()
+					v.Chams:Destroy() 
+
+				end 
+
+			end 
+
+		end 
+
+	end
+
+	dwRunService.Heartbeat:Connect(function()
+
+		if settings_tbl.ESP_Enabled then
+
+			for k,v in next, dwEntities:GetPlayers() do 
+
+				if v ~= dwLocalPlayer then
+
+					if v.Character and
+						v.Character:FindFirstChild("HumanoidRootPart") and 
+						v.Character:FindFirstChild("Humanoid") and 
+						v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+
+						if settings_tbl.ESP_TeamCheck == false then
+
+							local char = v.Character 
+
+							for k,b in next, char:GetChildren() do 
+
+								if b:IsA("BasePart") and 
+									b.Transparency ~= 1 then
+
+									if settings_tbl.Chams then
+
+										if not b:FindFirstChild("Glow") and
+											not b:FindFirstChild("Chams") then
+
+											local chams_box = Instance.new("BoxHandleAdornment", b)
+											chams_box.Name = "Chams"
+											chams_box.AlwaysOnTop = true 
+											chams_box.ZIndex = 4 
+											chams_box.Adornee = b 
+											chams_box.Color3 = settings_tbl.Chams_Color
+											chams_box.Transparency = settings_tbl.Chams_Transparency
+											chams_box.Size = b.Size + Vector3.new(0.02, 0.02, 0.02)
+
+											local glow_box = Instance.new("BoxHandleAdornment", b)
+											glow_box.Name = "Glow"
+											glow_box.AlwaysOnTop = false 
+											glow_box.ZIndex = 3 
+											glow_box.Adornee = b 
+											glow_box.Color3 = settings_tbl.Chams_Glow_Color
+											glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
+
+										end
+
+									else
+
+										destroy_chams(char)
+
+									end
+
+								end
+
+							end
+
+						else
+
+							if v.Team == dwLocalPlayer.Team then
+								destroy_chams(v.Character)
+							end
+
+						end
+
+					else
+
+						destroy_chams(v.Character)
+
+					end
+
+				end
+
+			end
+
+		else 
+
+			for k,v in next, dwEntities:GetPlayers() do 
+
+				if v ~= dwLocalPlayer and 
+					v.Character and 
+					v.Character:FindFirstChild("HumanoidRootPart") and 
+					v.Character:FindFirstChild("Humanoid") and 
+					v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+
+					destroy_chams(v.Character)
+
+				end
+
+			end
+
+		end
+
+	end)
+end)
+
+Transparency.Name = "Transparency"
+Transparency.Parent = VisualsTab
+Transparency.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Transparency.Position = UDim2.new(0.435607195, 0, 0.486385942, 0)
+Transparency.Size = UDim2.new(0, 135, 0, 32)
+Transparency.Font = Enum.Font.SourceSans
+Transparency.Text = "Transparency"
+Transparency.TextColor3 = Color3.fromRGB(255, 15, 231)
+Transparency.TextScaled = true
+Transparency.TextSize = 14.000
+Transparency.TextWrapped = true
+Transparency.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character["Left Leg"].Transparency = 0.5
+	game.Players.LocalPlayer.Character["Right Leg"].Transparency = 0.5
+	game.Players.LocalPlayer.Character["Left Arm"].Transparency = 0.5
+	game.Players.LocalPlayer.Character["Right Arm"].Transparency = 0.5
+	game.Players.LocalPlayer.Character.Head.Transparency = 0.5
+	game.Players.LocalPlayer.Character.Torso.Transparency = 0.5
+end)
+
+Fakelag.Name = "Fakelag"
+Fakelag.Parent = VisualsTab
+Fakelag.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Fakelag.Position = UDim2.new(0.0285720229, 0, 0.688032031, 0)
+Fakelag.Size = UDim2.new(0, 135, 0, 32)
+Fakelag.Font = Enum.Font.SourceSans
+Fakelag.Text = "Fake Lag"
+Fakelag.TextColor3 = Color3.fromRGB(255, 15, 231)
+Fakelag.TextScaled = true
+Fakelag.TextSize = 14.000
+Fakelag.TextWrapped = true
+Fakelag.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Torso.Anchored = false
+	game.Players.LocalPlayer.Character.Humanoid.Jump = false
+	wait(0.1)
+	game.Players.LocalPlayer.Character.Torso.Anchored = false
+	game.Players.LocalPlayer.Character.Humanoid.Sit = false
+	wait(0.1)
+end)
+
+Headless.Name = "Headless"
+Headless.Parent = VisualsTab
+Headless.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Headless.Position = UDim2.new(0.435607195, 0, 0.688032031, 0)
+Headless.Size = UDim2.new(0, 135, 0, 32)
+Headless.Font = Enum.Font.SourceSans
+Headless.Text = "Headless"
+Headless.TextColor3 = Color3.fromRGB(255, 15, 231)
+Headless.TextScaled = true
+Headless.TextSize = 14.000
+Headless.TextWrapped = true
+Headless.MouseButton1Down:Connect(function()
+	while true do
+		wait(1)
+		game.Players.LocalPlayer.Character.Head.Transparency = 1
+		game.Players.LocalPlayer.Character.Head.face:Destroy()
+	end
+end)
+
+CreditsTab.Name = "CreditsTab"
+CreditsTab.Parent = Frame
+CreditsTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+CreditsTab.BorderSizePixel = 0
+CreditsTab.Position = UDim2.new(0.334448159, 0, 0.127659574, 0)
+CreditsTab.Size = UDim2.new(0, 398, 0, 246)
+CreditsTab.Visible = false
 
 TitleCredit.Name = "TitleCredit"
-TitleCredit.Parent = Credits_2
+TitleCredit.Parent = CreditsTab
 TitleCredit.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 TitleCredit.Position = UDim2.new(-0.000688562461, 0, -0.141700402, 0)
 TitleCredit.Size = UDim2.new(0, 398, 0, 34)
@@ -527,11 +787,11 @@ TitleCredit.TextSize = 14.000
 TitleCredit.TextWrapped = true
 
 CreditMaker.Name = "CreditMaker"
-CreditMaker.Parent = Credits_2
+CreditMaker.Parent = CreditsTab
 CreditMaker.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 CreditMaker.BorderSizePixel = 0
 CreditMaker.Position = UDim2.new(0, 0, -0.00160816521, 0)
-CreditMaker.Size = UDim2.new(0, 398, 0, 73)
+CreditMaker.Size = UDim2.new(0, 398, 0, 43)
 CreditMaker.Font = Enum.Font.SourceSans
 CreditMaker.Text = "Script made by cOpEtriNe"
 CreditMaker.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -539,9 +799,61 @@ CreditMaker.TextScaled = true
 CreditMaker.TextSize = 14.000
 CreditMaker.TextWrapped = true
 
+ChamsCredit.Name = "ChamsCredit"
+ChamsCredit.Parent = CreditsTab
+ChamsCredit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ChamsCredit.BorderSizePixel = 0
+ChamsCredit.Position = UDim2.new(0, 0, 0.30203557, 0)
+ChamsCredit.Size = UDim2.new(0, 398, 0, 43)
+ChamsCredit.Font = Enum.Font.SourceSans
+ChamsCredit.Text = "Chams - 0x83 (Modified)"
+ChamsCredit.TextColor3 = Color3.fromRGB(255, 15, 231)
+ChamsCredit.TextScaled = true
+ChamsCredit.TextSize = 14.000
+ChamsCredit.TextWrapped = true
+
+EspCredit.Name = "EspCredit"
+EspCredit.Parent = CreditsTab
+EspCredit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EspCredit.BorderSizePixel = 0
+EspCredit.Position = UDim2.new(0, 0, 0.476124644, 0)
+EspCredit.Size = UDim2.new(0, 398, 0, 43)
+EspCredit.Font = Enum.Font.SourceSans
+EspCredit.Text = "ESP - IRc7 (Modified)"
+EspCredit.TextColor3 = Color3.fromRGB(255, 15, 231)
+EspCredit.TextScaled = true
+EspCredit.TextSize = 14.000
+EspCredit.TextWrapped = true
+
+AimbotCredit.Name = "AimbotCredit"
+AimbotCredit.Parent = CreditsTab
+AimbotCredit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AimbotCredit.BorderSizePixel = 0
+AimbotCredit.Position = UDim2.new(0, 0, 0.650213718, 0)
+AimbotCredit.Size = UDim2.new(0, 398, 0, 43)
+AimbotCredit.Font = Enum.Font.SourceSans
+AimbotCredit.Text = "Aimbot - Someone on pastebin"
+AimbotCredit.TextColor3 = Color3.fromRGB(255, 15, 231)
+AimbotCredit.TextScaled = true
+AimbotCredit.TextSize = 14.000
+AimbotCredit.TextWrapped = true
+
+AimbotCredit_2.Name = "AimbotCredit"
+AimbotCredit_2.Parent = CreditsTab
+AimbotCredit_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AimbotCredit_2.BorderSizePixel = 0
+AimbotCredit_2.Position = UDim2.new(0, 0, 0.824302852, 0)
+AimbotCredit_2.Size = UDim2.new(0, 398, 0, 43)
+AimbotCredit_2.Font = Enum.Font.SourceSans
+AimbotCredit_2.Text = "Hitbox - Someone on V3rm, NoLag - AliveExploits"
+AimbotCredit_2.TextColor3 = Color3.fromRGB(255, 15, 231)
+AimbotCredit_2.TextScaled = true
+AimbotCredit_2.TextSize = 14.000
+AimbotCredit_2.TextWrapped = true
+
 MiscTab.Name = "MiscTab"
 MiscTab.Parent = Frame
-MiscTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MiscTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 MiscTab.Position = UDim2.new(0.334448159, 0, 0, 0)
 MiscTab.Size = UDim2.new(0, 398, 0, 282)
 MiscTab.Visible = false
@@ -569,444 +881,135 @@ OldGui.TextScaled = true
 OldGui.TextSize = 14.000
 OldGui.TextWrapped = true
 OldGui.MouseButton1Down:connect(function()
-	-- Gui to Lua
-	-- Version: 3.2
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua'))()
+end)
 
-	-- Instances:
+Airstuck.Name = "Airstuck"
+Airstuck.Parent = MiscTab
+Airstuck.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Airstuck.Position = UDim2.new(0.42626974, 0, 0.205417737, 0)
+Airstuck.Size = UDim2.new(0, 135, 0, 32)
+Airstuck.Font = Enum.Font.SourceSans
+Airstuck.Text = "Airstuck"
+Airstuck.TextColor3 = Color3.fromRGB(255, 15, 231)
+Airstuck.TextScaled = true
+Airstuck.TextSize = 14.000
+Airstuck.TextWrapped = true
+Airstuck.MouseButton1Down:connect(function()
 
-	local ScreenGui = Instance.new("ScreenGui")
-	local Frame = Instance.new("Frame")
-	local Title = Instance.new("TextLabel")
-	local ESP = Instance.new("TextButton")
-	local SilentAim = Instance.new("TextButton")
-	local BiggerHitbox = Instance.new("TextButton")
-	local _100fov = Instance.new("TextButton")
-	local ForceField = Instance.new("TextButton")
-	local BorderBottom = Instance.new("TextLabel")
-	local NoLag = Instance.new("TextButton")
-	local ShowBinds = Instance.new("TextButton")
-	local BiggerHitbox2 = Instance.new("TextButton")
-	local BindsFrame = Instance.new("Frame")
-	local BindsTitle = Instance.new("TextLabel")
-	local TextLabel = Instance.new("TextLabel")
-	local TitleLoad = Instance.new("TextLabel")
+	-- Variables
 
-	--Properties:
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
 
-	ScreenGui.Parent = game.CoreGui
+	-- Settings
 
-	Frame.Parent = ScreenGui
-	Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	Frame.Position = UDim2.new(0.194545463, 0, 0.436274499, 0)
-	Frame.Size = UDim2.new(0, 382, 0, 309)
-	Frame.Active = true
-	Frame.Draggable = true
-	Frame.Visible = true
+	bind = "e" -- has to be lowercase
+	bind2 = "r"
 
-	Title.Name = "Title"
-	Title.Parent = Frame
-	Title.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	Title.Size = UDim2.new(0, 382, 0, 50)
-	Title.Font = Enum.Font.SourceSans
-	Title.Text = "Kat GUI"
-	Title.TextColor3 = Color3.fromRGB(255, 15, 231)
-	Title.TextScaled = true
-	Title.TextSize = 14.000
-	Title.TextWrapped = true
+	-- Script
 
-	ESP.Name = "ESP"
-	ESP.Parent = Frame
-	ESP.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	ESP.Position = UDim2.new(0.045748964, 0, 0.193718433, 0)
-	ESP.Size = UDim2.new(0, 150, 0, 37)
-	ESP.Font = Enum.Font.SourceSans
-	ESP.Text = "ESP"
-	ESP.TextColor3 = Color3.fromRGB(255, 15, 231)
-	ESP.TextScaled = true
-	ESP.TextSize = 14.000
-	ESP.TextWrapped = true
-	ESP.MouseButton1Down:connect(function()
+	mouse.KeyDown:connect(function(key)
+		if key == bind then
+			print("Currently Airstuck")
+			game.Players.LocalPlayer.Character.Torso.Anchored = true
+		end
+	end)
 
-		wait(1.2)
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kat GUI"; -- the title (ofc)
-			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-			Icon = "rbxassetid://57254792"; -- the image if u want. 
-			Duration = 5; -- how long the notification should in secounds
-		})
+	mouse.KeyDown:connect(function(key2)
+		if key2 == bind2 then
+			print("Currently Unstuck!")
+			game.Players.LocalPlayer.Character.Torso.Anchored = false
+		end
+	end)
+end)
 
-		--- Tut
 
-		local esp_settings = { ---- table for esp settings 
-			textsize = 20,
-			colour = 255,255,255
+ChatSpam.Name = "ChatSpam"
+ChatSpam.Parent = MiscTab
+ChatSpam.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ChatSpam.Position = UDim2.new(0.0267722607, 0, 0.382722706, 0)
+ChatSpam.Size = UDim2.new(0, 135, 0, 32)
+ChatSpam.Font = Enum.Font.SourceSans
+ChatSpam.Text = "Chat Spam"
+ChatSpam.TextColor3 = Color3.fromRGB(255, 15, 231)
+ChatSpam.TextScaled = true
+ChatSpam.TextSize = 14.000
+ChatSpam.TextWrapped = true
+ChatSpam.MouseButton1Down:connect(function()
+	while true do
+		wait(1)
+
+		-- chat spam, go customize unless you dont
+
+		local args = {
+			[1] = "kat where? free kat gui!", -- text said
+			[2] = "All"
 		}
 
-		local gui = Instance.new("BillboardGui")
-		local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
+		wait(2) -- safe mode, change if u wont want to go that sloow
 
-
-		gui.Name = "Cracked esp"; ---- properties of the esp
-		gui.ResetOnSpawn = false
-		gui.AlwaysOnTop = true;
-		gui.LightInfluence = 0;
-		gui.Size = UDim2.new(1.75, 0, 1.75, 0);
-		esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
-		esp.Text = ""
-		esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
-		esp.BorderSizePixel = 4;
-		esp.BorderColor3 = Color3.new(esp_settings.colour)
-		esp.BorderSizePixel = 0
-		esp.Font = "GothamSemibold"
-		esp.TextSize = esp_settings.textsize
-		esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
-
-		game:GetService("RunService").RenderStepped:Connect(function() ---- loops faster than a while loop :)
-			for i,v in pairs (game:GetService("Players"):GetPlayers()) do
-				if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
-					esp.Text = "{"..v.Name.."}"
-					gui:Clone().Parent = v.Character.Head
-				end
-			end
-		end)
-	end)
-
-	SilentAim.Name = "SilentAim"
-	SilentAim.Parent = Frame
-	SilentAim.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	SilentAim.Position = UDim2.new(0.55460161, 0, 0.193718478, 0)
-	SilentAim.Size = UDim2.new(0, 153, 0, 36)
-	SilentAim.Font = Enum.Font.SourceSans
-	SilentAim.Text = "Slient Aim"
-	SilentAim.TextColor3 = Color3.fromRGB(255, 15, 231)
-	SilentAim.TextScaled = true
-	SilentAim.TextSize = 14.000
-	SilentAim.TextWrapped = true
-	SilentAim.MouseButton1Down:connect(function()
-		wait(1.2)
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kat GUI"; -- the title (ofc)
-			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-			Icon = "rbxassetid://57254792"; -- the image if u want. 
-			Duration = 5; -- how long the notification should in secounds
-		})
-
-		getgenv().silentaim_settings = {
-			fov = 150,
-			hitbox = "Head",
-			fovcircle = true,
+		local args = {
+			[1] = "Knife-Bot! KATGuis Best server destroying feature!!", -- ooooh really?
+			[2] = "All"
 		}
-		-- Services
-		local Players = game:GetService("Players")
-		local RunService = game:GetService("RunService")
 
-		-- Player
-		local Player = Players.LocalPlayer
-		local Mouse = Player:GetMouse()
-		local CurrentCamera = workspace.CurrentCamera
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-		local function GetClosest(Fov)
-			local Target, Closest = nil, Fov or math.huge
+		wait(2)
 
-			for i,v in pairs(Players:GetPlayers()) do
-				if (v.Character and v ~= Player and v.Character:FindFirstChild(getgenv().silentaim_settings.hitbox)) then
-					local Position, OnScreen = CurrentCamera:WorldToScreenPoint(v.Character[getgenv().silentaim_settings.hitbox].Position)
-					local Distance = (Vector2.new(Position.X, Position.Y) - Vector2.new(Mouse.X, Mouse.Y)).Magnitude
 
-					if (Distance < Closest and OnScreen) then
-						Closest = Distance
-						Target = v
-					end
-				end
-			end
+		local args = {
+			[1] = "After 9 years in development, we hope it was worth the wait!", -- rofl!!
+			[2] = "All"
+		}
 
-			return Target
-		end
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-		local Target
-		local CircleInline = Drawing.new("Circle")
-		local CircleOutline = Drawing.new("Circle")
-		RunService.Stepped:Connect(function()
-			CircleInline.Radius = getgenv().silentaim_settings.fov
-			CircleInline.Thickness = 2
-			CircleInline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
-			CircleInline.Transparency = 1
-			CircleInline.Color = Color3.fromRGB(255, 255, 255)
-			CircleInline.Visible = getgenv().silentaim_settings.fovcircle
-			CircleInline.ZIndex = 2
+		wait(2)
 
-			CircleOutline.Radius = getgenv().silentaim_settings.fov
-			CircleOutline.Thickness = 4
-			CircleOutline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
-			CircleOutline.Transparency = 1
-			CircleOutline.Color = Color3.new()
-			CircleOutline.Visible = getgenv().silentaim_settings.fovcircle
-			CircleOutline.ZIndex = 1
+		local args = {
+			[1] = "KATGui! Free open source Kat! cheat!!", -- yessir
+			[2] = "All"
+		}
 
-			Target = GetClosest(getgenv().silentaim_settings.fov)
-		end)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-		local Old; Old = hookmetamethod(game, "__namecall", function(Self, ...)
-			local Args = {...}
+		wait(1)
 
-			if (not checkcaller() and getnamecallmethod() == "FindPartOnRayWithIgnoreList") then
-				if (table.find(Args[2], workspace.WorldIgnore.Ignore) and Target and Target.Character) then
-					local Origin = Args[1].Origin
+		local args = {
+			[1] = "KATGui You've been bot rolled!", --AH CRAP! NOT AGAIN!!
+			[2] = "All"
+		}
 
-					Args[1] = Ray.new(Origin, Target.Character[getgenv().silentaim_settings.hitbox].Position - Origin)
-				end
-			end
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-			return Old(Self, unpack(Args))
-		end)
+	end
+end)
+
+ChatSpam_2.Name = "ChatSpam"
+ChatSpam_2.Parent = MiscTab
+ChatSpam_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ChatSpam_2.Position = UDim2.new(0.42626974, 0, 0.382722706, 0)
+ChatSpam_2.Size = UDim2.new(0, 135, 0, 32)
+ChatSpam_2.Font = Enum.Font.SourceSans
+ChatSpam_2.Text = "Print Mouse Pos"
+ChatSpam_2.TextColor3 = Color3.fromRGB(255, 15, 231)
+ChatSpam_2.TextScaled = true
+ChatSpam_2.TextSize = 14.000
+ChatSpam_2.TextWrapped = true
+ChatSpam_2.MouseButton1Down:connect(function()
+	
+	local Players = game:GetService("Players")
+
+	local localPlayer = Players.LocalPlayer
+	local mouse = localPlayer:GetMouse()
+
+	mouse.Move:Connect(function()
+		print("KATWare Mouse Position Current/Before: ", mouse.X, mouse.Y)
 	end)
-
-	BiggerHitbox.Name = "BiggerHitbox"
-	BiggerHitbox.Parent = Frame
-	BiggerHitbox.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	BiggerHitbox.Position = UDim2.new(0.0483667664, 0, 0.345822036, 0)
-	BiggerHitbox.Size = UDim2.new(0, 149, 0, 39)
-	BiggerHitbox.Font = Enum.Font.SourceSans
-	BiggerHitbox.Text = "Extended Hitbox"
-	BiggerHitbox.TextColor3 = Color3.fromRGB(255, 15, 231)
-	BiggerHitbox.TextScaled = true
-	BiggerHitbox.TextSize = 14.000
-	BiggerHitbox.TextWrapped = true
-	BiggerHitbox.MouseButton1Down:connect(function()
-		wait(1.2)
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kat GUI"; -- the title (ofc)
-			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-			Icon = "rbxassetid://57254792"; -- the image if u want. 
-			Duration = 5; -- how long the notification should in secounds
-		})
-
-		print("Hitboxes Has been extended")
-		local Players = game:GetService("Players")
-		for _, player in pairs(Players:GetPlayers()) do
-			local charpre = player.Character or player.CharacterAdded:Wait()
-			if player.UserId == game.Players.LocalPlayer.UserId then
-			else
-				for i,v in pairs(charpre:WaitForChild("CollisionParts",60):GetChildren()) do
-					v.Transparency = 0.8
-					v.Size = Vector3.new(2.82, 2.82, 1.41)
-					v.Color = Color3.fromRGB(170, 255, 0)
-					v.Material = 'Neon'
-				end
-			end
-			player.CharacterAdded:Connect(function(chart)
-				chart:WaitForChild("HumanoidRootPart"):GetPropertyChangedSignal("Position"):Connect(function()
-					if player.UserId == game.Players.LocalPlayer.UserId then
-					else
-						for i,v in pairs(chart:WaitForChild("CollisionParts",60):GetChildren()) do
-							v.Transparency = 0.8
-							v.Size = Vector3.new(2.82, 2.82, 1.41)
-							v.Color = Color3.fromRGB(170, 255, 0)
-							v.Material = 'Neon'
-						end
-					end
-				end)
-			end)
-		end	
-	end)
-
-	_100fov.Name = "100fov"
-	_100fov.Parent = Frame
-	_100fov.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	_100fov.Position = UDim2.new(0.55460161, 0, 0.347566575, 0)
-	_100fov.Size = UDim2.new(0, 153, 0, 39)
-	_100fov.Font = Enum.Font.SourceSans
-	_100fov.Text = "100 Fov"
-	_100fov.TextColor3 = Color3.fromRGB(255, 15, 231)
-	_100fov.TextScaled = true
-	_100fov.TextSize = 14.000
-	_100fov.TextWrapped = true
-	_100fov.MouseButton1Down:connect(function()
-
-		wait(1.2)
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kat GUI"; -- the title (ofc)
-			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-			Icon = "rbxassetid://57254792"; -- the image if u want. 
-			Duration = 5; -- how long the notification should in secounds
-		})
-
-		workspace.CurrentCamera.FieldOfView = 100
-	end)
-
-	ForceField.Name = "ForceField"
-	ForceField.Parent = Frame
-	ForceField.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	ForceField.Position = UDim2.new(0.0467482172, 0, 0.505946457, 0)
-	ForceField.Size = UDim2.new(0, 150, 0, 37)
-	ForceField.Font = Enum.Font.SourceSans
-	ForceField.Text = "ForceField BodyParts"
-	ForceField.TextColor3 = Color3.fromRGB(255, 15, 231)
-	ForceField.TextScaled = true
-	ForceField.TextSize = 14.000
-	ForceField.TextWrapped = true
-	ForceField.MouseButton1Down:connect(function()
-		wait(1.2)
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kat GUI"; -- the title (ofc)
-			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-			Icon = "rbxassetid://57254792"; -- the image if u want. 
-			Duration = 5; -- how long the notification should in secounds
-		})
-
-		game.Players.LocalPlayer.Head.Material = ForceField
-		game.Players.LocalPlayer.Torso.Material = ForceField
-
-	end)
-
-	BorderBottom.Name = "BorderBottom"
-	BorderBottom.Parent = Frame
-	BorderBottom.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	BorderBottom.Position = UDim2.new(0, 0, 0.838187695, 0)
-	BorderBottom.Size = UDim2.new(0, 161, 0, 50)
-	BorderBottom.Font = Enum.Font.SourceSans
-	BorderBottom.Text = "Developer UI"
-	BorderBottom.TextColor3 = Color3.fromRGB(255, 15, 231)
-	BorderBottom.TextScaled = true
-	BorderBottom.TextSize = 14.000
-	BorderBottom.TextWrapped = true
-
-	NoLag.Name = "NoLag"
-	NoLag.Parent = Frame
-	NoLag.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	NoLag.Position = UDim2.new(0.55460161, 0, 0.505946457, 0)
-	NoLag.Size = UDim2.new(0, 153, 0, 37)
-	NoLag.Font = Enum.Font.SourceSans
-	NoLag.Text = "NoLag"
-	NoLag.TextColor3 = Color3.fromRGB(255, 15, 231)
-	NoLag.TextScaled = true
-	NoLag.TextSize = 14.000
-	NoLag.TextWrapped = true
-	NoLag.MouseButton1Down:connect(function()
-
-		wait(1.2)
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kat GUI"; -- the title (ofc)
-			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-			Icon = "rbxassetid://57254792"; -- the image if u want. 
-			Duration = 5; -- how long the notification should in secounds
-		})
-
-		local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
-		local g = game
-		local w = g.Workspace
-		local l = g.Lighting
-		local t = w.Terrain
-		t.WaterWaveSize = 0
-		t.WaterWaveSpeed = 0
-		t.WaterReflectance = 0
-		t.WaterTransparency = 0
-		l.GlobalShadows = false
-		l.FogEnd = 9e9
-		l.Brightness = 0
-		settings().Rendering.QualityLevel = "Level01"
-		for i, v in pairs(g:GetDescendants()) do
-			if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
-				v.Material = "Plastic"
-				v.Reflectance = 0
-			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
-				v.Transparency = 0.50
-			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-				v.Lifetime = NumberRange.new(0)
-			elseif v:IsA("Explosion") then
-				v.BlastPressure = 1
-				v.BlastRadius = 1
-			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
-				v.Enabled = false
-			elseif v:IsA("MeshPart") then
-				v.Material = "Plastic"
-				v.Reflectance = 0
-				v.TextureID = 10385902758728957
-			end
-		end
-		for i, e in pairs(l:GetChildren()) do
-			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
-				e.Enabled = false
-			end
-		end
-	end)
-
-
-	ShowBinds.Name = "ShowBinds"
-	ShowBinds.Parent = Frame
-	ShowBinds.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	ShowBinds.Position = UDim2.new(0.578161836, 0, 0.858697295, 0)
-	ShowBinds.Size = UDim2.new(0, 153, 0, 37)
-	ShowBinds.Font = Enum.Font.SourceSans
-	ShowBinds.Text = "Show Binds"
-	ShowBinds.TextColor3 = Color3.fromRGB(255, 15, 231)
-	ShowBinds.TextScaled = true
-	ShowBinds.TextSize = 14.000
-	ShowBinds.TextWrapped = true
-
-	BiggerHitbox2.Name = "BiggerHitbox2"
-	BiggerHitbox2.Parent = Frame
-	BiggerHitbox2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-	BiggerHitbox2.Position = UDim2.new(0.0467482172, 0, 0.661286235, 0)
-	BiggerHitbox2.Size = UDim2.new(0, 150, 0, 37)
-	BiggerHitbox2.Font = Enum.Font.SourceSans
-	BiggerHitbox2.Text = "Extended Hitbox 2"
-	BiggerHitbox2.TextColor3 = Color3.fromRGB(255, 15, 231)
-	BiggerHitbox2.TextScaled = true
-	BiggerHitbox2.TextSize = 14.000
-	BiggerHitbox2.TextWrapped = true
-	BiggerHitbox2.MouseButton1Down:connect(function()
-		wait(1.2)
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Kat GUI"; -- the title (ofc)
-			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-			Icon = "rbxassetid://57254792"; -- the image if u want. 
-			Duration = 5; -- how long the notification should in secounds
-		})	
-
-		-- Variables
-		local player = game.Players.LocalPlayer
-		local mouse = player:GetMouse()
-
-		-- Settings
-
-		bind = "" 
-		bind2 = "t"
-
-		-- Script
-
-		mouse.KeyDown:connect(function(key)
-			if key == bind then
-				player.Character.HumanoidRootPart.CFrame = CFrame.new(1254.09656, 137.906067, -172.128204)
-			end
-		end)
-
-		mouse.KeyDown:connect(function(key2)
-			if key2 == bind2 then
-				_G.HeadSize = 20
-				_G.Disabled = true
-
-
-				if _G.Disabled then
-					for i,v in next, game:GetService('Players'):GetPlayers() do
-						if v.Name ~= game:GetService('Players').LocalPlayer.Name then
-							pcall(function()
-								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-								v.Character.HumanoidRootPart.Transparency = 0.7
-								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
-								v.Character.HumanoidRootPart.Material = "Neon"
-								v.Character.HumanoidRootPart.CanCollide = false
-							end)
-						end
-					end
-				end
-			end
-		end)
-	end)
-
-
-
 
 end)
 
@@ -1014,7 +1017,7 @@ Miscellaneous.Name = "Miscellaneous"
 Miscellaneous.Parent = Frame
 Miscellaneous.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 Miscellaneous.Position = UDim2.new(0, 0, 0.617021263, 0)
-Miscellaneous.Size = UDim2.new(0, 200, 0, 50)
+Miscellaneous.Size = UDim2.new(0, 199, 0, 50)
 Miscellaneous.Font = Enum.Font.SourceSans
 Miscellaneous.Text = "Misc"
 Miscellaneous.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -1022,9 +1025,26 @@ Miscellaneous.TextScaled = true
 Miscellaneous.TextSize = 14.000
 Miscellaneous.TextWrapped = true
 
+WaterMarkFrame.Name = "WaterMarkFrame"
+WaterMarkFrame.Parent = ScreenGui
+WaterMarkFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaterMarkFrame.Position = UDim2.new(0.62937057, 0, -0.0701298714, 0)
+WaterMarkFrame.Size = UDim2.new(0, 300, 0, 54)
+
+TextLabel.Parent = WaterMarkFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TextLabel.Position = UDim2.new(2.23517418e-08, 0, -2.5331974e-07, 0)
+TextLabel.Size = UDim2.new(0, 300, 0, 54)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "KATWare V2.1 Build NewUI Fork"
+TextLabel.TextColor3 = Color3.fromRGB(255, 15, 231)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
 -- Scripts:
 
-local function ZGVXUR_fake_script() -- Aimbot.LocalScript 
+local function HVCAOZ_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1034,8 +1054,8 @@ local function ZGVXUR_fake_script() -- Aimbot.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(ZGVXUR_fake_script)()
-local function FWLMYF_fake_script() -- Visuals.LocalScript 
+coroutine.wrap(HVCAOZ_fake_script)()
+local function KVTEK_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1045,8 +1065,8 @@ local function FWLMYF_fake_script() -- Visuals.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(FWLMYF_fake_script)()
-local function JFLYZN_fake_script() -- Credits.LocalScript 
+coroutine.wrap(KVTEK_fake_script)()
+local function ERPL_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1056,8 +1076,8 @@ local function JFLYZN_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(JFLYZN_fake_script)()
-local function ULUM_fake_script() -- Miscellaneous.LocalScript 
+coroutine.wrap(ERPL_fake_script)()
+local function KFCF_fake_script() -- Miscellaneous.LocalScript 
 	local script = Instance.new('LocalScript', Miscellaneous)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1067,4 +1087,28 @@ local function ULUM_fake_script() -- Miscellaneous.LocalScript
 		script.Parent.Parent.MiscTab.Visible = true
 	end)
 end
-coroutine.wrap(ULUM_fake_script)()
+coroutine.wrap(KFCF_fake_script)()
+local function PHRTPFW_fake_script() -- ScreenGui.Keybind 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local Frame = script.Parent.Frame
+	local Opened = false
+	
+	local PositionClosed = UDim2.new(0, 0,0.695, 0)
+	local PositionOpened = UDim2.new(-0.358, 0,0.349, 0)
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(KeyCode)
+		if KeyCode.KeyCode == Enum.KeyCode.Insert then
+			if Opened then
+				Frame:TweenPosition((PositionClosed), "InOut", "Sine")
+				Opened = false
+			else
+				Frame:TweenPosition((PositionOpened), "InOut", "Sine")
+				Opened = true
+			end
+		end
+	end)
+end
+coroutine.wrap(PHRTPFW_fake_script)()
