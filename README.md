@@ -26,4 +26,4 @@ you cant haha, but, there are new features with the developer builds though.
 * Airstuck
 * Make your body transparent
 * Fakelag
-* New updated ESP (Box esp & name)
+
