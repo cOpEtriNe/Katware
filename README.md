@@ -1,11 +1,8 @@
 # KATGui
-GUI For the ROBLOX Game KAT!
+GUI For the ROBLOX Game KAT! It's Free And Open Source!
 
 ## Information
-
-This script was made probably a week ago, the date is 19/01/2022.
-Ive lost the old scripts and will have to recode them.
-The good thing is, i still have the guis.
+Q: Can I Edit This Script A: Yes, you can.
 This script will not get you banned from now.
 One of my accounts has been up to Level 105 with this script!
 
