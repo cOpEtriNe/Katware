@@ -10,6 +10,34 @@ If you want the old ui, copy the code and put into ur hax
 
 https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua
 
+## Changelog
+Changelog for LegacyUI(old ui) & NewUI(new ui)
+
+LegacyUI
+* Added Chams
+* Show Binds has been added back
+* Added Body Transparency
+* Added Night Mode
+* Fixed The Aimbot Circle Breaking (Made it invisible for now)
+
+NewUI
+* Added watermark thing ontop of TopUI
+* Added Headless
+* Added Transparent Body
+* Added Noob Pack (Gives you noob knife and character, next update you can get this without buying it manually)
+* Added FakeLag (Broken)
+* Added AirStuck
+* Added Chams
+* Fixed Misc Tab Being Broken
+* Fixed Credits Tab Being Broken
+* Added New Credits to the people who helped me creating KATWare.
+* Added Chat Spam (Go and Advertise!)
+* Added A Button To Open The LegacyUI With the latest update.
+* Added Print Mouse Position (to combat the spam in console, if you have even looked in console before in this game. Its a complete mess.)
+* Added Knife Bot (Broken)
+* Added a keybind to open and close the script (insert)
+
+Probably one of the biggest updates yet!
 
 ## how to get developer build?
 
@@ -19,14 +47,14 @@ you cant haha, but, there are new features with the developer builds though.
 
 2.1 will have,
 
-* Working misc tab
-* Being able to use the old gui
-* Chams
-* Night mode
-* Airstuck
-* Make your body transparent
-* Fakelag
-* Being able to use bots to destroy servers, basicaly bots that can kill anyone in sight (tf2 moment)
+* Working misc tab (done. In V2.1)
+* Being able to use the old gui (done. In V2.1)
+* Chams (done. In V2.1)
+* Night mode (done. In V2.1)
+* Airstuck (done. In V2.1)
+* Make your body transparent (done. In V2.1)
+* Fakelag (done. In V2.1)
+* Being able to use bots to destroy servers, basicaly bots that can kill anyone in sight (tf2 moment) (kinda done)
 
 ## How to host bots for kat
 
