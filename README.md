@@ -30,7 +30,7 @@ NewUI
 * Added Chams
 * Fixed Misc Tab Being Broken
 * Fixed Credits Tab Being Broken
-* Added New Credits to the people who helped me creating KATWare.
+* Added New Credits to the people who helped me create KATWare.
 * Added Chat Spam (Go and Advertise!)
 * Added A Button To Open The LegacyUI With the latest update.
 * Added Print Mouse Position (to combat the spam in console, if you have even looked in console before in this game. Its a complete mess.)
