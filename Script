@@ -995,12 +995,38 @@ ChatSpam.MouseButton1Down:connect(function()
 		wait(1)
 
 		local args = {
-			[1] = "KATGui You've been bot rolled!", --AH CRAP! NOT AGAIN!!
+			[1] = "KATGui You've been bot rolled!", -- AH CRAP! NOT AGAIN!!
 			[2] = "All"
 		}
 
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
+		wait(1)
+
+		local args = {
+			[1] = "Making Legits Cry Since 2019!", -- HAH
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+		
+		wait(1)
+
+		local args = {
+			[1] = "Recording Your Failure Right Now! ", -- EZ
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+		
+		wait(1)
+
+		local args = {
+			[1] = "0wning N00bz Since 2019! KAT IS A DEAD GAME!", -- damn ur not wrong 
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 	end
 end)
 
