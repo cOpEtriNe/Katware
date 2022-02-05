@@ -49,16 +49,10 @@ you cant haha, but, there are new features with the developer builds though.
 
 ## Things to be added next update
 
-2.1 will have,
+2.2 will have,
 
-* Working misc tab (done. In V2.1)
-* Being able to use the old gui (done. In V2.1)
-* Chams (done. In V2.1)
-* Night mode (done. In V2.1)
-* Airstuck (done. In V2.1)
-* Make your body transparent (done. In V2.1)
-* Fakelag (done. In V2.1)
 * Being able to use bots to destroy servers, basicaly bots that can kill anyone in sight (tf2 moment) (kinda done)
+* Anti Ban. A Way to not get banned in servers.
 
 ## How to host bots for kat
 
