@@ -1022,7 +1022,7 @@ ChatSpam.MouseButton1Down:connect(function()
 		wait(1)
 
 		local args = {
-			[1] = "0wning N00bz Since 2019! KAT IS A DEAD GAME!", -- damn ur not wrong 
+			[1] = "KAT IS A DEAD GAME! YOU WILL NOT BE FORGOTTEN.", -- damn ur not wrong 
 			[2] = "All"
 		}
 
