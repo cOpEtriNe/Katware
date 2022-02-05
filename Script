@@ -345,13 +345,13 @@ KnifeBot.TextScaled = true
 KnifeBot.TextSize = 14.000
 KnifeBot.TextWrapped = true
 KnifeBot.MouseButton1Down:connect(function()
-	wait(1.2)
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Alert!"; -- the title (ofc)
-		Text = "Buggy, - Script is not currently working"; -- what the text says (ofc)
-		Icon = "rbxassetid://57254792"; -- the image if u want. 
-		Duration = 5; -- how long the notification should in secounds
-	})
+wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Alert!"; -- the title (ofc)
+	Text = "Knife Bot, - Script Is Not Currently Working, Use The Github Version "; -- what the text says (ofc)
+	Icon = "rbxassetid://57254792"; -- the image if u want. 
+	Duration = 5; -- how long the notification should in secounds
+})
 end)
 
 VisualsTab.Name = "VisualsTab"
