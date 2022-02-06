@@ -15,33 +15,17 @@ https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua
 ## Changelog
 Changelog for LegacyUI(old ui) & NewUI(new ui)
 
-LegacyUI
-* Added Chams
-* Show Binds has been added back
-* Added Body Transparency
-* Added Night Mode
-* Fixed The Aimbot Circle Breaking (Made it invisible for now)
+LegacyUI (Old not new)
+Nothing Yet.
 
 NewUI
-* Added watermark thing ontop of TopUI
-* Added Headless
-* Added Transparent Body
-* Added Noob Pack (Gives you noob knife and character, next update you can get this without buying it manually)
-* Added FakeLag (Broken)
-* Added AirStuck
-* Added Chams
-* Fixed Misc Tab Being Broken
-* Fixed Credits Tab Being Broken
-* Added New Credits to the people who helped me create KATWare.
-* Added Chat Spam (Go and Advertise!)
-* Added A Button To Open The LegacyUI With the latest update.
-* Added Print Mouse Position (see what the position is)
-* Added Knife Bot (Broken)
-* Added a keybind to open and close the script (insert)
-* Changed The Background Colour So Its Not Completely Black
-* Re-Positioned The Buttons In The Aimbot Tab
-* Re-Positioned The Buttons In The Misc Tab
-* Re-Positioned The Buttons In The Visuals Tab
+ * Added Anti Ban And Unban
+ * Added Speed Boost
+ * Added No Lag Back
+ * Added Map Vote Spam
+ * Renamed the title to katware
+ * Removed the watermark
+ * Brightness has been added to night mode (darker?) 
 
 Probably one of the biggest updates yet!
 
@@ -53,8 +37,8 @@ you cant haha, but, there are new features with the developer builds though.
 
 2.2 will have,
 
-* Being able to use bots to destroy servers, basicaly bots that can kill anyone in sight (tf2 moment) (kinda done)
-* Anti Ban. A Way to not get banned in servers.
+* Being able to use bots to destroy servers, basicaly bots that can kill anyone in sight (tf2 moment) (done)
+* Anti Ban. A Way to not get banned in servers. (Done)
 
 ## How to host bots for kat
 
