@@ -1,4 +1,4 @@
--- epic new update
+-- V2.2 KATWare
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Kat GUI"; -- the title (ofc)
@@ -50,10 +50,11 @@ local TitleMisc = Instance.new("TextLabel")
 local OldGui = Instance.new("TextButton")
 local Airstuck = Instance.new("TextButton")
 local ChatSpam = Instance.new("TextButton")
-local ChatSpam_2 = Instance.new("TextButton")
+local MousePosition = Instance.new("TextButton")
+local Antiban = Instance.new("TextButton")
+local MapVoteSpam = Instance.new("TextButton")
+local SpeedBoost = Instance.new("TextButton")
 local Miscellaneous = Instance.new("TextButton")
-local WaterMarkFrame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
@@ -72,7 +73,7 @@ WelcomeTitle.Parent = Frame
 WelcomeTitle.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 WelcomeTitle.Size = UDim2.new(0, 200, 0, 50)
 WelcomeTitle.Font = Enum.Font.SourceSans
-WelcomeTitle.Text = "Kat GUI V2.1"
+WelcomeTitle.Text = "KatWare V2.2"
 WelcomeTitle.TextColor3 = Color3.fromRGB(255, 15, 231)
 WelcomeTitle.TextScaled = true
 WelcomeTitle.TextSize = 14.000
@@ -261,6 +262,7 @@ HitboxExtended.MouseButton1Down:connect(function()
 	end
 end)
 
+
 HitboxExtended2.Name = "HitboxExtended2"
 HitboxExtended2.Parent = AimbotTab
 HitboxExtended2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
@@ -321,6 +323,7 @@ HitboxExtended2.MouseButton1Down:connect(function()
 	end)
 end)
 
+
 TitleAimbot.Name = "TitleAimbot"
 TitleAimbot.Parent = AimbotTab
 TitleAimbot.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
@@ -345,13 +348,14 @@ KnifeBot.TextScaled = true
 KnifeBot.TextSize = 14.000
 KnifeBot.TextWrapped = true
 KnifeBot.MouseButton1Down:connect(function()
-wait(1.2)
-game.StarterGui:SetCore("SendNotification", {
-	Title = "Alert!"; -- the title (ofc)
-	Text = "Knife Bot, - Script Is Not Currently Working, Use The Github Version "; -- what the text says (ofc)
-	Icon = "rbxassetid://57254792"; -- the image if u want. 
-	Duration = 5; -- how long the notification should in secounds
-})
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Alert!"; -- the title (ofc)
+		Text = "Knife Bot, - Loaded! Leave to reset. Sorry about not being able to chat. It's buggy. "; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/virtualClick.lua'))()
 end)
 
 VisualsTab.Name = "VisualsTab"
@@ -376,7 +380,7 @@ TitleVisual.TextWrapped = true
 ESPButton.Name = "ESPButton"
 ESPButton.Parent = VisualsTab
 ESPButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-ESPButton.Position = UDim2.new(0.029498525, 0, 0.0779074281, 0)
+ESPButton.Position = UDim2.new(0.0244733989, 0, 0.0449856184, 0)
 ESPButton.Size = UDim2.new(0, 135, 0, 32)
 ESPButton.Font = Enum.Font.SourceSans
 ESPButton.Text = "ESP"
@@ -431,10 +435,11 @@ ESPButton.MouseButton1Down:connect(function()
 	end)
 end)
 
+
 FOV100Button.Name = "FOV100Button"
 FOV100Button.Parent = VisualsTab
 FOV100Button.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-FOV100Button.Position = UDim2.new(0.435607225, 0, 0.0779074281, 0)
+FOV100Button.Position = UDim2.new(0.435607225, 0, 0.0449856184, 0)
 FOV100Button.Size = UDim2.new(0, 135, 0, 32)
 FOV100Button.Font = Enum.Font.SourceSans
 FOV100Button.Text = "Fov 100"
@@ -455,12 +460,12 @@ FOV100Button.MouseButton1Down:connect(function()
 	workspace.CurrentCamera.FieldOfView = 100
 end)
 
+
 NoLagButton.Name = "NoLagButton"
 NoLagButton.Parent = VisualsTab
 NoLagButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NoLagButton.Position = UDim2.new(0.0294985175, 0, 0.2929703, 0)
+NoLagButton.Position = UDim2.new(0.0244733095, 0, 0.827949703, 0)
 NoLagButton.Size = UDim2.new(0, 135, 0, 32)
-NoLagButton.Visible = false
 NoLagButton.Font = Enum.Font.SourceSans
 NoLagButton.Text = "No Lag"
 NoLagButton.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -516,10 +521,11 @@ NoLagButton.MouseButton1Down:connect(function()
 	end
 end)
 
+
 NightMode.Name = "NightMode"
 NightMode.Parent = VisualsTab
 NightMode.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NightMode.Position = UDim2.new(0.0285720229, 0, 0.280624628, 0)
+NightMode.Position = UDim2.new(0.0235469546, 0, 0.231241912, 0)
 NightMode.Size = UDim2.new(0, 135, 0, 32)
 NightMode.Font = Enum.Font.SourceSans
 NightMode.Text = "Night Mode"
@@ -528,17 +534,17 @@ NightMode.TextScaled = true
 NightMode.TextSize = 14.000
 NightMode.TextWrapped = true
 NightMode.MouseButton1Down:connect(function()
-while true do
-wait(1)
-game.Lighting.TimeOfDay = 06
-game.Lighting.Brightness = 1
-end
+	while true do
+		wait(1)
+		game.Lighting.TimeOfDay = 06
+		game.Lighting.Brightness = 1
+	end
 end)
 
 NoobPack.Name = "NoobPack"
 NoobPack.Parent = VisualsTab
 NoobPack.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NoobPack.Position = UDim2.new(0.435607225, 0, 0.279553533, 0)
+NoobPack.Position = UDim2.new(0.433094651, 0, 0.230170816, 0)
 NoobPack.Size = UDim2.new(0, 135, 0, 32)
 NoobPack.Font = Enum.Font.SourceSans
 NoobPack.Text = "Noob Skin And Knife"
@@ -547,46 +553,47 @@ NoobPack.TextScaled = true
 NoobPack.TextSize = 14.000
 NoobPack.TextWrapped = true
 NoobPack.MouseButton1Down:connect(function()
-local args = {
-    [1] = "NoobKnife"
-}
+	local args = {
+		[1] = "NoobKnife"
+	}
 
-game:GetService("ReplicatedStorage").GameEvents.Misk.ItemPurchase:FireServer(unpack(args))
+	game:GetService("ReplicatedStorage").GameEvents.Misk.ItemPurchase:FireServer(unpack(args))
 
--- equips
+	-- equips
 
-local args = {
-    [1] = "Equip",
-    [2] = "6",
-    [3] = 1
-}
+	local args = {
+		[1] = "Equip",
+		[2] = "6",
+		[3] = 1
+	}
 
-game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
 
-wait(1)
+	wait(1)
 
--- equip the noob pax
-wait(1.2)
-game.StarterGui:SetCore("SendNotification", {
-	Title = "Kat GUI"; -- the title (ofc)
-	Text = "Alert!, - You need to be level 15 to get the noob knife! Ignore this message if you over level 15 or are level 15!"; -- what the text says (ofc)
-	Icon = "rbxassetid://57254792"; -- the image if u want. 
-	Duration = 5; -- how long the notification should in secounds
-})
+	-- equip the noob pax
+	wait(1.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Kat GUI"; -- the title (ofc)
+		Text = "Alert!, - You need to be level 15 to get the noob knife! Ignore this message if you over level 15 or are level 15!"; -- what the text says (ofc)
+		Icon = "rbxassetid://57254792"; -- the image if u want. 
+		Duration = 5; -- how long the notification should in secounds
+	})
 
-local args = {
-    [1] = "Equip",
-    [2] = "16",
-    [3] = 1
-}
+	local args = {
+		[1] = "Equip",
+		[2] = "16",
+		[3] = 1
+	}
 
-game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
 end)
+
 
 Chams.Name = "Chams"
 Chams.Parent = VisualsTab
 Chams.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Chams.Position = UDim2.new(0.0285720229, 0, 0.486385942, 0)
+Chams.Position = UDim2.new(0.0235468969, 0, 0.42054233, 0)
 Chams.Size = UDim2.new(0, 135, 0, 32)
 Chams.Font = Enum.Font.SourceSans
 Chams.Text = "Chams"
@@ -723,10 +730,11 @@ Chams.MouseButton1Down:connect(function()
 	end)
 end)
 
+
 Transparency.Name = "Transparency"
 Transparency.Parent = VisualsTab
 Transparency.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Transparency.Position = UDim2.new(0.435607195, 0, 0.486385942, 0)
+Transparency.Position = UDim2.new(0.430582047, 0, 0.42054233, 0)
 Transparency.Size = UDim2.new(0, 135, 0, 32)
 Transparency.Font = Enum.Font.SourceSans
 Transparency.Text = "Transparency"
@@ -743,10 +751,11 @@ Transparency.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.Torso.Transparency = 0.5
 end)
 
+
 Fakelag.Name = "Fakelag"
 Fakelag.Parent = VisualsTab
 Fakelag.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Fakelag.Position = UDim2.new(0.0285720229, 0, 0.688032031, 0)
+Fakelag.Position = UDim2.new(0.0235468969, 0, 0.626303673, 0)
 Fakelag.Size = UDim2.new(0, 135, 0, 32)
 Fakelag.Font = Enum.Font.SourceSans
 Fakelag.Text = "Fake Lag"
@@ -763,10 +772,11 @@ Fakelag.MouseButton1Down:connect(function()
 	wait(0.1)
 end)
 
+
 Headless.Name = "Headless"
 Headless.Parent = VisualsTab
 Headless.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Headless.Position = UDim2.new(0.435607195, 0, 0.688032031, 0)
+Headless.Position = UDim2.new(0.433094621, 0, 0.626303613, 0)
 Headless.Size = UDim2.new(0, 135, 0, 32)
 Headless.Font = Enum.Font.SourceSans
 Headless.Text = "Headless"
@@ -781,6 +791,7 @@ Headless.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Head.face:Destroy()
 	end
 end)
+
 
 CreditsTab.Name = "CreditsTab"
 CreditsTab.Parent = Frame
@@ -1010,7 +1021,7 @@ ChatSpam.MouseButton1Down:connect(function()
 		}
 
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-		
+
 		wait(1)
 
 		local args = {
@@ -1019,7 +1030,7 @@ ChatSpam.MouseButton1Down:connect(function()
 		}
 
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-		
+
 		wait(1)
 
 		local args = {
@@ -1031,19 +1042,20 @@ ChatSpam.MouseButton1Down:connect(function()
 	end
 end)
 
-ChatSpam_2.Name = "ChatSpam"
-ChatSpam_2.Parent = MiscTab
-ChatSpam_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-ChatSpam_2.Position = UDim2.new(0.42626974, 0, 0.382722706, 0)
-ChatSpam_2.Size = UDim2.new(0, 135, 0, 32)
-ChatSpam_2.Font = Enum.Font.SourceSans
-ChatSpam_2.Text = "Print Mouse Pos"
-ChatSpam_2.TextColor3 = Color3.fromRGB(255, 15, 231)
-ChatSpam_2.TextScaled = true
-ChatSpam_2.TextSize = 14.000
-ChatSpam_2.TextWrapped = true
-ChatSpam_2.MouseButton1Down:connect(function()
-	
+
+MousePosition.Name = "MousePosition"
+MousePosition.Parent = MiscTab
+MousePosition.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+MousePosition.Position = UDim2.new(0.42626974, 0, 0.382722706, 0)
+MousePosition.Size = UDim2.new(0, 135, 0, 32)
+MousePosition.Font = Enum.Font.SourceSans
+MousePosition.Text = "Print Mouse Pos"
+MousePosition.TextColor3 = Color3.fromRGB(255, 15, 231)
+MousePosition.TextScaled = true
+MousePosition.TextSize = 14.000
+MousePosition.TextWrapped = true
+MousePosition.MouseButton1Down:connect(function()
+
 	local Players = game:GetService("Players")
 
 	local localPlayer = Players.LocalPlayer
@@ -1053,6 +1065,110 @@ ChatSpam_2.MouseButton1Down:connect(function()
 		print("KATWare Mouse Position Current/Before: ", mouse.X, mouse.Y)
 	end)
 
+end)
+
+
+Antiban.Name = "Antiban"
+Antiban.Parent = MiscTab
+Antiban.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Antiban.Position = UDim2.new(0.0267722607, 0, 0.5564816, 0)
+Antiban.Size = UDim2.new(0, 135, 0, 32)
+Antiban.Font = Enum.Font.SourceSans
+Antiban.Text = "Anti Ban"
+Antiban.TextColor3 = Color3.fromRGB(255, 15, 231)
+Antiban.TextScaled = true
+Antiban.TextSize = 14.000
+Antiban.TextWrapped = true
+Antiban.MouseButton1Down:connect(function()
+	game:GetService("ReplicatedStorage").GameEvents.Misk.BanReceived:Destroy()
+	game.Players.LocalPlayer.PlayerGui.GameUI.Menu.MainMenuUI.Banned:Destroy()
+end)
+
+MapVoteSpam.Name = "MapVoteSpam"
+MapVoteSpam.Parent = MiscTab
+MapVoteSpam.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+MapVoteSpam.Position = UDim2.new(0.42626974, 0, 0.5564816, 0)
+MapVoteSpam.Size = UDim2.new(0, 135, 0, 32)
+MapVoteSpam.Font = Enum.Font.SourceSans
+MapVoteSpam.Text = "Map Vote Spam"
+MapVoteSpam.TextColor3 = Color3.fromRGB(255, 15, 231)
+MapVoteSpam.TextScaled = true
+MapVoteSpam.TextSize = 14.000
+MapVoteSpam.TextWrapped = true
+MapVoteSpam.MouseButton1Down:connect(function()
+	while true do
+	wait(1)
+
+
+	local args = {
+		[1] = "Kingdom"
+	}
+
+	game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+		
+	wait(1)
+
+		local args = {
+			[1] = "OldClassic"
+		}
+
+	game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+		
+	wait(1)
+		 
+
+
+		local args = {
+			[1] = "Castle2"
+		}
+
+	game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+
+   wait(1)
+   
+
+local args = {
+    [1] = "Dust"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+
+wait(1)
+
+
+local args = {
+    [1] = "Classic"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+
+wait(1)
+
+local args = {
+    [1] = "Alley"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+
+end
+end)
+
+SpeedBoost.Name = "SpeedBoost"
+SpeedBoost.Parent = MiscTab
+SpeedBoost.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+SpeedBoost.Position = UDim2.new(0.0267722607, 0, 0.733786583, 0)
+SpeedBoost.Size = UDim2.new(0, 135, 0, 32)
+SpeedBoost.Font = Enum.Font.SourceSans
+SpeedBoost.Text = "Speed Boost"
+SpeedBoost.TextColor3 = Color3.fromRGB(255, 15, 231)
+SpeedBoost.TextScaled = true
+SpeedBoost.TextSize = 14.000
+SpeedBoost.TextWrapped = true
+SpeedBoost.MouseButton1Down:connect(function()
+	while true do
+	wait(1)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+	end
 end)
 
 Miscellaneous.Name = "Miscellaneous"
@@ -1067,26 +1183,9 @@ Miscellaneous.TextScaled = true
 Miscellaneous.TextSize = 14.000
 Miscellaneous.TextWrapped = true
 
-WaterMarkFrame.Name = "WaterMarkFrame"
-WaterMarkFrame.Parent = ScreenGui
-WaterMarkFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WaterMarkFrame.Position = UDim2.new(0.62937057, 0, -0.0701298714, 0)
-WaterMarkFrame.Size = UDim2.new(0, 300, 0, 54)
-
-TextLabel.Parent = WaterMarkFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TextLabel.Position = UDim2.new(2.23517418e-08, 0, -2.5331974e-07, 0)
-TextLabel.Size = UDim2.new(0, 300, 0, 54)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "KATWare V2.1 Build NewUI Fork"
-TextLabel.TextColor3 = Color3.fromRGB(255, 15, 231)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
 -- Scripts:
 
-local function HVCAOZ_fake_script() -- Aimbot.LocalScript 
+local function VYOXZL_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1096,8 +1195,8 @@ local function HVCAOZ_fake_script() -- Aimbot.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(HVCAOZ_fake_script)()
-local function KVTEK_fake_script() -- Visuals.LocalScript 
+coroutine.wrap(VYOXZL_fake_script)()
+local function XNFL_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1107,8 +1206,8 @@ local function KVTEK_fake_script() -- Visuals.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(KVTEK_fake_script)()
-local function ERPL_fake_script() -- Credits.LocalScript 
+coroutine.wrap(XNFL_fake_script)()
+local function JQREK_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1118,8 +1217,8 @@ local function ERPL_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(ERPL_fake_script)()
-local function KFCF_fake_script() -- Miscellaneous.LocalScript 
+coroutine.wrap(JQREK_fake_script)()
+local function HOJEDQ_fake_script() -- Miscellaneous.LocalScript 
 	local script = Instance.new('LocalScript', Miscellaneous)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1129,8 +1228,8 @@ local function KFCF_fake_script() -- Miscellaneous.LocalScript
 		script.Parent.Parent.MiscTab.Visible = true
 	end)
 end
-coroutine.wrap(KFCF_fake_script)()
-local function PHRTPFW_fake_script() -- ScreenGui.Keybind 
+coroutine.wrap(HOJEDQ_fake_script)()
+local function UONUWA_fake_script() -- ScreenGui.Keybind 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Frame = script.Parent.Frame
@@ -1153,4 +1252,4 @@ local function PHRTPFW_fake_script() -- ScreenGui.Keybind
 		end
 	end)
 end
-coroutine.wrap(PHRTPFW_fake_script)()
+coroutine.wrap(UONUWA_fake_script)()
