@@ -1,7 +1,7 @@
 -- epic new update
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Bloxhook Alert!"; -- the title (ofc)
+	Title = "Bloxhook Edit Alert!"; -- the title (ofc)
 	Text = "The Script has Loaded, - Enjoy Exploiting! (Made by cOpEtriNe)"; -- what the text says (ofc)
 	Icon = "rbxassetid://57254792"; -- the image if u want. 
 	Duration = 5; -- how long the notification should in secounds
@@ -9,7 +9,7 @@ game.StarterGui:SetCore("SendNotification", {
 
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Bloxhook Alert!"; -- the title (ofc)
+	Title = "Bloxhook Edit Alert!"; -- the title (ofc)
 	Text = "The GUI Is Safe To Use, - Script is safe to use and will NOT ban you. Enjoy! V2.1 Update "; -- what the text says (ofc)
 	Icon = "rbxassetid://57254792"; -- the image if u want. 
 	Duration = 5; -- how long the notification should in secounds
