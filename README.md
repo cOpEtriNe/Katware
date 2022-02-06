@@ -6,6 +6,8 @@ Q: Can I Edit This Script A: Yes, you can.
 This script will not get you banned from now.
 One of my accounts has been up to Level 105 with this script!
 
+https://discord.gg/2k3aTWNEgq  Discoed server
+
 If you want the old ui, copy the code and put into ur hax
 
 https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua
