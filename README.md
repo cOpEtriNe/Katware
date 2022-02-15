@@ -1,3 +1,5 @@
+*NOT UPDATING ANYMORE BECAUSE NO ONE USES THIS LMAO*
+
 # KATGui
 GUI For the ROBLOX Game KAT! It's Free And Open Source!
 
