@@ -1,6 +1,8 @@
 *NOT UPDATING ANYMORE BECAUSE NO ONE USES THIS LMAO*
 **But i do have some things to add**
 
+If you'd like to give me any ideas, contact me on discord: asdjgolgolo#4559
+
 # KATGui
 GUI For the ROBLOX Game KAT! It's Free And Open Source!
 
