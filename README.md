@@ -27,7 +27,6 @@ NewUI
  * Removed the watermark
  * Brightness has been added to night mode (darker?) 
 
-Probably one of the biggest updates yet!
 
 ## how to get developer build?
 
