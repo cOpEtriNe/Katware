@@ -27,6 +27,7 @@ NewUI
 * Added XRay (See through walls)
 * Added a rainbow frame that has cool rainbow
 * removed fake lag (didnt work)
+* fixed the close animation not closing to the right place
 
 ## how to get developer build?
 
@@ -34,10 +35,9 @@ you cant haha, but, there are new features with the developer builds though.
 
 ## Things to be added next update
 
-2.2 will have,
+2.4 will have,
 
-* Being able to use bots to destroy servers, basicaly bots that can kill anyone in sight (tf2 moment) (done)
-* Anti Ban. A Way to not get banned in servers. (Done)
+* cool things
 
 ## How to host bots for kat
 
