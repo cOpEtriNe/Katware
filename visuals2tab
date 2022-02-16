@@ -1,6 +1,5 @@
--- visuals tab 2 crated by cOpEtriNe
--- v1.0 release
-
+-- visuals tab 2 created by cOpEtriNe
+-- v1.1
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -11,6 +10,8 @@ local BrickMaterial = Instance.new("TextButton")
 local ForceField = Instance.new("TextButton")
 local rainbowFrame2 = Instance.new("Frame")
 local rainbowFrame1 = Instance.new("Frame")
+local FullBright = Instance.new("TextButton")
+local CameraOffset = Instance.new("TextButton")
 
 --Properties:
 
@@ -23,6 +24,7 @@ Frame.Size = UDim2.new(0, 440, 0, 356)
 Frame.Active = true
 Frame.Draggable = true
 Frame.Visible = true
+
 
 Title.Name = "Title"
 Title.Parent = Frame
@@ -104,6 +106,7 @@ ForceField.MouseButton1Down:connect(function()
 	end
 end)
 
+
 rainbowFrame2.Name = "rainbowFrame2"
 rainbowFrame2.Parent = Frame
 rainbowFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -116,9 +119,46 @@ rainbowFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 rainbowFrame1.Position = UDim2.new(-0.0319737792, 0, -0.000906452537, 0)
 rainbowFrame1.Size = UDim2.new(0, 14, 0, 356)
 
+FullBright.Name = "FullBright"
+FullBright.Parent = Frame
+FullBright.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+FullBright.Position = UDim2.new(0.0545454621, 0, 0.54494381, 0)
+FullBright.Size = UDim2.new(0, 160, 0, 45)
+FullBright.Font = Enum.Font.SourceSans
+FullBright.Text = "Fullbright"
+FullBright.TextColor3 = Color3.fromRGB(255, 15, 231)
+FullBright.TextScaled = true
+FullBright.TextSize = 14.000
+FullBright.TextWrapped = true
+FullBright.MouseButton1Down:connect(function()
+	game:GetService("Lighting").Brightness = 2
+	game:GetService("Lighting").ClockTime = 14
+	game:GetService("Lighting").FogEnd = 100000
+	game:GetService("Lighting").GlobalShadows = false
+	game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+end)
+
+CameraOffset.Name = "CameraOffset"
+CameraOffset.Parent = Frame
+CameraOffset.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+CameraOffset.Position = UDim2.new(0.540909111, 0, 0.54494381, 0)
+CameraOffset.Size = UDim2.new(0, 160, 0, 45)
+CameraOffset.Font = Enum.Font.SourceSans
+CameraOffset.Text = "Camera Offset"
+CameraOffset.TextColor3 = Color3.fromRGB(255, 15, 231)
+CameraOffset.TextScaled = true
+CameraOffset.TextSize = 14.000
+CameraOffset.TextWrapped = true
+CameraOffset.MouseButton1Down:Connect(function()
+	while true do
+	wait(1)
+	game.Players.LocalPlayer.Character.Humanoid.CameraOffset = Vector3.new(2, 0, 0)
+	end	
+end)
+
 -- Scripts:
 
-local function CPNF_fake_script() -- rainbowFrame2.LocalScript 
+local function WOLYVZW_fake_script() -- rainbowFrame2.LocalScript 
 	local script = Instance.new('LocalScript', rainbowFrame2)
 
 	local t = 10;
@@ -133,8 +173,8 @@ local function CPNF_fake_script() -- rainbowFrame2.LocalScript
 	
 	end
 end
-coroutine.wrap(CPNF_fake_script)()
-local function MMEKGM_fake_script() -- rainbowFrame1.LocalScript 
+coroutine.wrap(WOLYVZW_fake_script)()
+local function KDSVZRV_fake_script() -- rainbowFrame1.LocalScript 
 	local script = Instance.new('LocalScript', rainbowFrame1)
 
 	local t = 10;
@@ -149,4 +189,4 @@ local function MMEKGM_fake_script() -- rainbowFrame1.LocalScript
 	
 	end
 end
-coroutine.wrap(MMEKGM_fake_script)()
+coroutine.wrap(KDSVZRV_fake_script)()
