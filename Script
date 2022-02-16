@@ -1,4 +1,4 @@
--- V2.2 KATWare
+-- katware v2.3 
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Kat GUI"; -- the title (ofc)
@@ -14,6 +14,7 @@ game.StarterGui:SetCore("SendNotification", {
 	Icon = "rbxassetid://57254792"; -- the image if u want. 
 	Duration = 5; -- how long the notification should in secounds
 })
+
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -36,8 +37,8 @@ local NightMode = Instance.new("TextButton")
 local NoobPack = Instance.new("TextButton")
 local Chams = Instance.new("TextButton")
 local Transparency = Instance.new("TextButton")
-local Fakelag = Instance.new("TextButton")
 local Headless = Instance.new("TextButton")
+local TransparentWorld = Instance.new("TextButton")
 local CreditsTab = Instance.new("Frame")
 local TitleCredit = Instance.new("TextLabel")
 local CreditMaker = Instance.new("TextLabel")
@@ -55,6 +56,7 @@ local Antiban = Instance.new("TextButton")
 local MapVoteSpam = Instance.new("TextButton")
 local SpeedBoost = Instance.new("TextButton")
 local Miscellaneous = Instance.new("TextButton")
+local RainbowFrame = Instance.new("Frame")
 
 --Properties:
 
@@ -62,7 +64,7 @@ ScreenGui.Parent = game.CoreGui
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-Frame.Position = UDim2.new(0.205621362, 0, 0.536764681, 0)
+Frame.Position = UDim2.new(0.182179034, 0, 0.425108224, 0)
 Frame.Size = UDim2.new(0, 598, 0, 282)
 Frame.Active = true
 Frame.Draggable = true
@@ -73,7 +75,7 @@ WelcomeTitle.Parent = Frame
 WelcomeTitle.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 WelcomeTitle.Size = UDim2.new(0, 200, 0, 50)
 WelcomeTitle.Font = Enum.Font.SourceSans
-WelcomeTitle.Text = "KatWare V2.2"
+WelcomeTitle.Text = "KatWare V2.3"
 WelcomeTitle.TextColor3 = Color3.fromRGB(255, 15, 231)
 WelcomeTitle.TextScaled = true
 WelcomeTitle.TextSize = 14.000
@@ -213,6 +215,7 @@ SilentAimButton.MouseButton1Down:connect(function()
 end)
 
 
+
 HitboxExtended.Name = "HitboxExtended"
 HitboxExtended.Parent = AimbotTab
 HitboxExtended.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
@@ -324,6 +327,7 @@ HitboxExtended2.MouseButton1Down:connect(function()
 end)
 
 
+
 TitleAimbot.Name = "TitleAimbot"
 TitleAimbot.Parent = AimbotTab
 TitleAimbot.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
@@ -357,6 +361,7 @@ KnifeBot.MouseButton1Down:connect(function()
 	})
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/virtualClick.lua'))()
 end)
+
 
 VisualsTab.Name = "VisualsTab"
 VisualsTab.Parent = Frame
@@ -448,7 +453,6 @@ FOV100Button.TextScaled = true
 FOV100Button.TextSize = 14.000
 FOV100Button.TextWrapped = true
 FOV100Button.MouseButton1Down:connect(function()
-
 	wait(1.2)
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Kat GUI"; -- the title (ofc)
@@ -459,6 +463,7 @@ FOV100Button.MouseButton1Down:connect(function()
 
 	workspace.CurrentCamera.FieldOfView = 100
 end)
+
 
 
 NoLagButton.Name = "NoLagButton"
@@ -522,6 +527,7 @@ NoLagButton.MouseButton1Down:connect(function()
 end)
 
 
+
 NightMode.Name = "NightMode"
 NightMode.Parent = VisualsTab
 NightMode.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
@@ -540,6 +546,7 @@ NightMode.MouseButton1Down:connect(function()
 		game.Lighting.Brightness = 0.5
 	end
 end)
+
 
 NoobPack.Name = "NoobPack"
 NoobPack.Parent = VisualsTab
@@ -588,6 +595,7 @@ NoobPack.MouseButton1Down:connect(function()
 
 	game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
 end)
+
 
 
 Chams.Name = "Chams"
@@ -743,33 +751,15 @@ Transparency.TextScaled = true
 Transparency.TextSize = 14.000
 Transparency.TextWrapped = true
 Transparency.MouseButton1Down:connect(function()
+	while true do
+		wait(1)
 	game.Players.LocalPlayer.Character["Left Leg"].Transparency = 0.5
 	game.Players.LocalPlayer.Character["Right Leg"].Transparency = 0.5
 	game.Players.LocalPlayer.Character["Left Arm"].Transparency = 0.5
 	game.Players.LocalPlayer.Character["Right Arm"].Transparency = 0.5
 	game.Players.LocalPlayer.Character.Head.Transparency = 0.5
 	game.Players.LocalPlayer.Character.Torso.Transparency = 0.5
-end)
-
-
-Fakelag.Name = "Fakelag"
-Fakelag.Parent = VisualsTab
-Fakelag.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Fakelag.Position = UDim2.new(0.0235468969, 0, 0.626303673, 0)
-Fakelag.Size = UDim2.new(0, 135, 0, 32)
-Fakelag.Font = Enum.Font.SourceSans
-Fakelag.Text = "Fake Lag"
-Fakelag.TextColor3 = Color3.fromRGB(255, 15, 231)
-Fakelag.TextScaled = true
-Fakelag.TextSize = 14.000
-Fakelag.TextWrapped = true
-Fakelag.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character.Torso.Anchored = false
-	game.Players.LocalPlayer.Character.Humanoid.Jump = false
-	wait(0.1)
-	game.Players.LocalPlayer.Character.Torso.Anchored = false
-	game.Players.LocalPlayer.Character.Humanoid.Sit = false
-	wait(0.1)
+	end	
 end)
 
 
@@ -792,6 +782,25 @@ Headless.MouseButton1Down:Connect(function()
 	end
 end)
 
+
+TransparentWorld.Name = "TransparentWorld'"
+TransparentWorld.Parent = VisualsTab
+TransparentWorld.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TransparentWorld.Position = UDim2.new(0.0244733095, 0, 0.626303613, 0)
+TransparentWorld.Size = UDim2.new(0, 135, 0, 32)
+TransparentWorld.Font = Enum.Font.SourceSans
+TransparentWorld.Text = "Xray"
+TransparentWorld.TextColor3 = Color3.fromRGB(255, 15, 231)
+TransparentWorld.TextScaled = true
+TransparentWorld.TextSize = 14.000
+TransparentWorld.TextWrapped = true
+TransparentWorld.MouseButton1Down:connect(function()
+	for _,i in pairs(workspace:GetDescendants()) do
+		if i:IsA("BasePart") and not i.Parent:FindFirstChildOfClass('Humanoid') and not i.Parent.Parent:FindFirstChildOfClass('Humanoid') then
+			i.LocalTransparencyModifier = 0.5
+		end
+	end
+end)
 
 CreditsTab.Name = "CreditsTab"
 CreditsTab.Parent = Frame
@@ -910,6 +919,7 @@ OldGui.TextWrapped = true
 OldGui.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua'))()
 end)
+
 
 Airstuck.Name = "Airstuck"
 Airstuck.Parent = MiscTab
@@ -1067,7 +1077,6 @@ MousePosition.MouseButton1Down:connect(function()
 
 end)
 
-
 Antiban.Name = "Antiban"
 Antiban.Parent = MiscTab
 Antiban.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
@@ -1084,6 +1093,7 @@ Antiban.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.PlayerGui.GameUI.Menu.MainMenuUI.Banned:Destroy()
 end)
 
+
 MapVoteSpam.Name = "MapVoteSpam"
 MapVoteSpam.Parent = MiscTab
 MapVoteSpam.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
@@ -1097,61 +1107,62 @@ MapVoteSpam.TextSize = 14.000
 MapVoteSpam.TextWrapped = true
 MapVoteSpam.MouseButton1Down:connect(function()
 	while true do
-	wait(1)
+		wait(1)
 
 
-	local args = {
-		[1] = "Kingdom"
-	}
+		local args = {
+			[1] = "Kingdom"
+		}
 
-	game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
-		
-	wait(1)
+		game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+
+		wait(1)
 
 		local args = {
 			[1] = "OldClassic"
 		}
 
-	game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
-		
-	wait(1)
-		 
+		game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+
+		wait(1)
+
 
 
 		local args = {
 			[1] = "Castle2"
 		}
 
-	game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+		game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
 
-   wait(1)
-   
-
-local args = {
-    [1] = "Dust"
-}
-
-game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
-
-wait(1)
+		wait(1)
 
 
-local args = {
-    [1] = "Classic"
-}
+		local args = {
+			[1] = "Dust"
+		}
 
-game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+		game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
 
-wait(1)
+		wait(1)
 
-local args = {
-    [1] = "Alley"
-}
 
-game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+		local args = {
+			[1] = "Classic"
+		}
 
-end
+		game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+
+		wait(1)
+
+		local args = {
+			[1] = "Alley"
+		}
+
+		game:GetService("ReplicatedStorage").GameEvents.Misk.SubmitMapVote:FireServer(unpack(args))
+
+	end
 end)
+
 
 SpeedBoost.Name = "SpeedBoost"
 SpeedBoost.Parent = MiscTab
@@ -1166,8 +1177,8 @@ SpeedBoost.TextSize = 14.000
 SpeedBoost.TextWrapped = true
 SpeedBoost.MouseButton1Down:connect(function()
 	while true do
-	wait(1)
-	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+		wait(1)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
 	end
 end)
 
@@ -1183,9 +1194,15 @@ Miscellaneous.TextScaled = true
 Miscellaneous.TextSize = 14.000
 Miscellaneous.TextWrapped = true
 
+RainbowFrame.Name = "RainbowFrame"
+RainbowFrame.Parent = Frame
+RainbowFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RainbowFrame.Position = UDim2.new(-0.0117056854, 0, 0, 0)
+RainbowFrame.Size = UDim2.new(0, 7, 0, 282)
+
 -- Scripts:
 
-local function VYOXZL_fake_script() -- Aimbot.LocalScript 
+local function NPLI_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1195,8 +1212,8 @@ local function VYOXZL_fake_script() -- Aimbot.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(VYOXZL_fake_script)()
-local function XNFL_fake_script() -- Visuals.LocalScript 
+coroutine.wrap(NPLI_fake_script)()
+local function VXVBBOE_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1206,8 +1223,8 @@ local function XNFL_fake_script() -- Visuals.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(XNFL_fake_script)()
-local function JQREK_fake_script() -- Credits.LocalScript 
+coroutine.wrap(VXVBBOE_fake_script)()
+local function TNBWURK_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1217,8 +1234,8 @@ local function JQREK_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(JQREK_fake_script)()
-local function HOJEDQ_fake_script() -- Miscellaneous.LocalScript 
+coroutine.wrap(TNBWURK_fake_script)()
+local function RVRJI_fake_script() -- Miscellaneous.LocalScript 
 	local script = Instance.new('LocalScript', Miscellaneous)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1228,15 +1245,31 @@ local function HOJEDQ_fake_script() -- Miscellaneous.LocalScript
 		script.Parent.Parent.MiscTab.Visible = true
 	end)
 end
-coroutine.wrap(HOJEDQ_fake_script)()
-local function UONUWA_fake_script() -- ScreenGui.Keybind 
+coroutine.wrap(RVRJI_fake_script)()
+local function CZCI_fake_script() -- RainbowFrame.LocalScript 
+	local script = Instance.new('LocalScript', RainbowFrame)
+
+	local t = 10;
+	
+	while wait() do
+	
+		local hue = tick() % t / t
+	
+		local color = Color3.fromHSV(hue,1,1)
+	
+		script.Parent.BackgroundColor3 = color
+	
+	end
+end
+coroutine.wrap(CZCI_fake_script)()
+local function POQJZJ_fake_script() -- ScreenGui.Keybind 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Frame = script.Parent.Frame
 	local Opened = false
 	
-	local PositionClosed = UDim2.new(0, 0,0.695, 0)
-	local PositionOpened = UDim2.new(-0.358, 0,0.349, 0)
+	local PositionClosed = UDim2.new(-0.369, 0,0.327, 0)
+	local PositionOpened = UDim2.new(0.182, 0,0.425, 0)
 	
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -1252,4 +1285,4 @@ local function UONUWA_fake_script() -- ScreenGui.Keybind
 		end
 	end)
 end
-coroutine.wrap(UONUWA_fake_script)()
+coroutine.wrap(POQJZJ_fake_script)()
