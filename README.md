@@ -36,7 +36,7 @@ you cant haha, but, there are new features with the developer builds though.
 
 2.4 will have,
 
-* cool things (dpme)
+* cool things (done)
 
 ## How to host bots for kat
 
