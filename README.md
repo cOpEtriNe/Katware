@@ -1,4 +1,4 @@
-*NOT UPDATING ANYMORE BECAUSE NO ONE USES THIS LMAO*
+*Script will continue to get updates, just not too often*
 **But i do have some things to add**
 
 If you'd like to give me any ideas, contact me on discord: asdjgolgolo#4559
@@ -24,14 +24,9 @@ LegacyUI (Old not new)
 Nothing Yet.
 
 NewUI
- * Added Anti Ban And Unban
- * Added Speed Boost
- * Added No Lag Back
- * Added Map Vote Spam
- * Renamed the title to katware
- * Removed the watermark
- * Brightness has been added to night mode (darker?) 
-
+* Added XRay (See through walls)
+* Added a rainbow frame that has cool rainbow
+* removed fake lag (didnt work)
 
 ## how to get developer build?
 
