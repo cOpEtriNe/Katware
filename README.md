@@ -24,11 +24,10 @@ LegacyUI (Old not new)
 Nothing Yet.
 
 NewUI
-* Added XRay (See through walls)
-* Added a rainbow frame that has cool rainbow
-* removed fake lag (didnt work)
-* fixed the close animation not closing to the right place
-
+* Added Nohitbox (Broken)
+* Added a new visuals tab
+* Added no shadows
+* Added alot of other things for new visuals tab
 ## how to get developer build?
 
 you cant haha, but, there are new features with the developer builds though.
@@ -37,7 +36,7 @@ you cant haha, but, there are new features with the developer builds though.
 
 2.4 will have,
 
-* cool things
+* cool things (dpme)
 
 ## How to host bots for kat
 
