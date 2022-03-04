@@ -148,7 +148,7 @@ SilentAimButton.MouseButton1Down:connect(function()
 	})
 
 	getgenv().silentaim_settings = {
-		fov = 150,
+		fov = 99999999,
 		hitbox = "Head",
 		fovcircle = true,
 	}
