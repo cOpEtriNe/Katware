@@ -14,13 +14,6 @@ game.StarterGui:SetCore("SendNotification", {
 	Duration = 5; -- seconds
 })
 
-	local StarterGui = game:GetService("StarterGui")
-	StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "Welcome to Katware.";
-	Color = Color3.fromRGB(255,0,0); 
-	Font = Enum.Font.SourceSansBold;TextSize = 25
-})
-
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcomeTitle = Instance.new("TextLabel")
