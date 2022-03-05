@@ -2,17 +2,23 @@
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Kat GUI"; -- the title (ofc)
-	Text = "The Script has Loaded, - Enjoy Exploiting! (Made by cOpEtriNe)"; -- what the text says (ofc)
-	Icon = "rbxassetid://57254792"; -- the image if u want. 
-	Duration = 5; -- how long the notification should in secounds
+	Text = "The Script has Loaded, - Enjoy Exploiting! (Made by cOpEtriNe)";
+	Icon = "rbxassetid://57254792"; 
+	Duration = 5; -- seconds
 })
 
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Alert!"; -- the title (ofc)
-	Text = "The GUI Is Safe To Use, - Script is safe to use and will NOT ban you. Enjoy! V2.4 Update "; -- what the text says (ofc)
-	Icon = "rbxassetid://57254792"; -- the image if u want. 
-	Duration = 5; -- how long the notification should in secounds
+	Text = "The GUI Is Safe To Use, - Script is safe to use and will NOT ban you. Enjoy! V2.4 Update "; 
+	Duration = 5; -- seconds
+})
+
+	local StarterGui = game:GetService("StarterGui")
+	StarterGui:SetCore("ChatMakeSystemMessage", {
+	Text = "Welcome to Katware.";
+	Color = Color3.fromRGB(255,0,0); 
+	Font = Enum.Font.SourceSansBold;TextSize = 25
 })
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -1208,7 +1214,7 @@ noHitbox.TextWrapped = true
 noHitbox.MouseButton1Down:connect(function()
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Alert!"; -- the title (ofc)
-		Text = "SCript alert, - Script is currently broken. "; -- what the text says (ofc)
+		Text = "Script alert, - Script is currently broken. "; -- what the text says (ofc)
 		Icon = "rbxassetid://57254792"; -- the image if u want. 
 		Duration = 5; -- how long the notification should in secounds
 	})
