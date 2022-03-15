@@ -38,8 +38,4 @@ you cant haha, but, there are new features with the developer builds though.
 
 * cool things (done)
 
-## How to host bots for kat
 
-Now, hosting bots for this game is just too difficult at the moment.
-Since the KnifeBot.Lua   Script is really broken.
-If anyone wants to help me with this, it would be much appreciated
