@@ -1,0 +1,313 @@
+-- added fov changer
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local _120Fov = Instance.new("TextButton")
+local PurpleAmbient = Instance.new("TextButton")
+local BrickMaterial = Instance.new("TextButton")
+local ForceField = Instance.new("TextButton")
+local rainbowFrame2 = Instance.new("Frame")
+local rainbowFrame1 = Instance.new("Frame")
+local FullBright = Instance.new("TextButton")
+local CameraOffset = Instance.new("TextButton")
+local CUstomFOVChanger = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Frame.Position = UDim2.new(0.215299204, 0, 0.462576687, 0)
+Frame.Size = UDim2.new(0, 440, 0, 356)
+Frame.Active = true
+Frame.Draggable = true
+Frame.Visible = true
+
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Title.Size = UDim2.new(0, 440, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Visuals tab 2"
+Title.TextColor3 = Color3.fromRGB(255, 15, 231)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+_120Fov.Name = "120Fov"
+_120Fov.Parent = Frame
+_120Fov.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+_120Fov.Position = UDim2.new(0.0545454547, 0, 0.182584256, 0)
+_120Fov.Size = UDim2.new(0, 160, 0, 45)
+_120Fov.Font = Enum.Font.SourceSans
+_120Fov.Text = "120 fov"
+_120Fov.TextColor3 = Color3.fromRGB(255, 15, 231)
+_120Fov.TextScaled = true
+_120Fov.TextSize = 14.000
+_120Fov.TextWrapped = true
+_120Fov.MouseButton1Down:connect(function()
+	game.Workspace.Camera.FieldOfView = 120
+end)
+
+PurpleAmbient.Name = "PurpleAmbient"
+PurpleAmbient.Parent = Frame
+PurpleAmbient.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+PurpleAmbient.Position = UDim2.new(0.540909111, 0, 0.182584256, 0)
+PurpleAmbient.Size = UDim2.new(0, 160, 0, 45)
+PurpleAmbient.Font = Enum.Font.SourceSans
+PurpleAmbient.Text = "Ambient"
+PurpleAmbient.TextColor3 = Color3.fromRGB(255, 15, 231)
+PurpleAmbient.TextScaled = true
+PurpleAmbient.TextSize = 14.000
+PurpleAmbient.TextWrapped = true
+PurpleAmbient.MouseButton1Down:connect(function()
+	game.Lighting.OutdoorAmbient = Color3.fromRGB(75, 7, 37)  
+	game.Lighting.Ambient = Color3.fromRGB(90, 0, 0)  
+end)
+
+BrickMaterial.Name = "BrickMaterial"
+BrickMaterial.Parent = Frame
+BrickMaterial.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+BrickMaterial.Position = UDim2.new(0.0545454547, 0, 0.362359524, 0)
+BrickMaterial.Size = UDim2.new(0, 160, 0, 45)
+BrickMaterial.Font = Enum.Font.SourceSans
+BrickMaterial.Text = "Brick Material"
+BrickMaterial.TextColor3 = Color3.fromRGB(255, 15, 231)
+BrickMaterial.TextScaled = true
+BrickMaterial.TextSize = 14.000
+BrickMaterial.TextWrapped = true
+BrickMaterial.MouseButton1Down:connect(function()
+	for _,i in pairs(workspace:GetDescendants()) do
+		if i:IsA("BasePart") and not i.Parent:FindFirstChildOfClass('Humanoid') and not i.Parent.Parent:FindFirstChildOfClass('Humanoid') then
+			i.Material = "Brick"
+		end
+	end
+end)
+
+ForceField.Name = "ForceField"
+ForceField.Parent = Frame
+ForceField.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ForceField.Position = UDim2.new(0.540909111, 0, 0.362359524, 0)
+ForceField.Size = UDim2.new(0, 160, 0, 45)
+ForceField.Font = Enum.Font.SourceSans
+ForceField.Text = "ForceField Material"
+ForceField.TextColor3 = Color3.fromRGB(255, 15, 231)
+ForceField.TextScaled = true
+ForceField.TextSize = 14.000
+ForceField.TextWrapped = true
+ForceField.MouseButton1Down:connect(function()
+	for _,i in pairs(workspace:GetDescendants()) do
+		if i:IsA("BasePart") and not i.Parent:FindFirstChildOfClass('Humanoid') and not i.Parent.Parent:FindFirstChildOfClass('Humanoid') then
+			i.Material = "ForceField"
+		end
+	end
+end)
+
+rainbowFrame2.Name = "rainbowFrame2"
+rainbowFrame2.Parent = Frame
+rainbowFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rainbowFrame2.Position = UDim2.new(0.998100221, 0, -0.000906452537, 0)
+rainbowFrame2.Size = UDim2.new(0, 14, 0, 356)
+
+rainbowFrame1.Name = "rainbowFrame1"
+rainbowFrame1.Parent = Frame
+rainbowFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rainbowFrame1.Position = UDim2.new(-0.0319737792, 0, -0.000906452537, 0)
+rainbowFrame1.Size = UDim2.new(0, 14, 0, 356)
+
+FullBright.Name = "FullBright"
+FullBright.Parent = Frame
+FullBright.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+FullBright.Position = UDim2.new(0.0545454621, 0, 0.54494381, 0)
+FullBright.Size = UDim2.new(0, 160, 0, 45)
+FullBright.Font = Enum.Font.SourceSans
+FullBright.Text = "Fullbright"
+FullBright.TextColor3 = Color3.fromRGB(255, 15, 231)
+FullBright.TextScaled = true
+FullBright.TextSize = 14.000
+FullBright.TextWrapped = true
+FullBright.MouseButton1Down:connect(function()
+	game:GetService("Lighting").Brightness = 2
+	game:GetService("Lighting").ClockTime = 14
+	game:GetService("Lighting").FogEnd = 100000
+	game:GetService("Lighting").GlobalShadows = false
+	game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+end)
+
+CameraOffset.Name = "CameraOffset"
+CameraOffset.Parent = Frame
+CameraOffset.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+CameraOffset.Position = UDim2.new(0.540909111, 0, 0.54494381, 0)
+CameraOffset.Size = UDim2.new(0, 160, 0, 45)
+CameraOffset.Font = Enum.Font.SourceSans
+CameraOffset.Text = "Camera Offset"
+CameraOffset.TextColor3 = Color3.fromRGB(255, 15, 231)
+CameraOffset.TextScaled = true
+CameraOffset.TextSize = 14.000
+CameraOffset.TextWrapped = true
+CameraOffset.MouseButton1Down:Connect(function()
+	while true do
+		wait(1)
+		game.Players.LocalPlayer.Character.Humanoid.CameraOffset = Vector3.new(2, 0, 0)
+	end	
+end)
+
+CUstomFOVChanger.Name = "CUstomFOVChanger"
+CUstomFOVChanger.Parent = Frame
+CUstomFOVChanger.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+CUstomFOVChanger.Position = UDim2.new(0.540909111, 0, 0.856741548, 0)
+CUstomFOVChanger.Size = UDim2.new(0, 200, 0, 50)
+CUstomFOVChanger.Font = Enum.Font.SourceSans
+CUstomFOVChanger.PlaceholderColor3 = Color3.fromRGB(255, 15, 231)
+CUstomFOVChanger.PlaceholderText = "fov changer"
+CUstomFOVChanger.Text = ""
+CUstomFOVChanger.TextColor3 = Color3.fromRGB(255, 15, 231)
+CUstomFOVChanger.TextSize = 50.000
+CUstomFOVChanger.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TextLabel.Position = UDim2.new(0.190909088, 0, 0.890449405, 0)
+TextLabel.Size = UDim2.new(0, 154, 0, 38)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "takes a while to work.."
+TextLabel.TextColor3 = Color3.fromRGB(255, 15, 231)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function MUJCSC_fake_script() -- rainbowFrame2.LocalScript 
+	local script = Instance.new('LocalScript', rainbowFrame2)
+
+	local t = 10;
+	
+	while wait() do
+	
+		local hue = tick() % t / t
+	
+		local color = Color3.fromHSV(hue,1,1)
+	
+		script.Parent.BackgroundColor3 = color
+	
+	end
+end
+coroutine.wrap(MUJCSC_fake_script)()
+local function YHHXRZG_fake_script() -- rainbowFrame1.LocalScript 
+	local script = Instance.new('LocalScript', rainbowFrame1)
+
+	local t = 10;
+	
+	while wait() do
+	
+		local hue = tick() % t / t
+	
+		local color = Color3.fromHSV(hue,1,1)
+	
+		script.Parent.BackgroundColor3 = color
+	
+	end
+end
+coroutine.wrap(YHHXRZG_fake_script)()
+local function ZJNT_fake_script() -- CUstomFOVChanger.LocalScript 
+	local script = Instance.new('LocalScript', CUstomFOVChanger)
+
+	local box = script.Parent
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '130' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 130
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '120' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 120
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '110' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 110
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '100' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 100
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '90' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 90
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '80' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 80
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '70' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 70
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '60' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 60
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '50' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 50
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '40' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 40
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '30' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 30
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '20' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 20
+		end
+	end)
+	
+	box.MouseEnter:Connect(function()
+		if box.Text == '10' then
+	
+			game.workspace.CurrentCamera.FieldOfView = 10
+		end
+	end)
+end
+coroutine.wrap(ZJNT_fake_script)()
