@@ -651,52 +651,7 @@ NoLagButton.TextScaled = true
 NoLagButton.TextSize = 14.000
 NoLagButton.TextWrapped = true
 NoLagButton.MouseButton1Down:connect(function()
-
-	wait(1.2)
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Kat GUI"; -- the title (ofc)
-		Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-		Icon = "rbxassetid://57254792"; -- the image if u want. 
-		Duration = 5; -- how long the notification should in secounds
-	})
-
-	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
-	local g = game
-	local w = g.Workspace
-	local l = g.Lighting
-	local t = w.Terrain
-	t.WaterWaveSize = 0
-	t.WaterWaveSpeed = 0
-	t.WaterReflectance = 0
-	t.WaterTransparency = 0
-	l.GlobalShadows = false
-	l.FogEnd = 9e9
-	l.Brightness = 0
-	settings().Rendering.QualityLevel = "Level01"
-	for i, v in pairs(g:GetDescendants()) do
-		if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
-			v.Material = "Plastic"
-			v.Reflectance = 0
-		elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
-			v.Transparency = 0.50
-		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-			v.Lifetime = NumberRange.new(0)
-		elseif v:IsA("Explosion") then
-			v.BlastPressure = 1
-			v.BlastRadius = 1
-		elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
-			v.Enabled = false
-		elseif v:IsA("MeshPart") then
-			v.Material = "Plastic"
-			v.Reflectance = 0
-			v.TextureID = 10385902758728957
-		end
-	end
-	for i, e in pairs(l:GetChildren()) do
-		if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
-			e.Enabled = false
-		end
-	end
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/NoLag.lua'))()
 end)
 
 NightMode.Name = "NightMode"
@@ -730,40 +685,7 @@ NoobPack.TextScaled = true
 NoobPack.TextSize = 14.000
 NoobPack.TextWrapped = true
 NoobPack.MouseButton1Down:connect(function()
-	local args = {
-		[1] = "NoobKnife"
-	}
-
-	game:GetService("ReplicatedStorage").GameEvents.Misk.ItemPurchase:FireServer(unpack(args))
-
-	-- equips
-
-	local args = {
-		[1] = "Equip",
-		[2] = "6",
-		[3] = 1
-	}
-
-	game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
-
-	wait(1)
-
-	-- equip the noob pax
-	wait(1.2)
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Kat GUI"; -- the title (ofc)
-		Text = "Alert!, - You need to be level 15 to get the noob knife! Ignore this message if you over level 15 or are level 15!"; -- what the text says (ofc)
-		Icon = "rbxassetid://57254792"; -- the image if u want. 
-		Duration = 5; -- how long the notification should in secounds
-	})
-
-	local args = {
-		[1] = "Equip",
-		[2] = "16",
-		[3] = 1
-	}
-
-	game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/EquipNoob.lua'))()
 end)
 
 
@@ -994,7 +916,7 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/visuals2tab'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/visuals2tab'))()
 end)
 
 CreditsTab.Name = "CreditsTab"
@@ -1167,82 +1089,7 @@ ChatSpam.TextScaled = true
 ChatSpam.TextSize = 14.000
 ChatSpam.TextWrapped = true
 ChatSpam.MouseButton1Down:connect(function()
-	while true do
-		wait(1)
-
-		-- chat spam, go customize unless you dont
-
-		local args = {
-			[1] = "kat where? free kat gui!", -- text said
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-		wait(2) -- safe mode, change if u wont want to go that sloow
-
-		local args = {
-			[1] = "Knife-Bot! KATGuis Best server destroying feature!!", -- ooooh really?
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-		wait(2)
-
-
-		local args = {
-			[1] = "After 9 years in development, we hope it was worth the wait!", -- rofl!!
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-		wait(2)
-
-		local args = {
-			[1] = "KATGui! Free open source Kat! cheat!!", -- yessir
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-		wait(1)
-
-		local args = {
-			[1] = "KATGui You've been bot rolled!", -- AH CRAP! NOT AGAIN!!
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-		wait(1)
-
-		local args = {
-			[1] = "Making Legits Cry Since 2019!", -- HAH
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-		wait(1)
-
-		local args = {
-			[1] = "Recording Your Failure Right Now! ", -- EZ
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-		wait(1)
-
-		local args = {
-			[1] = "KAT IS A DEAD GAME! YOU WILL NOT BE FORGOTTEN.", -- damn ur not wrong 
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/ChatSpam.lua'))()
 end)
 
 MousePosition.Name = "MousePosition"
@@ -1257,16 +1104,7 @@ MousePosition.TextScaled = true
 MousePosition.TextSize = 14.000
 MousePosition.TextWrapped = true
 MousePosition.MouseButton1Down:connect(function()
-
-	local Players = game:GetService("Players")
-
-	local localPlayer = Players.LocalPlayer
-	local mouse = localPlayer:GetMouse()
-
-	mouse.Move:Connect(function()
-		print("KATWare Mouse Position Current/Before: ", mouse.X, mouse.Y)
-	end)
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/mousePosPrint.lua'))()
 end)
 
 Antiban.Name = "Antiban"
