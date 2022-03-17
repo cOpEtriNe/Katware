@@ -3,12 +3,12 @@
 
 If you'd like to give me any ideas, contact me on discord: cOpEtriNe#2745
 
-# KATGui
+# KATWare
 GUI For the ROBLOX Game KAT! It's Free And Open Source!
 
 ## Information
 Q: Can I Edit This Script A: Yes, you can.
-This script will not get you banned from now.
+This script will not get you banned.
 One of my accounts has been up to Level 105 with this script!
 
 If you prefer to use the loadstring, here it is: loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Script'))()
