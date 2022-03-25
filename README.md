@@ -26,11 +26,11 @@ LegacyUI (Old not new)
 Nothing Yet.
 
 NewUI
-* Added Nohitbox (Broken)
-* Added a new visuals tab
-* Added no shadows
-* Added alot of other things for new visuals tab
-## how to get developer build?
+- new UI
+- Added Graphics Enhancer
+- Added settings tab
+- bug fixes
+
 
 you cant haha, but, there are new features with the developer builds though.
 
