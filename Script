@@ -1,5 +1,7 @@
 -- KATWare v2.5
 
+loadstring(game:HttpGet('https://pastebin.com/raw/7GHT6T9N'))()
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcomeTitle = Instance.new("TextLabel")
@@ -62,8 +64,6 @@ Frame.Size = UDim2.new(0, 580, 0, 395)
 Frame.Draggable = true
 Frame.Active = true
 Frame.Visible = true
-
-loadstring(game:HttpGet('https://pastebin.com/raw/7GHT6T9N'))()
 
 WelcomeTitle.Name = "WelcomeTitle"
 WelcomeTitle.Parent = Frame
