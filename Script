@@ -1,4 +1,4 @@
--- KATWare V2.6 
+-- KATWare 2.7
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -14,18 +14,20 @@ local TitleAimbot = Instance.new("TextLabel")
 local KnifeBot = Instance.new("TextButton")
 local VisualsTab = Instance.new("Frame")
 local TitleVisual = Instance.new("TextLabel")
-local ESPButton = Instance.new("TextButton")
-local FOV100Button = Instance.new("TextButton")
-local NoLagButton = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local ESP = Instance.new("TextButton")
+local Chams = Instance.new("TextButton")
+local FOV100 = Instance.new("TextButton")
+local FOV120 = Instance.new("TextButton")
 local NightMode = Instance.new("TextButton")
 local NoobPack = Instance.new("TextButton")
-local Chams = Instance.new("TextButton")
-local Transparency = Instance.new("TextButton")
+local Transparentbody = Instance.new("TextButton")
+local XRay = Instance.new("TextButton")
 local Headless = Instance.new("TextButton")
-local TransparentWorld = Instance.new("TextButton")
-local NoShadows = Instance.new("TextButton")
-local TextButton = Instance.new("TextButton")
+local Fpsboost = Instance.new("TextButton")
+local noShadows = Instance.new("TextButton")
 local BetterGraphics = Instance.new("TextButton")
+local NextPageVisualTab = Instance.new("TextButton")
 local CreditsTab = Instance.new("Frame")
 local TitleCredit = Instance.new("TextLabel")
 local CreditMaker = Instance.new("TextLabel")
@@ -78,7 +80,7 @@ WelcomeTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
 WelcomeTitle.BorderSizePixel = 0
 WelcomeTitle.Size = UDim2.new(0, 580, 0, 43)
 WelcomeTitle.Font = Enum.Font.SourceSans
-WelcomeTitle.Text = "KatWare V2.6"
+WelcomeTitle.Text = "KatWare V2.7"
 WelcomeTitle.TextColor3 = Color3.fromRGB(255, 15, 231)
 WelcomeTitle.TextScaled = true
 WelcomeTitle.TextSize = 14.000
@@ -206,46 +208,64 @@ TitleVisual.TextScaled = true
 TitleVisual.TextSize = 14.000
 TitleVisual.TextWrapped = true
 
-ESPButton.Name = "ESPButton"
-ESPButton.Parent = VisualsTab
-ESPButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-ESPButton.Position = UDim2.new(0.0244733989, 0, 0.0449856184, 0)
-ESPButton.Size = UDim2.new(0, 135, 0, 32)
-ESPButton.Font = Enum.Font.SourceSans
-ESPButton.Text = "ESP"
-ESPButton.TextColor3 = Color3.fromRGB(255, 15, 231)
-ESPButton.TextScaled = true
-ESPButton.TextSize = 14.000
-ESPButton.TextWrapped = true
+ScrollingFrame.Parent = VisualsTab
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+ScrollingFrame.Position = UDim2.new(0.00510215759, 0, 0.00458557904, 0)
+ScrollingFrame.Size = UDim2.new(0, 390, 0, 314)
 
-FOV100Button.Name = "FOV100Button"
-FOV100Button.Parent = VisualsTab
-FOV100Button.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-FOV100Button.Position = UDim2.new(0.435607225, 0, 0.0449856184, 0)
-FOV100Button.Size = UDim2.new(0, 135, 0, 32)
-FOV100Button.Font = Enum.Font.SourceSans
-FOV100Button.Text = "Fov 100"
-FOV100Button.TextColor3 = Color3.fromRGB(255, 15, 231)
-FOV100Button.TextScaled = true
-FOV100Button.TextSize = 14.000
-FOV100Button.TextWrapped = true
+ESP.Name = "ESP"
+ESP.Parent = ScrollingFrame
+ESP.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ESP.Position = UDim2.new(0.0586666688, 0, 0.0463965274, 0)
+ESP.Size = UDim2.new(0, 135, 0, 32)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 15, 231)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
 
-NoLagButton.Name = "NoLagButton"
-NoLagButton.Parent = VisualsTab
-NoLagButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NoLagButton.Position = UDim2.new(0.0244733095, 0, 0.681917965, 0)
-NoLagButton.Size = UDim2.new(0, 135, 0, 32)
-NoLagButton.Font = Enum.Font.SourceSans
-NoLagButton.Text = "No Lag"
-NoLagButton.TextColor3 = Color3.fromRGB(255, 15, 231)
-NoLagButton.TextScaled = true
-NoLagButton.TextSize = 14.000
-NoLagButton.TextWrapped = true
+Chams.Name = "Chams"
+Chams.Parent = ScrollingFrame
+Chams.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Chams.Position = UDim2.new(0.517641008, 0, 0.0463965274, 0)
+Chams.Size = UDim2.new(0, 135, 0, 32)
+Chams.Font = Enum.Font.SourceSans
+Chams.Text = "Chams"
+Chams.TextColor3 = Color3.fromRGB(255, 15, 231)
+Chams.TextScaled = true
+Chams.TextSize = 14.000
+Chams.TextWrapped = true
+
+FOV100.Name = "FOV100"
+FOV100.Parent = ScrollingFrame
+FOV100.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+FOV100.Position = UDim2.new(0.0586666688, 0, 0.124174312, 0)
+FOV100.Size = UDim2.new(0, 135, 0, 32)
+FOV100.Font = Enum.Font.SourceSans
+FOV100.Text = "FOV 100"
+FOV100.TextColor3 = Color3.fromRGB(255, 15, 231)
+FOV100.TextScaled = true
+FOV100.TextSize = 14.000
+FOV100.TextWrapped = true
+
+FOV120.Name = "FOV120"
+FOV120.Parent = ScrollingFrame
+FOV120.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+FOV120.Position = UDim2.new(0.517641068, 0, 0.124174312, 0)
+FOV120.Size = UDim2.new(0, 135, 0, 32)
+FOV120.Font = Enum.Font.SourceSans
+FOV120.Text = "FOV 120"
+FOV120.TextColor3 = Color3.fromRGB(255, 15, 231)
+FOV120.TextScaled = true
+FOV120.TextSize = 14.000
+FOV120.TextWrapped = true
 
 NightMode.Name = "NightMode"
-NightMode.Parent = VisualsTab
+NightMode.Parent = ScrollingFrame
 NightMode.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NightMode.Position = UDim2.new(0.0235469546, 0, 0.199495882, 0)
+NightMode.Position = UDim2.new(0.0586666688, 0, 0.200364798, 0)
 NightMode.Size = UDim2.new(0, 135, 0, 32)
 NightMode.Font = Enum.Font.SourceSans
 NightMode.Text = "Night Mode"
@@ -255,45 +275,45 @@ NightMode.TextSize = 14.000
 NightMode.TextWrapped = true
 
 NoobPack.Name = "NoobPack"
-NoobPack.Parent = VisualsTab
+NoobPack.Parent = ScrollingFrame
 NoobPack.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NoobPack.Position = UDim2.new(0.433094651, 0, 0.195250183, 0)
+NoobPack.Position = UDim2.new(0.517641008, 0, 0.200364798, 0)
 NoobPack.Size = UDim2.new(0, 135, 0, 32)
 NoobPack.Font = Enum.Font.SourceSans
-NoobPack.Text = "Noob Skin And Knife"
+NoobPack.Text = "Noob Pack"
 NoobPack.TextColor3 = Color3.fromRGB(255, 15, 231)
 NoobPack.TextScaled = true
 NoobPack.TextSize = 14.000
 NoobPack.TextWrapped = true
 
-Chams.Name = "Chams"
-Chams.Parent = VisualsTab
-Chams.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Chams.Position = UDim2.new(0.0235468969, 0, 0.353875667, 0)
-Chams.Size = UDim2.new(0, 135, 0, 32)
-Chams.Font = Enum.Font.SourceSans
-Chams.Text = "Chams"
-Chams.TextColor3 = Color3.fromRGB(255, 15, 231)
-Chams.TextScaled = true
-Chams.TextSize = 14.000
-Chams.TextWrapped = true
+Transparentbody.Name = "Transparentbody"
+Transparentbody.Parent = ScrollingFrame
+Transparentbody.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Transparentbody.Position = UDim2.new(0.517641008, 0, 0.27655527, 0)
+Transparentbody.Size = UDim2.new(0, 135, 0, 32)
+Transparentbody.Font = Enum.Font.SourceSans
+Transparentbody.Text = "Transparent body"
+Transparentbody.TextColor3 = Color3.fromRGB(255, 15, 231)
+Transparentbody.TextScaled = true
+Transparentbody.TextSize = 14.000
+Transparentbody.TextWrapped = true
 
-Transparency.Name = "Transparency"
-Transparency.Parent = VisualsTab
-Transparency.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Transparency.Position = UDim2.new(0.428031027, 0, 0.353875667, 0)
-Transparency.Size = UDim2.new(0, 135, 0, 32)
-Transparency.Font = Enum.Font.SourceSans
-Transparency.Text = "Transparency"
-Transparency.TextColor3 = Color3.fromRGB(255, 15, 231)
-Transparency.TextScaled = true
-Transparency.TextSize = 14.000
-Transparency.TextWrapped = true
+XRay.Name = "XRay"
+XRay.Parent = ScrollingFrame
+XRay.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+XRay.Position = UDim2.new(0.0586666465, 0, 0.27655527, 0)
+XRay.Size = UDim2.new(0, 135, 0, 32)
+XRay.Font = Enum.Font.SourceSans
+XRay.Text = "Xray"
+XRay.TextColor3 = Color3.fromRGB(255, 15, 231)
+XRay.TextScaled = true
+XRay.TextSize = 14.000
+XRay.TextWrapped = true
 
 Headless.Name = "Headless"
-Headless.Parent = VisualsTab
+Headless.Parent = ScrollingFrame
 Headless.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Headless.Position = UDim2.new(0.427992582, 0, 0.524716318, 0)
+Headless.Position = UDim2.new(0.517641008, 0, 0.360682249, 0)
 Headless.Size = UDim2.new(0, 135, 0, 32)
 Headless.Font = Enum.Font.SourceSans
 Headless.Text = "Headless"
@@ -302,52 +322,53 @@ Headless.TextScaled = true
 Headless.TextSize = 14.000
 Headless.TextWrapped = true
 
-TransparentWorld.Name = "TransparentWorld"
-TransparentWorld.Parent = VisualsTab
-TransparentWorld.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-TransparentWorld.Position = UDim2.new(0.0219222885, 0, 0.524716318, 0)
-TransparentWorld.Size = UDim2.new(0, 135, 0, 32)
-TransparentWorld.Font = Enum.Font.SourceSans
-TransparentWorld.Text = "Xray"
-TransparentWorld.TextColor3 = Color3.fromRGB(255, 15, 231)
-TransparentWorld.TextScaled = true
-TransparentWorld.TextSize = 14.000
-TransparentWorld.TextWrapped = true
+Fpsboost.Name = "Fpsboost"
+Fpsboost.Parent = ScrollingFrame
+Fpsboost.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Fpsboost.Position = UDim2.new(0.0586666465, 0, 0.360682249, 0)
+Fpsboost.Size = UDim2.new(0, 135, 0, 32)
+Fpsboost.Font = Enum.Font.SourceSans
+Fpsboost.Text = "FPS Boost"
+Fpsboost.TextColor3 = Color3.fromRGB(255, 15, 231)
+Fpsboost.TextScaled = true
+Fpsboost.TextSize = 14.000
+Fpsboost.TextWrapped = true
 
-NoShadows.Name = "NoShadows"
-NoShadows.Parent = VisualsTab
-NoShadows.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NoShadows.Position = UDim2.new(0.426444918, 0, 0.678743362, 0)
-NoShadows.Size = UDim2.new(0, 135, 0, 32)
-NoShadows.Font = Enum.Font.SourceSans
-NoShadows.Text = "Remove Shadows"
-NoShadows.TextColor3 = Color3.fromRGB(255, 15, 231)
-NoShadows.TextScaled = true
-NoShadows.TextSize = 14.000
-NoShadows.TextWrapped = true
-
-TextButton.Parent = VisualsTab
-TextButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-TextButton.Position = UDim2.new(0.813532174, 0, 0.924397409, 0)
-TextButton.Size = UDim2.new(0, 72, 0, 23)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Page 2"
-TextButton.TextColor3 = Color3.fromRGB(255, 15, 231)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+noShadows.Name = "noShadows"
+noShadows.Parent = ScrollingFrame
+noShadows.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+noShadows.Position = UDim2.new(0.517641008, 0, 0.44639653, 0)
+noShadows.Size = UDim2.new(0, 135, 0, 32)
+noShadows.Font = Enum.Font.SourceSans
+noShadows.Text = "No Shadows"
+noShadows.TextColor3 = Color3.fromRGB(255, 15, 231)
+noShadows.TextScaled = true
+noShadows.TextSize = 14.000
+noShadows.TextWrapped = true
 
 BetterGraphics.Name = "BetterGraphics"
-BetterGraphics.Parent = VisualsTab
+BetterGraphics.Parent = ScrollingFrame
 BetterGraphics.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-BetterGraphics.Position = UDim2.new(0.0233837068, 0, 0.843822718, 0)
+BetterGraphics.Position = UDim2.new(0.0586666465, 0, 0.447983831, 0)
 BetterGraphics.Size = UDim2.new(0, 135, 0, 32)
 BetterGraphics.Font = Enum.Font.SourceSans
-BetterGraphics.Text = "Better Graphics"
+BetterGraphics.Text = "Graphics Enhancer"
 BetterGraphics.TextColor3 = Color3.fromRGB(255, 15, 231)
 BetterGraphics.TextScaled = true
 BetterGraphics.TextSize = 14.000
 BetterGraphics.TextWrapped = true
+
+NextPageVisualTab.Name = "NextPageVisualTab"
+NextPageVisualTab.Parent = ScrollingFrame
+NextPageVisualTab.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+NextPageVisualTab.Position = UDim2.new(0.666666687, 0, 0.921384335, 0)
+NextPageVisualTab.Size = UDim2.new(0, 103, 0, 34)
+NextPageVisualTab.Font = Enum.Font.SourceSans
+NextPageVisualTab.Text = "Page 2"
+NextPageVisualTab.TextColor3 = Color3.fromRGB(255, 15, 231)
+NextPageVisualTab.TextScaled = true
+NextPageVisualTab.TextSize = 14.000
+NextPageVisualTab.TextWrapped = true
 
 CreditsTab.Name = "CreditsTab"
 CreditsTab.Parent = Frame
@@ -680,7 +701,7 @@ UICorner_2.Parent = Open
 
 -- Scripts:
 
-local function QWEU_fake_script() -- Aimbot.LocalScript 
+local function MOAXLS_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -691,8 +712,8 @@ local function QWEU_fake_script() -- Aimbot.LocalScript
 		script.Parent.Parent.SettingsTab.Visible = false
 	end)
 end
-coroutine.wrap(QWEU_fake_script)()
-local function GNZZXNZ_fake_script() -- Visuals.LocalScript 
+coroutine.wrap(MOAXLS_fake_script)()
+local function PGKE_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -703,8 +724,8 @@ local function GNZZXNZ_fake_script() -- Visuals.LocalScript
 		script.Parent.Parent.SettingsTab.Visible = false
 	end)
 end
-coroutine.wrap(GNZZXNZ_fake_script)()
-local function KMNXUFV_fake_script() -- Credits.LocalScript 
+coroutine.wrap(PGKE_fake_script)()
+local function NGTQH_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -715,8 +736,8 @@ local function KMNXUFV_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.SettingsTab.Visible = false
 	end)
 end
-coroutine.wrap(KMNXUFV_fake_script)()
-local function DSUSM_fake_script() -- SilentAimButton.LocalScript 
+coroutine.wrap(NGTQH_fake_script)()
+local function LWOHYG_fake_script() -- SilentAimButton.LocalScript 
 	local script = Instance.new('LocalScript', SilentAimButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -798,8 +819,8 @@ local function DSUSM_fake_script() -- SilentAimButton.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(DSUSM_fake_script)()
-local function LVTM_fake_script() -- HitboxExtended.LocalScript 
+coroutine.wrap(LWOHYG_fake_script)()
+local function GVJRASY_fake_script() -- HitboxExtended.LocalScript 
 	local script = Instance.new('LocalScript', HitboxExtended)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -840,8 +861,8 @@ local function LVTM_fake_script() -- HitboxExtended.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LVTM_fake_script)()
-local function JBWG_fake_script() -- HitboxExtended2.LocalScript 
+coroutine.wrap(GVJRASY_fake_script)()
+local function LYOFE_fake_script() -- HitboxExtended2.LocalScript 
 	local script = Instance.new('LocalScript', HitboxExtended2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -896,289 +917,253 @@ local function JBWG_fake_script() -- HitboxExtended2.LocalScript
 	
 	
 end
-coroutine.wrap(JBWG_fake_script)()
-local function WJKWD_fake_script() -- KnifeBot.LocalScript 
+coroutine.wrap(LYOFE_fake_script)()
+local function ZWRYEE_fake_script() -- KnifeBot.LocalScript 
 	local script = Instance.new('LocalScript', KnifeBot)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Roblox-Error-Prompt-Open-Source/main/Error%20Prompt'))()
 	end)
 end
-coroutine.wrap(WJKWD_fake_script)()
-local function QBGPDKK_fake_script() -- ESPButton.LocalScript 
-	local script = Instance.new('LocalScript', ESPButton)
+coroutine.wrap(ZWRYEE_fake_script)()
+local function EPGVIWJ_fake_script() -- ESP.LocalScript 
+	local script = Instance.new('LocalScript', ESP)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
-			wait(1.2)
-			game.StarterGui:SetCore("SendNotification", {
-				Title = "Kat GUI"; -- the title (ofc)
-				Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
-				Icon = "rbxassetid://57254792"; -- the image if u want. 
-				Duration = 5; -- how long the notification should in secounds
-			})
+		wait(1.2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Kat GUI"; -- the title (ofc)
+			Text = "Executed!, - Enjoy Exploiting!"; -- what the text says (ofc)
+			Icon = "rbxassetid://57254792"; -- the image if u want. 
+			Duration = 5; -- how long the notification should in secounds
+		})
 	
 	
-			-- credits to 0x83 for box esp (i just edited this)
-			local lplr = game.Players.LocalPlayer
-			local camera = game:GetService("Workspace").CurrentCamera
-			local CurrentCamera = workspace.CurrentCamera
-			local worldToViewportPoint = CurrentCamera.worldToViewportPoint
+		-- credits to 0x83 for box esp (i just edited this)
+		local lplr = game.Players.LocalPlayer
+		local camera = game:GetService("Workspace").CurrentCamera
+		local CurrentCamera = workspace.CurrentCamera
+		local worldToViewportPoint = CurrentCamera.worldToViewportPoint
 	
-			local HeadOff = Vector3.new(0, 0.5, 0)
-			local LegOff = Vector3.new(0,3,0)
+		local HeadOff = Vector3.new(0, 0.5, 0)
+		local LegOff = Vector3.new(0,3,0)
 	
-			for i,v in pairs(game.Players:GetChildren()) do
-				local BoxOutline = Drawing.new("Square")
-				BoxOutline.Visible = false
-				BoxOutline.Color = Color3.new(255,0,0)
-				BoxOutline.Thickness = 3
-				BoxOutline.Transparency = 1
-				BoxOutline.Filled = false
+		for i,v in pairs(game.Players:GetChildren()) do
+			local BoxOutline = Drawing.new("Square")
+			BoxOutline.Visible = false
+			BoxOutline.Color = Color3.new(255,0,0)
+			BoxOutline.Thickness = 3
+			BoxOutline.Transparency = 1
+			BoxOutline.Filled = false
 	
-				local Box = Drawing.new("Square")
-				Box.Visible = false
-				Box.Color = Color3.new(255,0,0)
-				Box.Thickness = 1
-				Box.Transparency = 1
-				Box.Filled = false
+			local Box = Drawing.new("Square")
+			Box.Visible = false
+			Box.Color = Color3.new(255,0,0)
+			Box.Thickness = 1
+			Box.Transparency = 1
+			Box.Filled = false
 	
-				local HealthBarOutline = Drawing.new("Square")
-				HealthBarOutline.Thickness = 3
-				HealthBarOutline.Filled = false
-				HealthBarOutline.Color = Color3.new(0,255,0)
-				HealthBarOutline.Transparency = 1
-				HealthBarOutline.Visible = false
+			local HealthBarOutline = Drawing.new("Square")
+			HealthBarOutline.Thickness = 3
+			HealthBarOutline.Filled = false
+			HealthBarOutline.Color = Color3.new(0,255,0)
+			HealthBarOutline.Transparency = 1
+			HealthBarOutline.Visible = false
 	
-				local HealthBar = Drawing.new("Square")
-				HealthBar.Thickness = 1
-				HealthBar.Filled = false
-				HealthBar.Transparency = 1
-				HealthBar.Visible = false
+			local HealthBar = Drawing.new("Square")
+			HealthBar.Thickness = 1
+			HealthBar.Filled = false
+			HealthBar.Transparency = 1
+			HealthBar.Visible = false
 	
-				function boxesp()
-					game:GetService("RunService").RenderStepped:Connect(function()
-						if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
-							local Vector, onScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+			function boxesp()
+				game:GetService("RunService").RenderStepped:Connect(function()
+					if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
+						local Vector, onScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
 	
-							local RootPart = v.Character.HumanoidRootPart
-							local Head = v.Character.Head
-							local RootPosition, RootVis = worldToViewportPoint(CurrentCamera, RootPart.Position)
-							local HeadPosition = worldToViewportPoint(CurrentCamera, Head.Position + HeadOff)
-							local LegPosition = worldToViewportPoint(CurrentCamera, RootPart.Position - LegOff)
+						local RootPart = v.Character.HumanoidRootPart
+						local Head = v.Character.Head
+						local RootPosition, RootVis = worldToViewportPoint(CurrentCamera, RootPart.Position)
+						local HeadPosition = worldToViewportPoint(CurrentCamera, Head.Position + HeadOff)
+						local LegPosition = worldToViewportPoint(CurrentCamera, RootPart.Position - LegOff)
 	
-							if onScreen then
-								BoxOutline.Size = Vector2.new(2000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
-								BoxOutline.Position = Vector2.new(RootPosition.X - BoxOutline.Size.X / 2, RootPosition.Y - BoxOutline.Size.Y / 2)
-								BoxOutline.Visible = true
+						if onScreen then
+							BoxOutline.Size = Vector2.new(2000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+							BoxOutline.Position = Vector2.new(RootPosition.X - BoxOutline.Size.X / 2, RootPosition.Y - BoxOutline.Size.Y / 2)
+							BoxOutline.Visible = true
 	
-								Box.Size = Vector2.new(2000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
-								Box.Position = Vector2.new(RootPosition.X - Box.Size.X / 2, RootPosition.Y - Box.Size.Y / 2)
-								Box.Visible = true
+							Box.Size = Vector2.new(2000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+							Box.Position = Vector2.new(RootPosition.X - Box.Size.X / 2, RootPosition.Y - Box.Size.Y / 2)
+							Box.Visible = true
 	
-								HealthBarOutline.Size = Vector2.new(3, HeadPosition.Y - LegPosition.Y)
-								HealthBarOutline.Position = BoxOutline.Position - Vector2.new(6,0)
-								HealthBarOutline.Visible = true
+							HealthBarOutline.Size = Vector2.new(3, HeadPosition.Y - LegPosition.Y)
+							HealthBarOutline.Position = BoxOutline.Position - Vector2.new(6,0)
+							HealthBarOutline.Visible = true
 	
-								HealthBar.Size = Vector2.new(3, (HeadPosition.Y - LegPosition.Y) / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / math.clamp(game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value, 0, game:GetService("Players")[v.Character.Name].NRPBS:WaitForChild("MaxHealth").Value)))
-								HealthBar.Position = Vector2.new(Box.Position.X - 6, Box.Position.Y + (1 / HealthBar.Size.Y))
-								HealthBar.Color = Color3.fromRGB(0,255,0 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 255 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 0)
-								HealthBar.Visible = true
+							HealthBar.Size = Vector2.new(3, (HeadPosition.Y - LegPosition.Y) / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / math.clamp(game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value, 0, game:GetService("Players")[v.Character.Name].NRPBS:WaitForChild("MaxHealth").Value)))
+							HealthBar.Position = Vector2.new(Box.Position.X - 6, Box.Position.Y + (1 / HealthBar.Size.Y))
+							HealthBar.Color = Color3.fromRGB(0,255,0 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 255 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 0)
+							HealthBar.Visible = true
 	
-								if v.TeamColor == lplr.TeamColor then
-									--- Our Team
-									BoxOutline.Visible = false
-									Box.Visible = false
-									HealthBarOutline.Visible = false
-									HealthBar.Visible = false
-								else
-									---Enemy Team
-									BoxOutline.Visible = true
-									Box.Visible = true
-									HealthBarOutline.Visible = true
-									HealthBar.Visible = true
-								end
-	
-							else
+							if v.TeamColor == lplr.TeamColor then
+								--- Our Team
 								BoxOutline.Visible = false
 								Box.Visible = false
 								HealthBarOutline.Visible = false
 								HealthBar.Visible = false
+							else
+								---Enemy Team
+								BoxOutline.Visible = true
+								Box.Visible = true
+								HealthBarOutline.Visible = true
+								HealthBar.Visible = true
 							end
+	
 						else
 							BoxOutline.Visible = false
 							Box.Visible = false
 							HealthBarOutline.Visible = false
 							HealthBar.Visible = false
 						end
-					end)
-				end
-				coroutine.wrap(boxesp)()
-			end
-	
-			game.Players.PlayerAdded:Connect(function(v)
-				local BoxOutline = Drawing.new("Square")
-				BoxOutline.Visible = false
-				BoxOutline.Color = Color3.new(255,0,0)
-				BoxOutline.Thickness = 3
-				BoxOutline.Transparency = 1
-				BoxOutline.Filled = false
-	
-				local Box = Drawing.new("Square")
-				Box.Visible = false
-				Box.Color = Color3.new(255,0,0)
-				Box.Thickness = 1
-				Box.Transparency = 1
-				Box.Filled = false
-	
-				local HealthBarOutline = Drawing.new("Square")
-				HealthBarOutline.Thickness = 3
-				HealthBarOutline.Filled = false
-				HealthBarOutline.Color = Color3.new(0,255,0)
-				HealthBarOutline.Transparency = 1
-				HealthBarOutline.Visible = false
-	
-				local HealthBar = Drawing.new("Square")
-				HealthBar.Thickness = 1
-				HealthBar.Filled = false
-				HealthBar.Transparency = 1
-				HealthBar.Visible = false
-	
-				function boxesp()
-					game:GetService("RunService").RenderStepped:Connect(function()
-						if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
-							local Vector, onScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
-	
-							local RootPart = v.Character.HumanoidRootPart
-							local Head = v.Character.Head
-							local RootPosition, RootVis = worldToViewportPoint(CurrentCamera, RootPart.Position)
-							local HeadPosition = worldToViewportPoint(CurrentCamera, Head.Position + HeadOff)
-							local LegPosition = worldToViewportPoint(CurrentCamera, RootPart.Position - LegOff)
-	
-							if onScreen then
-								BoxOutline.Size = Vector2.new(2000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
-								BoxOutline.Position = Vector2.new(RootPosition.X - BoxOutline.Size.X / 2, RootPosition.Y - BoxOutline.Size.Y / 2)
-								BoxOutline.Visible = true
-	
-								Box.Size = Vector2.new(2000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
-								Box.Position = Vector2.new(RootPosition.X - Box.Size.X / 2, RootPosition.Y - Box.Size.Y / 2)
-								Box.Visible = true
-	
-								HealthBarOutline.Size = Vector2.new(2, HeadPosition.Y - LegPosition.Y)
-								HealthBarOutline.Position = BoxOutline.Position - Vector2.new(6,0)
-								HealthBarOutline.Visible = true
-	
-								HealthBar.Size = Vector2.new(2, (HeadPosition.Y - LegPosition.Y) / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / math.clamp(game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value, 0, game:GetService("Players")[v.Character.Name].NRPBS:WaitForChild("MaxHealth").Value)))
-								HealthBar.Position = Vector2.new(Box.Position.X - 6, Box.Position.Y + (1/HealthBar.Size.Y))
-								HealthBar.Color = Color3.fromRGB(0,255,0 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 255 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 0)                    
-								HealthBar.Visible = true
-	
-								if v.TeamColor == lplr.TeamColor then
-									--- Our Team
-									BoxOutline.Visible = false
-									Box.Visible = false
-									HealthBarOutline.Visible = false
-									HealthBar.Visible = false
-								else
-									---Enemy Team
-									BoxOutline.Visible = true
-									Box.Visible = true
-									HealthBarOutline.Visible = true
-									HealthBar.Visible = true
-								end
-	
-							else
-								BoxOutline.Visible = false
-								Box.Visible = false
-								HealthBarOutline.Visible = false
-								HealthBar.Visible = false
-							end
-						else
-							BoxOutline.Visible = false
-							Box.Visible = false
-							HealthBarOutline.Visible = false
-							HealthBar.Visible = false
-						end
-					end)
-				end
-				coroutine.wrap(boxesp)()
-			end)
-	
-			--- Start name sep
-	
-			local esp_settings = { ---- table for esp settings 
-				textsize = 20,
-				colour = 255,255,255
-			}
-	
-			local gui = Instance.new("BillboardGui")
-			local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
-	
-	
-	
-			gui.Name = "Cracked esp"; ---- properties of the esp
-			gui.ResetOnSpawn = false
-			gui.AlwaysOnTop = true;
-			gui.LightInfluence = 0;
-			gui.Size = UDim2.new(1.75, 0, 1.75, 0);
-			esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
-			esp.Text = ""
-			esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
-			esp.BorderSizePixel = 4;
-			esp.BorderColor3 = Color3.new(esp_settings.colour)
-			esp.BorderSizePixel = 0
-			esp.Font = "Ubuntu"
-			esp.TextSize = esp_settings.textsize
-			esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
-	
-			game:GetService("RunService").RenderStepped:Connect(function() --- srtersdgffg
-				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
-					if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
-						esp.Text = "{"..v.Name.."}"
-						gui:Clone().Parent = v.Character.Head
+					else
+						BoxOutline.Visible = false
+						Box.Visible = false
+						HealthBarOutline.Visible = false
+						HealthBar.Visible = false
 					end
-				end
-			end)
-	end)
-end
-coroutine.wrap(QBGPDKK_fake_script)()
-local function CWUHVOR_fake_script() -- FOV100Button.LocalScript 
-	local script = Instance.new('LocalScript', FOV100Button)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		workspace.CurrentCamera.FieldOfView = 100
-	end)
-end
-coroutine.wrap(CWUHVOR_fake_script)()
-local function BPBGLB_fake_script() -- NoLagButton.LocalScript 
-	local script = Instance.new('LocalScript', NoLagButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/NoLag.lua'))()
-	end)
-end
-coroutine.wrap(BPBGLB_fake_script)()
-local function CBXRA_fake_script() -- NightMode.LocalScript 
-	local script = Instance.new('LocalScript', NightMode)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		while true do
-			wait(1)
-			game.Lighting.TimeOfDay = 06
-			game.Lighting.Brightness = 0.5
+				end)
+			end
+			coroutine.wrap(boxesp)()
 		end
+	
+		game.Players.PlayerAdded:Connect(function(v)
+			local BoxOutline = Drawing.new("Square")
+			BoxOutline.Visible = false
+			BoxOutline.Color = Color3.new(255,0,0)
+			BoxOutline.Thickness = 3
+			BoxOutline.Transparency = 1
+			BoxOutline.Filled = false
+	
+			local Box = Drawing.new("Square")
+			Box.Visible = false
+			Box.Color = Color3.new(255,0,0)
+			Box.Thickness = 1
+			Box.Transparency = 1
+			Box.Filled = false
+	
+			local HealthBarOutline = Drawing.new("Square")
+			HealthBarOutline.Thickness = 3
+			HealthBarOutline.Filled = false
+			HealthBarOutline.Color = Color3.new(0,255,0)
+			HealthBarOutline.Transparency = 1
+			HealthBarOutline.Visible = false
+	
+			local HealthBar = Drawing.new("Square")
+			HealthBar.Thickness = 1
+			HealthBar.Filled = false
+			HealthBar.Transparency = 1
+			HealthBar.Visible = false
+	
+			function boxesp()
+				game:GetService("RunService").RenderStepped:Connect(function()
+					if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
+						local Vector, onScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	
+						local RootPart = v.Character.HumanoidRootPart
+						local Head = v.Character.Head
+						local RootPosition, RootVis = worldToViewportPoint(CurrentCamera, RootPart.Position)
+						local HeadPosition = worldToViewportPoint(CurrentCamera, Head.Position + HeadOff)
+						local LegPosition = worldToViewportPoint(CurrentCamera, RootPart.Position - LegOff)
+	
+						if onScreen then
+							BoxOutline.Size = Vector2.new(2000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+							BoxOutline.Position = Vector2.new(RootPosition.X - BoxOutline.Size.X / 2, RootPosition.Y - BoxOutline.Size.Y / 2)
+							BoxOutline.Visible = true
+	
+							Box.Size = Vector2.new(2000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+							Box.Position = Vector2.new(RootPosition.X - Box.Size.X / 2, RootPosition.Y - Box.Size.Y / 2)
+							Box.Visible = true
+	
+							HealthBarOutline.Size = Vector2.new(2, HeadPosition.Y - LegPosition.Y)
+							HealthBarOutline.Position = BoxOutline.Position - Vector2.new(6,0)
+							HealthBarOutline.Visible = true
+	
+							HealthBar.Size = Vector2.new(2, (HeadPosition.Y - LegPosition.Y) / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / math.clamp(game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value, 0, game:GetService("Players")[v.Character.Name].NRPBS:WaitForChild("MaxHealth").Value)))
+							HealthBar.Position = Vector2.new(Box.Position.X - 6, Box.Position.Y + (1/HealthBar.Size.Y))
+							HealthBar.Color = Color3.fromRGB(0,255,0 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 255 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 0)                    
+							HealthBar.Visible = true
+	
+							if v.TeamColor == lplr.TeamColor then
+								--- Our Team
+								BoxOutline.Visible = false
+								Box.Visible = false
+								HealthBarOutline.Visible = false
+								HealthBar.Visible = false
+							else
+								---Enemy Team
+								BoxOutline.Visible = true
+								Box.Visible = true
+								HealthBarOutline.Visible = true
+								HealthBar.Visible = true
+							end
+	
+						else
+							BoxOutline.Visible = false
+							Box.Visible = false
+							HealthBarOutline.Visible = false
+							HealthBar.Visible = false
+						end
+					else
+						BoxOutline.Visible = false
+						Box.Visible = false
+						HealthBarOutline.Visible = false
+						HealthBar.Visible = false
+					end
+				end)
+			end
+			coroutine.wrap(boxesp)()
+		end)
+	
+		--- Start name sep
+	
+		local esp_settings = { ---- table for esp settings 
+			textsize = 20,
+			colour = 255,255,255
+		}
+	
+		local gui = Instance.new("BillboardGui")
+		local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
+	
+	
+	
+		gui.Name = "Cracked esp"; ---- properties of the esp
+		gui.ResetOnSpawn = false
+		gui.AlwaysOnTop = true;
+		gui.LightInfluence = 0;
+		gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+		esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+		esp.Text = ""
+		esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+		esp.BorderSizePixel = 4;
+		esp.BorderColor3 = Color3.new(esp_settings.colour)
+		esp.BorderSizePixel = 0
+		esp.Font = "Ubuntu"
+		esp.TextSize = esp_settings.textsize
+		esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+	
+		game:GetService("RunService").RenderStepped:Connect(function() --- srtersdgffg
+			for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+				if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
+					esp.Text = "{"..v.Name.."}"
+					gui:Clone().Parent = v.Character.Head
+				end
+			end
+		end)
 	end)
 end
-coroutine.wrap(CBXRA_fake_script)()
-local function KUPKXO_fake_script() -- NoobPack.LocalScript 
-	local script = Instance.new('LocalScript', NoobPack)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/EquipNoob.lua'))()
-	end)
-end
-coroutine.wrap(KUPKXO_fake_script)()
-local function BSKB_fake_script() -- Chams.LocalScript 
+coroutine.wrap(EPGVIWJ_fake_script)()
+local function DRURZA_fake_script() -- Chams.LocalScript 
 	local script = Instance.new('LocalScript', Chams)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1310,31 +1295,58 @@ local function BSKB_fake_script() -- Chams.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(BSKB_fake_script)()
-local function CTVI_fake_script() -- Transparency.LocalScript 
-	local script = Instance.new('LocalScript', Transparency)
+coroutine.wrap(DRURZA_fake_script)()
+local function SIWI_fake_script() -- FOV100.LocalScript 
+	local script = Instance.new('LocalScript', FOV100)
 
 	script.Parent.MouseButton1Click:Connect(function()
-			game.Players.LocalPlayer.Character["Left Leg"].Transparency = 0.5
-			game.Players.LocalPlayer.Character["Right Leg"].Transparency = 0.5
-			game.Players.LocalPlayer.Character["Left Arm"].Transparency = 0.5
-			game.Players.LocalPlayer.Character["Right Arm"].Transparency = 0.5
-			game.Players.LocalPlayer.Character.Head.Transparency = 0.5
-			game.Players.LocalPlayer.Character.Torso.Transparency = 0.5
+		workspace.CurrentCamera.FieldOfView = 100
 	end)
 end
-coroutine.wrap(CTVI_fake_script)()
-local function UVIVV_fake_script() -- Headless.LocalScript 
-	local script = Instance.new('LocalScript', Headless)
+coroutine.wrap(SIWI_fake_script)()
+local function WCJRIHW_fake_script() -- FOV120.LocalScript 
+	local script = Instance.new('LocalScript', FOV120)
 
 	script.Parent.MouseButton1Click:Connect(function()
-			game.Players.LocalPlayer.Character.Head.Transparency = 1
-			game.Players.LocalPlayer.Character.Head.face:Destroy()
+		workspace.CurrentCamera.FieldOfView = 120
 	end)
 end
-coroutine.wrap(UVIVV_fake_script)()
-local function EAEA_fake_script() -- TransparentWorld.LocalScript 
-	local script = Instance.new('LocalScript', TransparentWorld)
+coroutine.wrap(WCJRIHW_fake_script)()
+local function MROJTPO_fake_script() -- NightMode.LocalScript 
+	local script = Instance.new('LocalScript', NightMode)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			wait(1)
+			game.Lighting.TimeOfDay = 06
+			game.Lighting.Brightness = 0.5
+		end
+	end)
+end
+coroutine.wrap(MROJTPO_fake_script)()
+local function PNRDCK_fake_script() -- NoobPack.LocalScript 
+	local script = Instance.new('LocalScript', NoobPack)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/EquipNoob.lua'))()
+	end)
+end
+coroutine.wrap(PNRDCK_fake_script)()
+local function EHNP_fake_script() -- Transparentbody.LocalScript 
+	local script = Instance.new('LocalScript', Transparentbody)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character["Left Leg"].Transparency = 0.5
+		game.Players.LocalPlayer.Character["Right Leg"].Transparency = 0.5
+		game.Players.LocalPlayer.Character["Left Arm"].Transparency = 0.5
+		game.Players.LocalPlayer.Character["Right Arm"].Transparency = 0.5
+		game.Players.LocalPlayer.Character.Head.Transparency = 0.5
+		game.Players.LocalPlayer.Character.Torso.Transparency = 0.5
+	end)
+end
+coroutine.wrap(EHNP_fake_script)()
+local function FEHG_fake_script() -- XRay.LocalScript 
+	local script = Instance.new('LocalScript', XRay)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		for _,i in pairs(workspace:GetDescendants()) do
@@ -1344,24 +1356,33 @@ local function EAEA_fake_script() -- TransparentWorld.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EAEA_fake_script)()
-local function VHHIWZ_fake_script() -- NoShadows.LocalScript 
-	local script = Instance.new('LocalScript', NoShadows)
+coroutine.wrap(FEHG_fake_script)()
+local function YPHS_fake_script() -- Headless.LocalScript 
+	local script = Instance.new('LocalScript', Headless)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Head.Transparency = 1
+		game.Players.LocalPlayer.Character.Head.face:Destroy()
+	end)
+end
+coroutine.wrap(YPHS_fake_script)()
+local function BYIOFUW_fake_script() -- Fpsboost.LocalScript 
+	local script = Instance.new('LocalScript', Fpsboost)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/NoLag.lua'))()
+	end)
+end
+coroutine.wrap(BYIOFUW_fake_script)()
+local function QOSTJOX_fake_script() -- noShadows.LocalScript 
+	local script = Instance.new('LocalScript', noShadows)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Lighting.GlobalShadows = false
 	end)
 end
-coroutine.wrap(VHHIWZ_fake_script)()
-local function PNTEDVZ_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/visuals2tab'))()
-	end)
-end
-coroutine.wrap(PNTEDVZ_fake_script)()
-local function NIQWYB_fake_script() -- BetterGraphics.LocalScript 
+coroutine.wrap(QOSTJOX_fake_script)()
+local function ACSM_fake_script() -- BetterGraphics.LocalScript 
 	local script = Instance.new('LocalScript', BetterGraphics)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1456,16 +1477,24 @@ local function NIQWYB_fake_script() -- BetterGraphics.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NIQWYB_fake_script)()
-local function YMRE_fake_script() -- OldGui.LocalScript 
+coroutine.wrap(ACSM_fake_script)()
+local function WNCI_fake_script() -- NextPageVisualTab.LocalScript 
+	local script = Instance.new('LocalScript', NextPageVisualTab)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/visuals2tab'))()
+	end)
+end
+coroutine.wrap(WNCI_fake_script)()
+local function JEXCFDQ_fake_script() -- OldGui.LocalScript 
 	local script = Instance.new('LocalScript', OldGui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua'))()
 	end)
 end
-coroutine.wrap(YMRE_fake_script)()
-local function OXNNC_fake_script() -- Airstuck.LocalScript 
+coroutine.wrap(JEXCFDQ_fake_script)()
+local function BAVAS_fake_script() -- Airstuck.LocalScript 
 	local script = Instance.new('LocalScript', Airstuck)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1501,24 +1530,24 @@ local function OXNNC_fake_script() -- Airstuck.LocalScript
 	
 	
 end
-coroutine.wrap(OXNNC_fake_script)()
-local function UYIHN_fake_script() -- ChatSpam.LocalScript 
+coroutine.wrap(BAVAS_fake_script)()
+local function UHEGYJI_fake_script() -- ChatSpam.LocalScript 
 	local script = Instance.new('LocalScript', ChatSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/ChatSpam.lua'))()
 	end)
 end
-coroutine.wrap(UYIHN_fake_script)()
-local function YELYI_fake_script() -- MousePosition.LocalScript 
+coroutine.wrap(UHEGYJI_fake_script)()
+local function YGGKM_fake_script() -- MousePosition.LocalScript 
 	local script = Instance.new('LocalScript', MousePosition)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/mousePosPrint.lua'))()
 	end)
 end
-coroutine.wrap(YELYI_fake_script)()
-local function MKAJH_fake_script() -- Antiban.LocalScript 
+coroutine.wrap(YGGKM_fake_script)()
+local function WEGWBVM_fake_script() -- Antiban.LocalScript 
 	local script = Instance.new('LocalScript', Antiban)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1526,8 +1555,8 @@ local function MKAJH_fake_script() -- Antiban.LocalScript
 		game.Players.LocalPlayer.PlayerGui.GameUI.Menu.MainMenuUI.Banned:Destroy()
 	end)
 end
-coroutine.wrap(MKAJH_fake_script)()
-local function BLLEZXI_fake_script() -- MapVoteSpam.LocalScript 
+coroutine.wrap(WEGWBVM_fake_script)()
+local function AHSRD_fake_script() -- MapVoteSpam.LocalScript 
 	local script = Instance.new('LocalScript', MapVoteSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1588,8 +1617,8 @@ local function BLLEZXI_fake_script() -- MapVoteSpam.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BLLEZXI_fake_script)()
-local function UTHCSNT_fake_script() -- SpeedBoost.LocalScript 
+coroutine.wrap(AHSRD_fake_script)()
+local function BQUOJA_fake_script() -- SpeedBoost.LocalScript 
 	local script = Instance.new('LocalScript', SpeedBoost)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1599,8 +1628,8 @@ local function UTHCSNT_fake_script() -- SpeedBoost.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UTHCSNT_fake_script)()
-local function MFQJ_fake_script() -- Bhop.LocalScript 
+coroutine.wrap(BQUOJA_fake_script)()
+local function ARUE_fake_script() -- Bhop.LocalScript 
 	local script = Instance.new('LocalScript', Bhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1610,8 +1639,8 @@ local function MFQJ_fake_script() -- Bhop.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MFQJ_fake_script)()
-local function PVEYJ_fake_script() -- Miscellaneous.LocalScript 
+coroutine.wrap(ARUE_fake_script)()
+local function SCDHJLX_fake_script() -- Miscellaneous.LocalScript 
 	local script = Instance.new('LocalScript', Miscellaneous)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1622,8 +1651,8 @@ local function PVEYJ_fake_script() -- Miscellaneous.LocalScript
 		script.Parent.Parent.SettingsTab.Visible = false
 	end)
 end
-coroutine.wrap(PVEYJ_fake_script)()
-local function OWBWWR_fake_script() -- RainbowFrame.LocalScript 
+coroutine.wrap(SCDHJLX_fake_script)()
+local function PNXG_fake_script() -- RainbowFrame.LocalScript 
 	local script = Instance.new('LocalScript', RainbowFrame)
 
 	local t = 10;
@@ -1638,8 +1667,8 @@ local function OWBWWR_fake_script() -- RainbowFrame.LocalScript
 	
 	end
 end
-coroutine.wrap(OWBWWR_fake_script)()
-local function QKJZXO_fake_script() -- Close.LocalScript 
+coroutine.wrap(PNXG_fake_script)()
+local function XSLV_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1650,8 +1679,8 @@ local function QKJZXO_fake_script() -- Close.LocalScript
 	
 	
 end
-coroutine.wrap(QKJZXO_fake_script)()
-local function NXKGEMU_fake_script() -- Settings.LocalScript 
+coroutine.wrap(XSLV_fake_script)()
+local function NUXI_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1662,8 +1691,8 @@ local function NXKGEMU_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.SettingsTab.Visible = true
 	end)
 end
-coroutine.wrap(NXKGEMU_fake_script)()
-local function ROEH_fake_script() -- InviteDiscord.LocalScript 
+coroutine.wrap(NUXI_fake_script)()
+local function OSQSJ_fake_script() -- InviteDiscord.LocalScript 
 	local script = Instance.new('LocalScript', InviteDiscord)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1672,16 +1701,16 @@ local function ROEH_fake_script() -- InviteDiscord.LocalScript
 	end)
 	
 end
-coroutine.wrap(ROEH_fake_script)()
-local function YAYPWSU_fake_script() -- LoadMiscScripts.LocalScript 
+coroutine.wrap(OSQSJ_fake_script)()
+local function TTMQCHG_fake_script() -- LoadMiscScripts.LocalScript 
 	local script = Instance.new('LocalScript', LoadMiscScripts)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://pastebin.com/7GHT6T9N'))()
 	end)
 end
-coroutine.wrap(YAYPWSU_fake_script)()
-local function STYHSMF_fake_script() -- ShowFPS.LocalScript 
+coroutine.wrap(TTMQCHG_fake_script)()
+local function QZGWID_fake_script() -- ShowFPS.LocalScript 
 	local script = Instance.new('LocalScript', ShowFPS)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1689,14 +1718,14 @@ local function STYHSMF_fake_script() -- ShowFPS.LocalScript
 	end)
 	
 end
-coroutine.wrap(STYHSMF_fake_script)()
-local function XJOAXU_fake_script() -- LocalUsername.LocalScript 
+coroutine.wrap(QZGWID_fake_script)()
+local function GMDFDMP_fake_script() -- LocalUsername.LocalScript 
 	local script = Instance.new('LocalScript', LocalUsername)
 
 	script.Parent.Text = "User: "..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(XJOAXU_fake_script)()
-local function KJHGGRB_fake_script() -- ScreenGui.Keybind 
+coroutine.wrap(GMDFDMP_fake_script)()
+local function PNCPSYU_fake_script() -- ScreenGui.Keybind 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Frame = script.Parent.Frame
@@ -1719,8 +1748,8 @@ local function KJHGGRB_fake_script() -- ScreenGui.Keybind
 		end
 	end)
 end
-coroutine.wrap(KJHGGRB_fake_script)()
-local function BMPX_fake_script() -- Open.LocalScript 
+coroutine.wrap(PNCPSYU_fake_script)()
+local function VTAZMDH_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local frame = script.Parent.Parent.Frame  -- change “Test” to the name of the frane
@@ -1733,4 +1762,4 @@ local function BMPX_fake_script() -- Open.LocalScript
 	end)
 	
 end
-coroutine.wrap(BMPX_fake_script)()
+coroutine.wrap(VTAZMDH_fake_script)()
