@@ -1,9 +1,10 @@
+-- 1.1 fps counter
 -- made by cOpEtriNe
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local FPSCounter = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
+local FPSCounter = Instance.new("TextLabel")
 
 --Properties:
 
@@ -18,10 +19,14 @@ Frame.Active = true
 Frame.Visible = true
 Frame.Draggable = true
 
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(117, 255, 179)), ColorSequenceKeypoint.new(0.69, Color3.fromRGB(117, 255, 179)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(117, 255, 179))}
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.11, 0.64), NumberSequenceKeypoint.new(0.45, 0.64), NumberSequenceKeypoint.new(0.89, 0.67), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient.Parent = Frame
+
 FPSCounter.Name = "FPSCounter"
-FPSCounter.Parent = ScreenGui
+FPSCounter.Parent = Frame
 FPSCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FPSCounter.Position = UDim2.new(0.729179621, 0, 0.847583711, 0)
+FPSCounter.Position = UDim2.new(-0.00266396999, 0, 0.185083687, 0)
 FPSCounter.Size = UDim2.new(0, 179, 0, 50)
 FPSCounter.Font = Enum.Font.SourceSans
 FPSCounter.Text = "FPS: "
@@ -30,13 +35,9 @@ FPSCounter.TextScaled = true
 FPSCounter.TextSize = 14.000
 FPSCounter.TextWrapped = true
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(117, 255, 179)), ColorSequenceKeypoint.new(0.69, Color3.fromRGB(117, 255, 179)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(117, 255, 179))}
-UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.11, 0.64), NumberSequenceKeypoint.new(0.45, 0.64), NumberSequenceKeypoint.new(0.89, 0.67), NumberSequenceKeypoint.new(1.00, 0.00)}
-UIGradient.Parent = FPSCounter
-
 -- Scripts:
 
-local function NYFQ_fake_script() -- FPSCounter.LocalScript 
+local function EDMW_fake_script() -- FPSCounter.LocalScript 
 	local script = Instance.new('LocalScript', FPSCounter)
 
 	while true do
@@ -44,4 +45,4 @@ local function NYFQ_fake_script() -- FPSCounter.LocalScript
 		script.Parent.Text = "FPS: "..game.Workspace:GetRealPhysicsFPS()
 	end
 end
-coroutine.wrap(NYFQ_fake_script)()
+coroutine.wrap(EDMW_fake_script)()
