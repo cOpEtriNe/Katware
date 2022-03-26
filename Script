@@ -1,4 +1,5 @@
 -- KATWare 2.5 fix
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcomeTitle = Instance.new("TextLabel")
