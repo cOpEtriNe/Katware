@@ -26,18 +26,10 @@ LegacyUI (Old not new)
 Nothing Yet.
 
 NewUI
-- new UI
-- Added Graphics Enhancer
-- Added settings tab
-- bug fixes
-
+- Added FPS Counter
 
 you cant haha, but, there are new features with the developer builds though.
 
 ## Things to be added next update
 
-2.4 will have,
-
-* cool things (done)
-
-
+- really cool new things
