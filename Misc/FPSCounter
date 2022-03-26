@@ -1,10 +1,11 @@
--- 1.1 fps counter
+-- 1.2 fps counter
 -- made by cOpEtriNe
+
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
 local FPSCounter = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
 
 --Properties:
 
@@ -19,10 +20,6 @@ Frame.Active = true
 Frame.Visible = true
 Frame.Draggable = true
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(117, 255, 179)), ColorSequenceKeypoint.new(0.69, Color3.fromRGB(117, 255, 179)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(117, 255, 179))}
-UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.11, 0.64), NumberSequenceKeypoint.new(0.45, 0.64), NumberSequenceKeypoint.new(0.89, 0.67), NumberSequenceKeypoint.new(1.00, 0.00)}
-UIGradient.Parent = Frame
-
 FPSCounter.Name = "FPSCounter"
 FPSCounter.Parent = Frame
 FPSCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -35,9 +32,13 @@ FPSCounter.TextScaled = true
 FPSCounter.TextSize = 14.000
 FPSCounter.TextWrapped = true
 
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(117, 255, 179)), ColorSequenceKeypoint.new(0.69, Color3.fromRGB(117, 255, 179)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(117, 255, 179))}
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.11, 0.64), NumberSequenceKeypoint.new(0.45, 0.64), NumberSequenceKeypoint.new(0.89, 0.67), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient.Parent = FPSCounter
+
 -- Scripts:
 
-local function EDMW_fake_script() -- FPSCounter.LocalScript 
+local function QIBPLM_fake_script() -- FPSCounter.LocalScript 
 	local script = Instance.new('LocalScript', FPSCounter)
 
 	while true do
@@ -45,4 +46,4 @@ local function EDMW_fake_script() -- FPSCounter.LocalScript
 		script.Parent.Text = "FPS: "..game.Workspace:GetRealPhysicsFPS()
 	end
 end
-coroutine.wrap(EDMW_fake_script)()
+coroutine.wrap(QIBPLM_fake_script)()
