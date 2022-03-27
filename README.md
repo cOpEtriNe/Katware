@@ -28,8 +28,6 @@ Nothing Yet.
 NewUI
 - Added FPS Counter
 
-you cant haha, but, there are new features with the developer builds though.
-
 ## Things to be added next update
 
 - really cool new things
