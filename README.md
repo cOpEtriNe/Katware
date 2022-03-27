@@ -20,11 +20,6 @@ If you want the old ui, copy the code and put into ur hax
 https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua
 
 ## Changelog
-Changelog for LegacyUI(old ui) & NewUI(new ui)
-
-LegacyUI (Old not new)
-Nothing Yet.
-
 NewUI
 - Added FPS Counter
 
