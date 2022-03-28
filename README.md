@@ -21,7 +21,9 @@ https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua
 
 ## Changelog
 NewUI
-- Added FPS Counter
+- new UI Design (Again)
+- Added No Barriers
+- Added more things
 
 ## Things to be added next update
 
