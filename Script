@@ -1,11 +1,9 @@
--- KATWare 2.7
+-- KATWare V2.8
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcomeTitle = Instance.new("TextLabel")
-local Aimbot = Instance.new("TextButton")
-local Visuals = Instance.new("TextButton")
-local Credits = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
 local AimbotTab = Instance.new("Frame")
 local SilentAimButton = Instance.new("TextButton")
 local HitboxExtended = Instance.new("TextButton")
@@ -37,28 +35,37 @@ local AimbotCredit = Instance.new("TextLabel")
 local AimbotCredit_2 = Instance.new("TextLabel")
 local MiscTab = Instance.new("Frame")
 local TitleMisc = Instance.new("TextLabel")
-local OldGui = Instance.new("TextButton")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local Airstuck = Instance.new("TextButton")
-local ChatSpam = Instance.new("TextButton")
-local MousePosition = Instance.new("TextButton")
 local Antiban = Instance.new("TextButton")
-local MapVoteSpam = Instance.new("TextButton")
-local SpeedBoost = Instance.new("TextButton")
 local Bhop = Instance.new("TextButton")
-local Miscellaneous = Instance.new("TextButton")
+local ChatSpam = Instance.new("TextButton")
+local MapVoteSpam = Instance.new("TextButton")
+local Removals = Instance.new("TextButton")
+local RemoveBarrier = Instance.new("TextButton")
+local SpeedBoost = Instance.new("TextButton")
 local RainbowFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
 local Close = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local Settings = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
 local SettingsTab = Instance.new("Frame")
 local TitleSettings = Instance.new("TextLabel")
 local InviteDiscord = Instance.new("TextButton")
-local LoadMiscScripts = Instance.new("TextButton")
 local ShowFPS = Instance.new("TextButton")
 local AntiAfk = Instance.new("TextButton")
+local OldGui = Instance.new("TextButton")
+local MousePosition = Instance.new("TextButton")
+local MousePosition_2 = Instance.new("TextButton")
 local LocalUsername = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local ScrollingFrame_3 = Instance.new("ScrollingFrame")
+local Aimbot = Instance.new("TextButton")
+local Visuals = Instance.new("TextButton")
+local Miscellaneous = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 
 --Properties:
 
@@ -67,8 +74,8 @@ ScreenGui.Parent = game.CoreGui
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 Frame.BorderSizePixel = 2
-Frame.Position = UDim2.new(0.182179064, 0, 0.443513125, 0)
-Frame.Size = UDim2.new(0, 580, 0, 395)
+Frame.Position = UDim2.new(0.101981655, 0, 0.400568336, 0)
+Frame.Size = UDim2.new(0, 671, 0, 422)
 Frame.Draggable = true
 Frame.Visible = true
 Frame.Active = true
@@ -79,61 +86,29 @@ WelcomeTitle.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 WelcomeTitle.BackgroundTransparency = 1.000
 WelcomeTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
 WelcomeTitle.BorderSizePixel = 0
+WelcomeTitle.Position = UDim2.new(0.0655737668, 0, 0, 0)
 WelcomeTitle.Size = UDim2.new(0, 580, 0, 43)
 WelcomeTitle.Font = Enum.Font.SourceSans
-WelcomeTitle.Text = "KatWare V2.7"
-WelcomeTitle.TextColor3 = Color3.fromRGB(255, 15, 231)
+WelcomeTitle.Text = "KatWare V2.8"
+WelcomeTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 WelcomeTitle.TextScaled = true
 WelcomeTitle.TextSize = 14.000
 WelcomeTitle.TextWrapped = true
 
-Aimbot.Name = "Aimbot"
-Aimbot.Parent = Frame
-Aimbot.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Aimbot.Position = UDim2.new(0.00172413792, 0, 0.106939621, 0)
-Aimbot.Size = UDim2.new(0, 187, 0, 50)
-Aimbot.Font = Enum.Font.SourceSans
-Aimbot.Text = "Aimbot"
-Aimbot.TextColor3 = Color3.fromRGB(255, 15, 231)
-Aimbot.TextScaled = true
-Aimbot.TextSize = 14.000
-Aimbot.TextWrapped = true
-
-Visuals.Name = "Visuals"
-Visuals.Parent = Frame
-Visuals.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Visuals.Position = UDim2.new(0.00172413792, 0, 0.231600687, 0)
-Visuals.Size = UDim2.new(0, 187, 0, 50)
-Visuals.Font = Enum.Font.SourceSans
-Visuals.Text = "Visuals"
-Visuals.TextColor3 = Color3.fromRGB(255, 15, 231)
-Visuals.TextScaled = true
-Visuals.TextSize = 14.000
-Visuals.TextWrapped = true
-
-Credits.Name = "Credits"
-Credits.Parent = Frame
-Credits.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Credits.Position = UDim2.new(0, 0, 0.873327971, 0)
-Credits.Size = UDim2.new(0, 188, 0, 50)
-Credits.Font = Enum.Font.SourceSans
-Credits.Text = "Credits"
-Credits.TextColor3 = Color3.fromRGB(255, 15, 231)
-Credits.TextScaled = true
-Credits.TextSize = 14.000
-Credits.TextWrapped = true
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = WelcomeTitle
 
 AimbotTab.Name = "AimbotTab"
 AimbotTab.Parent = Frame
 AimbotTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-AimbotTab.Position = UDim2.new(0.324137926, 0, 0.180815175, 0)
-AimbotTab.Size = UDim2.new(0, 391, 0, 323)
+AimbotTab.Position = UDim2.new(0.00344825885, 0, 0.296520948, 0)
+AimbotTab.Size = UDim2.new(0, 668, 0, 295)
 AimbotTab.Visible = false
 
 SilentAimButton.Name = "SilentAimButton"
 SilentAimButton.Parent = AimbotTab
 SilentAimButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-SilentAimButton.Position = UDim2.new(0.0530973449, 0, 0.0734231919, 0)
+SilentAimButton.Position = UDim2.new(0.051364243, 0, 0.0734231919, 0)
 SilentAimButton.Size = UDim2.new(0, 135, 0, 32)
 SilentAimButton.Font = Enum.Font.SourceSans
 SilentAimButton.Text = "Silent Aim"
@@ -145,7 +120,7 @@ SilentAimButton.TextWrapped = true
 HitboxExtended.Name = "HitboxExtended"
 HitboxExtended.Parent = AimbotTab
 HitboxExtended.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-HitboxExtended.Position = UDim2.new(0.482908666, 0, 0.0734231919, 0)
+HitboxExtended.Position = UDim2.new(0.687414706, 0, 0.0734231919, 0)
 HitboxExtended.Size = UDim2.new(0, 135, 0, 32)
 HitboxExtended.Font = Enum.Font.SourceSans
 HitboxExtended.Text = "Extended Hitbox"
@@ -157,7 +132,7 @@ HitboxExtended.TextWrapped = true
 HitboxExtended2.Name = "HitboxExtended2"
 HitboxExtended2.Parent = AimbotTab
 HitboxExtended2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-HitboxExtended2.Position = UDim2.new(0.05309733, 0, 0.240702257, 0)
+HitboxExtended2.Position = UDim2.new(0.0513642244, 0, 0.225720972, 0)
 HitboxExtended2.Size = UDim2.new(0, 135, 0, 32)
 HitboxExtended2.Font = Enum.Font.SourceSans
 HitboxExtended2.Text = "Extended Hitbox 2"
@@ -169,8 +144,8 @@ HitboxExtended2.TextWrapped = true
 TitleAimbot.Name = "TitleAimbot"
 TitleAimbot.Parent = AimbotTab
 TitleAimbot.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TitleAimbot.Position = UDim2.new(0, 0, -0.0956422016, 0)
-TitleAimbot.Size = UDim2.new(0, 392, 0, 30)
+TitleAimbot.Position = UDim2.new(-0.00103474164, 0, -0.119595639, 0)
+TitleAimbot.Size = UDim2.new(0, 669, 0, 35)
 TitleAimbot.Font = Enum.Font.SourceSans
 TitleAimbot.Text = "Aimbot Tab"
 TitleAimbot.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -181,7 +156,7 @@ TitleAimbot.TextWrapped = true
 KnifeBot.Name = "KnifeBot"
 KnifeBot.Parent = AimbotTab
 KnifeBot.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-KnifeBot.Position = UDim2.new(0.482745588, 0, 0.240702257, 0)
+KnifeBot.Position = UDim2.new(0.687251687, 0, 0.225720972, 0)
 KnifeBot.Size = UDim2.new(0, 135, 0, 32)
 KnifeBot.Font = Enum.Font.SourceSans
 KnifeBot.Text = "KnifeBot"
@@ -193,15 +168,15 @@ KnifeBot.TextWrapped = true
 VisualsTab.Name = "VisualsTab"
 VisualsTab.Parent = Frame
 VisualsTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-VisualsTab.Position = UDim2.new(0.324103296, 0, 0.199057281, 0)
-VisualsTab.Size = UDim2.new(0, 392, 0, 315)
+VisualsTab.Position = UDim2.new(0.00344825885, 0, 0.308061928, 0)
+VisualsTab.Size = UDim2.new(0, 668, 0, 291)
 VisualsTab.Visible = false
 
 TitleVisual.Name = "TitleVisual"
 TitleVisual.Parent = VisualsTab
 TitleVisual.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TitleVisual.Position = UDim2.new(5.12259357e-05, 0, -0.116049342, 0)
-TitleVisual.Size = UDim2.new(0, 391, 0, 38)
+TitleVisual.Position = UDim2.new(-0.00346374512, 0, -0.133231461, 0)
+TitleVisual.Size = UDim2.new(0, 671, 0, 38)
 TitleVisual.Font = Enum.Font.SourceSans
 TitleVisual.Text = "Visuals Tab"
 TitleVisual.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -212,8 +187,8 @@ TitleVisual.TextWrapped = true
 ScrollingFrame.Parent = VisualsTab
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-ScrollingFrame.Position = UDim2.new(0.00510215759, 0, 0.00458557904, 0)
-ScrollingFrame.Size = UDim2.new(0, 390, 0, 314)
+ScrollingFrame.Position = UDim2.new(-4.56849989e-08, 0, 0, 0)
+ScrollingFrame.Size = UDim2.new(0, 668, 0, 291)
 
 ESP.Name = "ESP"
 ESP.Parent = ScrollingFrame
@@ -222,7 +197,7 @@ ESP.Position = UDim2.new(0.0586666688, 0, 0.0463965274, 0)
 ESP.Size = UDim2.new(0, 135, 0, 32)
 ESP.Font = Enum.Font.SourceSans
 ESP.Text = "ESP"
-ESP.TextColor3 = Color3.fromRGB(255, 15, 231)
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
 ESP.TextScaled = true
 ESP.TextSize = 14.000
 ESP.TextWrapped = true
@@ -230,11 +205,11 @@ ESP.TextWrapped = true
 Chams.Name = "Chams"
 Chams.Parent = ScrollingFrame
 Chams.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Chams.Position = UDim2.new(0.517641008, 0, 0.0463965274, 0)
+Chams.Position = UDim2.new(0.719736814, 0, 0.0463965274, 0)
 Chams.Size = UDim2.new(0, 135, 0, 32)
 Chams.Font = Enum.Font.SourceSans
 Chams.Text = "Chams"
-Chams.TextColor3 = Color3.fromRGB(255, 15, 231)
+Chams.TextColor3 = Color3.fromRGB(255, 255, 255)
 Chams.TextScaled = true
 Chams.TextSize = 14.000
 Chams.TextWrapped = true
@@ -246,7 +221,7 @@ FOV100.Position = UDim2.new(0.0586666688, 0, 0.124174312, 0)
 FOV100.Size = UDim2.new(0, 135, 0, 32)
 FOV100.Font = Enum.Font.SourceSans
 FOV100.Text = "FOV 100"
-FOV100.TextColor3 = Color3.fromRGB(255, 15, 231)
+FOV100.TextColor3 = Color3.fromRGB(255, 255, 255)
 FOV100.TextScaled = true
 FOV100.TextSize = 14.000
 FOV100.TextWrapped = true
@@ -254,11 +229,11 @@ FOV100.TextWrapped = true
 FOV120.Name = "FOV120"
 FOV120.Parent = ScrollingFrame
 FOV120.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-FOV120.Position = UDim2.new(0.517641068, 0, 0.124174312, 0)
+FOV120.Position = UDim2.new(0.718239903, 0, 0.124174312, 0)
 FOV120.Size = UDim2.new(0, 135, 0, 32)
 FOV120.Font = Enum.Font.SourceSans
 FOV120.Text = "FOV 120"
-FOV120.TextColor3 = Color3.fromRGB(255, 15, 231)
+FOV120.TextColor3 = Color3.fromRGB(255, 255, 255)
 FOV120.TextScaled = true
 FOV120.TextSize = 14.000
 FOV120.TextWrapped = true
@@ -270,7 +245,7 @@ NightMode.Position = UDim2.new(0.0586666688, 0, 0.200364798, 0)
 NightMode.Size = UDim2.new(0, 135, 0, 32)
 NightMode.Font = Enum.Font.SourceSans
 NightMode.Text = "Night Mode"
-NightMode.TextColor3 = Color3.fromRGB(255, 15, 231)
+NightMode.TextColor3 = Color3.fromRGB(255, 255, 255)
 NightMode.TextScaled = true
 NightMode.TextSize = 14.000
 NightMode.TextWrapped = true
@@ -278,11 +253,11 @@ NightMode.TextWrapped = true
 NoobPack.Name = "NoobPack"
 NoobPack.Parent = ScrollingFrame
 NoobPack.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NoobPack.Position = UDim2.new(0.517641008, 0, 0.200364798, 0)
+NoobPack.Position = UDim2.new(0.719736814, 0, 0.200364798, 0)
 NoobPack.Size = UDim2.new(0, 135, 0, 32)
 NoobPack.Font = Enum.Font.SourceSans
 NoobPack.Text = "Noob Pack"
-NoobPack.TextColor3 = Color3.fromRGB(255, 15, 231)
+NoobPack.TextColor3 = Color3.fromRGB(255, 255, 255)
 NoobPack.TextScaled = true
 NoobPack.TextSize = 14.000
 NoobPack.TextWrapped = true
@@ -290,11 +265,11 @@ NoobPack.TextWrapped = true
 Transparentbody.Name = "Transparentbody"
 Transparentbody.Parent = ScrollingFrame
 Transparentbody.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Transparentbody.Position = UDim2.new(0.517641008, 0, 0.27655527, 0)
+Transparentbody.Position = UDim2.new(0.719736814, 0, 0.27655527, 0)
 Transparentbody.Size = UDim2.new(0, 135, 0, 32)
 Transparentbody.Font = Enum.Font.SourceSans
 Transparentbody.Text = "Transparent body"
-Transparentbody.TextColor3 = Color3.fromRGB(255, 15, 231)
+Transparentbody.TextColor3 = Color3.fromRGB(255, 255, 255)
 Transparentbody.TextScaled = true
 Transparentbody.TextSize = 14.000
 Transparentbody.TextWrapped = true
@@ -306,7 +281,7 @@ XRay.Position = UDim2.new(0.0586666465, 0, 0.27655527, 0)
 XRay.Size = UDim2.new(0, 135, 0, 32)
 XRay.Font = Enum.Font.SourceSans
 XRay.Text = "Xray"
-XRay.TextColor3 = Color3.fromRGB(255, 15, 231)
+XRay.TextColor3 = Color3.fromRGB(255, 255, 255)
 XRay.TextScaled = true
 XRay.TextSize = 14.000
 XRay.TextWrapped = true
@@ -314,11 +289,11 @@ XRay.TextWrapped = true
 Headless.Name = "Headless"
 Headless.Parent = ScrollingFrame
 Headless.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Headless.Position = UDim2.new(0.517641008, 0, 0.360682249, 0)
+Headless.Position = UDim2.new(0.719736814, 0, 0.360682249, 0)
 Headless.Size = UDim2.new(0, 135, 0, 32)
 Headless.Font = Enum.Font.SourceSans
 Headless.Text = "Headless"
-Headless.TextColor3 = Color3.fromRGB(255, 15, 231)
+Headless.TextColor3 = Color3.fromRGB(255, 255, 255)
 Headless.TextScaled = true
 Headless.TextSize = 14.000
 Headless.TextWrapped = true
@@ -330,7 +305,7 @@ Fpsboost.Position = UDim2.new(0.0586666465, 0, 0.360682249, 0)
 Fpsboost.Size = UDim2.new(0, 135, 0, 32)
 Fpsboost.Font = Enum.Font.SourceSans
 Fpsboost.Text = "FPS Boost"
-Fpsboost.TextColor3 = Color3.fromRGB(255, 15, 231)
+Fpsboost.TextColor3 = Color3.fromRGB(255, 255, 255)
 Fpsboost.TextScaled = true
 Fpsboost.TextSize = 14.000
 Fpsboost.TextWrapped = true
@@ -338,11 +313,11 @@ Fpsboost.TextWrapped = true
 noShadows.Name = "noShadows"
 noShadows.Parent = ScrollingFrame
 noShadows.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-noShadows.Position = UDim2.new(0.517641008, 0, 0.44639653, 0)
+noShadows.Position = UDim2.new(0.718239784, 0, 0.44639653, 0)
 noShadows.Size = UDim2.new(0, 135, 0, 32)
 noShadows.Font = Enum.Font.SourceSans
 noShadows.Text = "No Shadows"
-noShadows.TextColor3 = Color3.fromRGB(255, 15, 231)
+noShadows.TextColor3 = Color3.fromRGB(255, 255, 255)
 noShadows.TextScaled = true
 noShadows.TextSize = 14.000
 noShadows.TextWrapped = true
@@ -354,7 +329,7 @@ BetterGraphics.Position = UDim2.new(0.0586666465, 0, 0.447983831, 0)
 BetterGraphics.Size = UDim2.new(0, 135, 0, 32)
 BetterGraphics.Font = Enum.Font.SourceSans
 BetterGraphics.Text = "Graphics Enhancer"
-BetterGraphics.TextColor3 = Color3.fromRGB(255, 15, 231)
+BetterGraphics.TextColor3 = Color3.fromRGB(255, 255, 255)
 BetterGraphics.TextScaled = true
 BetterGraphics.TextSize = 14.000
 BetterGraphics.TextWrapped = true
@@ -362,11 +337,11 @@ BetterGraphics.TextWrapped = true
 NextPageVisualTab.Name = "NextPageVisualTab"
 NextPageVisualTab.Parent = ScrollingFrame
 NextPageVisualTab.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-NextPageVisualTab.Position = UDim2.new(0.666666687, 0, 0.921384335, 0)
+NextPageVisualTab.Position = UDim2.new(0.801397204, 0, 0.919666111, 0)
 NextPageVisualTab.Size = UDim2.new(0, 103, 0, 34)
 NextPageVisualTab.Font = Enum.Font.SourceSans
 NextPageVisualTab.Text = "Page 2"
-NextPageVisualTab.TextColor3 = Color3.fromRGB(255, 15, 231)
+NextPageVisualTab.TextColor3 = Color3.fromRGB(255, 255, 255)
 NextPageVisualTab.TextScaled = true
 NextPageVisualTab.TextSize = 14.000
 NextPageVisualTab.TextWrapped = true
@@ -375,15 +350,15 @@ CreditsTab.Name = "CreditsTab"
 CreditsTab.Parent = Frame
 CreditsTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 CreditsTab.BorderSizePixel = 0
-CreditsTab.Position = UDim2.new(0.324137926, 0, 0.190950722, 0)
-CreditsTab.Size = UDim2.new(0, 391, 0, 319)
+CreditsTab.Position = UDim2.new(0.000363254687, 0, 0.309938103, 0)
+CreditsTab.Size = UDim2.new(0, 670, 0, 291)
 CreditsTab.Visible = false
 
 TitleCredit.Name = "TitleCredit"
 TitleCredit.Parent = CreditsTab
 TitleCredit.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TitleCredit.Position = UDim2.new(-0.000688669621, 0, -0.100948036, 0)
-TitleCredit.Size = UDim2.new(0, 392, 0, 34)
+TitleCredit.Position = UDim2.new(-0.00163920387, 0, -0.118247092, 0)
+TitleCredit.Size = UDim2.new(0, 670, 0, 34)
 TitleCredit.Font = Enum.Font.SourceSans
 TitleCredit.Text = "Credits Tab"
 TitleCredit.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -395,8 +370,8 @@ CreditMaker.Name = "CreditMaker"
 CreditMaker.Parent = CreditsTab
 CreditMaker.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 CreditMaker.BorderSizePixel = 0
-CreditMaker.Position = UDim2.new(0, 0, 0.00466144038, 0)
-CreditMaker.Size = UDim2.new(0, 392, 0, 43)
+CreditMaker.Position = UDim2.new(0.00468400028, 0, 0.00466144783, 0)
+CreditMaker.Size = UDim2.new(0, 576, 0, 35)
 CreditMaker.Font = Enum.Font.SourceSans
 CreditMaker.Text = "Script made by cOpEtriNe"
 CreditMaker.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -408,7 +383,7 @@ ChamsCredit.Name = "ChamsCredit"
 ChamsCredit.Parent = CreditsTab
 ChamsCredit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ChamsCredit.BorderSizePixel = 0
-ChamsCredit.Position = UDim2.new(0, 0, 0.132756531, 0)
+ChamsCredit.Position = UDim2.new(0.00345423142, 0, 0.122447252, 0)
 ChamsCredit.Size = UDim2.new(0, 392, 0, 43)
 ChamsCredit.Font = Enum.Font.SourceSans
 ChamsCredit.Text = "Chams - 0x83 (Modified)"
@@ -421,7 +396,7 @@ EspCredit.Name = "EspCredit"
 EspCredit.Parent = CreditsTab
 EspCredit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 EspCredit.BorderSizePixel = 0
-EspCredit.Position = UDim2.new(0, 0, 0.266093373, 0)
+EspCredit.Position = UDim2.new(0.00345423818, 0, 0.26753363, 0)
 EspCredit.Size = UDim2.new(0, 392, 0, 43)
 EspCredit.Font = Enum.Font.SourceSans
 EspCredit.Text = "ESP - IRc7 (Modified)"
@@ -434,7 +409,7 @@ AimbotCredit.Name = "AimbotCredit"
 AimbotCredit.Parent = CreditsTab
 AimbotCredit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 AimbotCredit.BorderSizePixel = 0
-AimbotCredit.Position = UDim2.new(0, 0, 0.399429947, 0)
+AimbotCredit.Position = UDim2.new(0.00345423073, 0, 0.414375871, 0)
 AimbotCredit.Size = UDim2.new(0, 392, 0, 43)
 AimbotCredit.Font = Enum.Font.SourceSans
 AimbotCredit.Text = "Aimbot - Someone on pastebin"
@@ -447,7 +422,7 @@ AimbotCredit_2.Name = "AimbotCredit"
 AimbotCredit_2.Parent = CreditsTab
 AimbotCredit_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 AimbotCredit_2.BorderSizePixel = 0
-AimbotCredit_2.Position = UDim2.new(0, 0, 0.532766879, 0)
+AimbotCredit_2.Position = UDim2.new(0.00345423818, 0, 0.559462368, 0)
 AimbotCredit_2.Size = UDim2.new(0, 392, 0, 43)
 AimbotCredit_2.Font = Enum.Font.SourceSans
 AimbotCredit_2.Text = "Hitbox - Someone on V3rm, NoLag - AliveExploits"
@@ -459,14 +434,14 @@ AimbotCredit_2.TextWrapped = true
 MiscTab.Name = "MiscTab"
 MiscTab.Parent = Frame
 MiscTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-MiscTab.Position = UDim2.new(0.324103296, 0, 0.106329113, 0)
-MiscTab.Size = UDim2.new(0, 392, 0, 351)
+MiscTab.Position = UDim2.new(-0.00127350632, 0, 0.21059458, 0)
+MiscTab.Size = UDim2.new(0, 671, 0, 332)
 MiscTab.Visible = false
 
 TitleMisc.Name = "TitleMisc"
 TitleMisc.Parent = MiscTab
 TitleMisc.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TitleMisc.Size = UDim2.new(0, 392, 0, 36)
+TitleMisc.Size = UDim2.new(0, 671, 0, 36)
 TitleMisc.Font = Enum.Font.SourceSans
 TitleMisc.Text = "Miscellaneous Tab"
 TitleMisc.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -474,120 +449,117 @@ TitleMisc.TextScaled = true
 TitleMisc.TextSize = 14.000
 TitleMisc.TextWrapped = true
 
-OldGui.Name = "OldGui"
-OldGui.Parent = MiscTab
-OldGui.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-OldGui.Position = UDim2.new(0.0267722607, 0, 0.162682697, 0)
-OldGui.Size = UDim2.new(0, 135, 0, 32)
-OldGui.Font = Enum.Font.SourceSans
-OldGui.Text = "Old UI"
-OldGui.TextColor3 = Color3.fromRGB(255, 15, 231)
-OldGui.TextScaled = true
-OldGui.TextSize = 14.000
-OldGui.TextWrapped = true
+ScrollingFrame_2.Parent = MiscTab
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+ScrollingFrame_2.Position = UDim2.new(0.00127350632, 0, 0.106117524, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 662, 0, 296)
 
 Airstuck.Name = "Airstuck"
-Airstuck.Parent = MiscTab
+Airstuck.Parent = ScrollingFrame_2
 Airstuck.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Airstuck.Position = UDim2.new(0.423718721, 0, 0.162682697, 0)
+Airstuck.Position = UDim2.new(0.0758926272, 0, 0.0302040577, 0)
 Airstuck.Size = UDim2.new(0, 135, 0, 32)
 Airstuck.Font = Enum.Font.SourceSans
 Airstuck.Text = "Airstuck"
-Airstuck.TextColor3 = Color3.fromRGB(255, 15, 231)
+Airstuck.TextColor3 = Color3.fromRGB(255, 255, 255)
 Airstuck.TextScaled = true
 Airstuck.TextSize = 14.000
 Airstuck.TextWrapped = true
 
-ChatSpam.Name = "ChatSpam"
-ChatSpam.Parent = MiscTab
-ChatSpam.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-ChatSpam.Position = UDim2.new(0.0267722607, 0, 0.302950621, 0)
-ChatSpam.Size = UDim2.new(0, 135, 0, 32)
-ChatSpam.Font = Enum.Font.SourceSans
-ChatSpam.Text = "Chat Spam"
-ChatSpam.TextColor3 = Color3.fromRGB(255, 15, 231)
-ChatSpam.TextScaled = true
-ChatSpam.TextSize = 14.000
-ChatSpam.TextWrapped = true
-
-MousePosition.Name = "MousePosition"
-MousePosition.Parent = MiscTab
-MousePosition.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-MousePosition.Position = UDim2.new(0.42626974, 0, 0.302950621, 0)
-MousePosition.Size = UDim2.new(0, 135, 0, 32)
-MousePosition.Font = Enum.Font.SourceSans
-MousePosition.Text = "Print Mouse Pos"
-MousePosition.TextColor3 = Color3.fromRGB(255, 15, 231)
-MousePosition.TextScaled = true
-MousePosition.TextSize = 14.000
-MousePosition.TextWrapped = true
-
 Antiban.Name = "Antiban"
-Antiban.Parent = MiscTab
+Antiban.Parent = ScrollingFrame_2
 Antiban.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Antiban.Position = UDim2.new(0.0267722607, 0, 0.465313494, 0)
+Antiban.Position = UDim2.new(0.690609634, 0, 0.0294160247, 0)
 Antiban.Size = UDim2.new(0, 135, 0, 32)
 Antiban.Font = Enum.Font.SourceSans
 Antiban.Text = "Anti Ban"
-Antiban.TextColor3 = Color3.fromRGB(255, 15, 231)
+Antiban.TextColor3 = Color3.fromRGB(255, 255, 255)
 Antiban.TextScaled = true
 Antiban.TextSize = 14.000
 Antiban.TextWrapped = true
 
-MapVoteSpam.Name = "MapVoteSpam"
-MapVoteSpam.Parent = MiscTab
-MapVoteSpam.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-MapVoteSpam.Position = UDim2.new(0.423718721, 0, 0.465313494, 0)
-MapVoteSpam.Size = UDim2.new(0, 135, 0, 32)
-MapVoteSpam.Font = Enum.Font.SourceSans
-MapVoteSpam.Text = "Map Vote Spam"
-MapVoteSpam.TextColor3 = Color3.fromRGB(255, 15, 231)
-MapVoteSpam.TextScaled = true
-MapVoteSpam.TextSize = 14.000
-MapVoteSpam.TextWrapped = true
-
-SpeedBoost.Name = "SpeedBoost"
-SpeedBoost.Parent = MiscTab
-SpeedBoost.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-SpeedBoost.Position = UDim2.new(0.0267722607, 0, 0.616977453, 0)
-SpeedBoost.Size = UDim2.new(0, 135, 0, 32)
-SpeedBoost.Font = Enum.Font.SourceSans
-SpeedBoost.Text = "Speed Boost"
-SpeedBoost.TextColor3 = Color3.fromRGB(255, 15, 231)
-SpeedBoost.TextScaled = true
-SpeedBoost.TextSize = 14.000
-SpeedBoost.TextWrapped = true
-
 Bhop.Name = "Bhop"
-Bhop.Parent = MiscTab
+Bhop.Parent = ScrollingFrame_2
 Bhop.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Bhop.Position = UDim2.new(0.424731433, 0, 0.616977453, 0)
+Bhop.Position = UDim2.new(0.689591825, 0, 0.0901135281, 0)
 Bhop.Size = UDim2.new(0, 135, 0, 32)
 Bhop.Font = Enum.Font.SourceSans
 Bhop.Text = "BHop"
-Bhop.TextColor3 = Color3.fromRGB(255, 15, 231)
+Bhop.TextColor3 = Color3.fromRGB(255, 255, 255)
 Bhop.TextScaled = true
 Bhop.TextSize = 14.000
 Bhop.TextWrapped = true
 
-Miscellaneous.Name = "Miscellaneous"
-Miscellaneous.Parent = Frame
-Miscellaneous.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Miscellaneous.Position = UDim2.new(0.00344827585, 0, 0.35626173, 0)
-Miscellaneous.Size = UDim2.new(0, 186, 0, 50)
-Miscellaneous.Font = Enum.Font.SourceSans
-Miscellaneous.Text = "Misc"
-Miscellaneous.TextColor3 = Color3.fromRGB(255, 15, 231)
-Miscellaneous.TextScaled = true
-Miscellaneous.TextSize = 14.000
-Miscellaneous.TextWrapped = true
+ChatSpam.Name = "ChatSpam"
+ChatSpam.Parent = ScrollingFrame_2
+ChatSpam.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ChatSpam.Position = UDim2.new(0.0753656104, 0, 0.0909015462, 0)
+ChatSpam.Size = UDim2.new(0, 135, 0, 32)
+ChatSpam.Font = Enum.Font.SourceSans
+ChatSpam.Text = "Chat Spam"
+ChatSpam.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatSpam.TextScaled = true
+ChatSpam.TextSize = 14.000
+ChatSpam.TextWrapped = true
+
+MapVoteSpam.Name = "MapVoteSpam"
+MapVoteSpam.Parent = ScrollingFrame_2
+MapVoteSpam.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+MapVoteSpam.Position = UDim2.new(0.688579202, 0, 0.152081907, 0)
+MapVoteSpam.Size = UDim2.new(0, 135, 0, 32)
+MapVoteSpam.Font = Enum.Font.SourceSans
+MapVoteSpam.Text = "Map Vote Spam"
+MapVoteSpam.TextColor3 = Color3.fromRGB(255, 255, 255)
+MapVoteSpam.TextScaled = true
+MapVoteSpam.TextSize = 14.000
+MapVoteSpam.TextWrapped = true
+
+Removals.Name = "Removals"
+Removals.Parent = ScrollingFrame_2
+Removals.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Removals.Position = UDim2.new(0.0738550425, 0, 0.152830213, 0)
+Removals.Size = UDim2.new(0, 135, 0, 32)
+Removals.Font = Enum.Font.SourceSans
+Removals.Text = "Remove Stuff"
+Removals.TextColor3 = Color3.fromRGB(255, 255, 255)
+Removals.TextScaled = true
+Removals.TextSize = 14.000
+Removals.TextWrapped = true
+
+RemoveBarrier.Name = "RemoveBarrier"
+RemoveBarrier.Parent = ScrollingFrame_2
+RemoveBarrier.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+RemoveBarrier.Position = UDim2.new(0.0728437454, 0, 0.215302333, 0)
+RemoveBarrier.Size = UDim2.new(0, 135, 0, 32)
+RemoveBarrier.Font = Enum.Font.SourceSans
+RemoveBarrier.Text = "Remove Barriers"
+RemoveBarrier.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveBarrier.TextScaled = true
+RemoveBarrier.TextSize = 14.000
+RemoveBarrier.TextWrapped = true
+
+SpeedBoost.Name = "SpeedBoost"
+SpeedBoost.Parent = ScrollingFrame_2
+SpeedBoost.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+SpeedBoost.Position = UDim2.new(0.688052118, 0, 0.215220809, 0)
+SpeedBoost.Size = UDim2.new(0, 135, 0, 32)
+SpeedBoost.Font = Enum.Font.SourceSans
+SpeedBoost.Text = "Speed Boost"
+SpeedBoost.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBoost.TextScaled = true
+SpeedBoost.TextSize = 14.000
+SpeedBoost.TextWrapped = true
 
 RainbowFrame.Name = "RainbowFrame"
 RainbowFrame.Parent = Frame
 RainbowFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 RainbowFrame.BorderSizePixel = 0
-RainbowFrame.Position = UDim2.new(-0.0117057012, 0, 0, 0)
-RainbowFrame.Size = UDim2.new(0, 7, 0, 395)
+RainbowFrame.Position = UDim2.new(-0.0117056966, 0, 0, 0)
+RainbowFrame.Size = UDim2.new(0, 7, 0, 421)
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = RainbowFrame
 
 Close.Name = "Close"
 Close.Parent = Frame
@@ -596,38 +568,26 @@ Close.Position = UDim2.new(0.90172416, 0, -0.00192113954, 0)
 Close.Size = UDim2.new(0, 57, 0, 27)
 Close.Font = Enum.Font.SourceSans
 Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 15, 231)
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-UICorner.CornerRadius = UDim.new(0, 6)
-UICorner.Parent = Close
-
-Settings.Name = "Settings"
-Settings.Parent = Frame
-Settings.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Settings.Position = UDim2.new(0.00344827585, 0, 0.482844025, 0)
-Settings.Size = UDim2.new(0, 186, 0, 50)
-Settings.Font = Enum.Font.SourceSans
-Settings.Text = "Settings"
-Settings.TextColor3 = Color3.fromRGB(255, 15, 231)
-Settings.TextScaled = true
-Settings.TextSize = 14.000
-Settings.TextWrapped = true
+UICorner_3.CornerRadius = UDim.new(0, 6)
+UICorner_3.Parent = Close
 
 SettingsTab.Name = "SettingsTab"
 SettingsTab.Parent = Frame
 SettingsTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-SettingsTab.Position = UDim2.new(0.324103296, 0, 0.199057281, 0)
-SettingsTab.Size = UDim2.new(0, 392, 0, 315)
+SettingsTab.Position = UDim2.new(0.00344821345, 0, 0.291474253, 0)
+SettingsTab.Size = UDim2.new(0, 668, 0, 297)
 SettingsTab.Visible = false
 
 TitleSettings.Name = "TitleSettings"
 TitleSettings.Parent = SettingsTab
 TitleSettings.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TitleSettings.Position = UDim2.new(5.12259357e-05, 0, -0.116049342, 0)
-TitleSettings.Size = UDim2.new(0, 391, 0, 38)
+TitleSettings.Position = UDim2.new(-0.00346369948, 0, -0.116049305, 0)
+TitleSettings.Size = UDim2.new(0, 669, 0, 38)
 TitleSettings.Font = Enum.Font.SourceSans
 TitleSettings.Text = "Settings Tab"
 TitleSettings.TextColor3 = Color3.fromRGB(255, 15, 231)
@@ -642,22 +602,10 @@ InviteDiscord.Position = UDim2.new(0.0490571037, 0, 0.0427645445, 0)
 InviteDiscord.Size = UDim2.new(0, 135, 0, 32)
 InviteDiscord.Font = Enum.Font.SourceSans
 InviteDiscord.Text = "Force Quit"
-InviteDiscord.TextColor3 = Color3.fromRGB(255, 15, 231)
+InviteDiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
 InviteDiscord.TextScaled = true
 InviteDiscord.TextSize = 14.000
 InviteDiscord.TextWrapped = true
-
-LoadMiscScripts.Name = "LoadMiscScripts"
-LoadMiscScripts.Parent = SettingsTab
-LoadMiscScripts.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-LoadMiscScripts.Position = UDim2.new(0.0490571633, 0, 0.871335924, 0)
-LoadMiscScripts.Size = UDim2.new(0, 189, 0, 32)
-LoadMiscScripts.Font = Enum.Font.SourceSans
-LoadMiscScripts.Text = "Load Misc Scripts"
-LoadMiscScripts.TextColor3 = Color3.fromRGB(255, 15, 231)
-LoadMiscScripts.TextScaled = true
-LoadMiscScripts.TextSize = 14.000
-LoadMiscScripts.TextWrapped = true
 
 ShowFPS.Name = "ShowFPS"
 ShowFPS.Parent = SettingsTab
@@ -666,7 +614,7 @@ ShowFPS.Position = UDim2.new(0.508240759, 0, 0.0427645445, 0)
 ShowFPS.Size = UDim2.new(0, 135, 0, 32)
 ShowFPS.Font = Enum.Font.SourceSans
 ShowFPS.Text = "Show FPS"
-ShowFPS.TextColor3 = Color3.fromRGB(255, 15, 231)
+ShowFPS.TextColor3 = Color3.fromRGB(255, 255, 255)
 ShowFPS.TextScaled = true
 ShowFPS.TextSize = 14.000
 ShowFPS.TextWrapped = true
@@ -678,29 +626,142 @@ AntiAfk.Position = UDim2.new(0.0490571037, 0, 0.195145503, 0)
 AntiAfk.Size = UDim2.new(0, 135, 0, 32)
 AntiAfk.Font = Enum.Font.SourceSans
 AntiAfk.Text = "Anti Afk"
-AntiAfk.TextColor3 = Color3.fromRGB(255, 15, 231)
+AntiAfk.TextColor3 = Color3.fromRGB(255, 255, 255)
 AntiAfk.TextScaled = true
 AntiAfk.TextSize = 14.000
 AntiAfk.TextWrapped = true
+
+OldGui.Name = "OldGui"
+OldGui.Parent = SettingsTab
+OldGui.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+OldGui.Position = UDim2.new(0.507440686, 0, 0.197440505, 0)
+OldGui.Size = UDim2.new(0, 135, 0, 32)
+OldGui.Font = Enum.Font.SourceSans
+OldGui.Text = "Old UI"
+OldGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+OldGui.TextScaled = true
+OldGui.TextSize = 14.000
+OldGui.TextWrapped = true
+
+MousePosition.Name = "MousePosition"
+MousePosition.Parent = SettingsTab
+MousePosition.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+MousePosition.Position = UDim2.new(0.048470825, 0, 0.35508734, 0)
+MousePosition.Size = UDim2.new(0, 135, 0, 32)
+MousePosition.Font = Enum.Font.SourceSans
+MousePosition.Text = "Print Mouse Pos"
+MousePosition.TextColor3 = Color3.fromRGB(255, 255, 255)
+MousePosition.TextScaled = true
+MousePosition.TextSize = 14.000
+MousePosition.TextWrapped = true
+
+MousePosition_2.Name = "MousePosition"
+MousePosition_2.Parent = SettingsTab
+MousePosition_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+MousePosition_2.Position = UDim2.new(0.505103469, 0, 0.35508734, 0)
+MousePosition_2.Size = UDim2.new(0, 135, 0, 32)
+MousePosition_2.Font = Enum.Font.SourceSans
+MousePosition_2.Text = "Anti Message Uploader"
+MousePosition_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MousePosition_2.TextScaled = true
+MousePosition_2.TextSize = 14.000
+MousePosition_2.TextWrapped = true
 
 LocalUsername.Name = "LocalUsername"
 LocalUsername.Parent = Frame
 LocalUsername.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 LocalUsername.BackgroundTransparency = 1.000
 LocalUsername.BorderColor3 = Color3.fromRGB(27, 42, 53)
-LocalUsername.Position = UDim2.new(0.00344822183, 0, 0, 0)
-LocalUsername.Size = UDim2.new(0, 151, 0, 29)
+LocalUsername.Position = UDim2.new(0.00344827585, 0, 0, 0)
+LocalUsername.Size = UDim2.new(0, 141, 0, 29)
 LocalUsername.Font = Enum.Font.SourceSans
 LocalUsername.Text = "User:"
-LocalUsername.TextColor3 = Color3.fromRGB(255, 15, 231)
+LocalUsername.TextColor3 = Color3.fromRGB(255, 255, 255)
 LocalUsername.TextScaled = true
 LocalUsername.TextSize = 14.000
 LocalUsername.TextWrapped = true
 
+UICorner_4.CornerRadius = UDim.new(0, 9)
+UICorner_4.Parent = Frame
+
+ScrollingFrame_3.Parent = Frame
+ScrollingFrame_3.Active = true
+ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_3.BackgroundTransparency = 1.000
+ScrollingFrame_3.Position = UDim2.new(0.00344821345, 0, 0.10754995, 0)
+ScrollingFrame_3.Size = UDim2.new(0, 668, 0, 59)
+ScrollingFrame_3.CanvasSize = UDim2.new(2, 0, 2, 0)
+ScrollingFrame_3.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = ScrollingFrame_3
+Aimbot.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Aimbot.BorderSizePixel = 3
+Aimbot.Position = UDim2.new(0, 0, -0.00192113861, 0)
+Aimbot.Size = UDim2.new(0, 186, 0, 50)
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14.000
+Aimbot.TextWrapped = true
+
+Visuals.Name = "Visuals"
+Visuals.Parent = ScrollingFrame_3
+Visuals.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Visuals.BorderSizePixel = 3
+Visuals.Position = UDim2.new(0.137990147, 0, -0.00376136205, 0)
+Visuals.Size = UDim2.new(0, 186, 0, 50)
+Visuals.Font = Enum.Font.SourceSans
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(255, 255, 255)
+Visuals.TextScaled = true
+Visuals.TextSize = 14.000
+Visuals.TextWrapped = true
+
+Miscellaneous.Name = "Miscellaneous"
+Miscellaneous.Parent = ScrollingFrame_3
+Miscellaneous.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Miscellaneous.BorderSizePixel = 3
+Miscellaneous.Position = UDim2.new(0.413736582, 0, -0.00196610391, 0)
+Miscellaneous.Size = UDim2.new(0, 185, 0, 50)
+Miscellaneous.Font = Enum.Font.SourceSans
+Miscellaneous.Text = "Misc"
+Miscellaneous.TextColor3 = Color3.fromRGB(255, 255, 255)
+Miscellaneous.TextScaled = true
+Miscellaneous.TextSize = 14.000
+Miscellaneous.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = ScrollingFrame_3
+Settings.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Settings.BorderSizePixel = 3
+Settings.Position = UDim2.new(0.276585311, 0, -0.00295231864, 0)
+Settings.Size = UDim2.new(0, 185, 0, 49)
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = ScrollingFrame_3
+Credits.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Credits.BorderSizePixel = 3
+Credits.Position = UDim2.new(0.550864637, 0, -0.00380626135, 0)
+Credits.Size = UDim2.new(0, 188, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
 Open.Name = "Open"
 Open.Parent = ScreenGui
 Open.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Open.Position = UDim2.new(-0.000188218008, 0, 0.966176987, 0)
+Open.Position = UDim2.new(-0.000188218008, 0, 0.977219939, 0)
 Open.Size = UDim2.new(0, 91, 0, 27)
 Open.Font = Enum.Font.SourceSans
 Open.Text = "Open"
@@ -709,48 +770,12 @@ Open.TextScaled = true
 Open.TextSize = 14.000
 Open.TextWrapped = true
 
-UICorner_2.CornerRadius = UDim.new(0, 6)
-UICorner_2.Parent = Open
+UICorner_5.CornerRadius = UDim.new(0, 6)
+UICorner_5.Parent = Open
 
 -- Scripts:
 
-local function BNVHJF_fake_script() -- Aimbot.LocalScript 
-	local script = Instance.new('LocalScript', Aimbot)
-
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.AimbotTab.Visible = true
-		script.Parent.Parent.VisualsTab.Visible = false
-		script.Parent.Parent.CreditsTab.Visible = false
-		script.Parent.Parent.MiscTab.Visible = false
-		script.Parent.Parent.SettingsTab.Visible = false
-	end)
-end
-coroutine.wrap(BNVHJF_fake_script)()
-local function ZMLLPJ_fake_script() -- Visuals.LocalScript 
-	local script = Instance.new('LocalScript', Visuals)
-
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.AimbotTab.Visible = false
-		script.Parent.Parent.VisualsTab.Visible = true
-		script.Parent.Parent.CreditsTab.Visible = false
-		script.Parent.Parent.MiscTab.Visible = false
-		script.Parent.Parent.SettingsTab.Visible = false
-	end)
-end
-coroutine.wrap(ZMLLPJ_fake_script)()
-local function KLUI_fake_script() -- Credits.LocalScript 
-	local script = Instance.new('LocalScript', Credits)
-
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.AimbotTab.Visible = false
-		script.Parent.Parent.VisualsTab.Visible = false
-		script.Parent.Parent.CreditsTab.Visible = true
-		script.Parent.Parent.MiscTab.Visible = false
-		script.Parent.Parent.SettingsTab.Visible = false
-	end)
-end
-coroutine.wrap(KLUI_fake_script)()
-local function GEVZM_fake_script() -- SilentAimButton.LocalScript 
+local function YMVACR_fake_script() -- SilentAimButton.LocalScript 
 	local script = Instance.new('LocalScript', SilentAimButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -832,8 +857,8 @@ local function GEVZM_fake_script() -- SilentAimButton.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(GEVZM_fake_script)()
-local function FOBN_fake_script() -- HitboxExtended.LocalScript 
+coroutine.wrap(YMVACR_fake_script)()
+local function JLVGLR_fake_script() -- HitboxExtended.LocalScript 
 	local script = Instance.new('LocalScript', HitboxExtended)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -874,8 +899,8 @@ local function FOBN_fake_script() -- HitboxExtended.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FOBN_fake_script)()
-local function LECQNSC_fake_script() -- HitboxExtended2.LocalScript 
+coroutine.wrap(JLVGLR_fake_script)()
+local function LXZFCYA_fake_script() -- HitboxExtended2.LocalScript 
 	local script = Instance.new('LocalScript', HitboxExtended2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -930,16 +955,16 @@ local function LECQNSC_fake_script() -- HitboxExtended2.LocalScript
 	
 	
 end
-coroutine.wrap(LECQNSC_fake_script)()
-local function IFXL_fake_script() -- KnifeBot.LocalScript 
+coroutine.wrap(LXZFCYA_fake_script)()
+local function LQIKZC_fake_script() -- KnifeBot.LocalScript 
 	local script = Instance.new('LocalScript', KnifeBot)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Roblox-Error-Prompt-Open-Source/main/Error%20Prompt'))()
 	end)
 end
-coroutine.wrap(IFXL_fake_script)()
-local function DMRJE_fake_script() -- ESP.LocalScript 
+coroutine.wrap(LQIKZC_fake_script)()
+local function XNIAOK_fake_script() -- ESP.LocalScript 
 	local script = Instance.new('LocalScript', ESP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1175,8 +1200,8 @@ local function DMRJE_fake_script() -- ESP.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(DMRJE_fake_script)()
-local function MIJADR_fake_script() -- Chams.LocalScript 
+coroutine.wrap(XNIAOK_fake_script)()
+local function ZKZHAGH_fake_script() -- Chams.LocalScript 
 	local script = Instance.new('LocalScript', Chams)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1308,24 +1333,24 @@ local function MIJADR_fake_script() -- Chams.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(MIJADR_fake_script)()
-local function KDCTRY_fake_script() -- FOV100.LocalScript 
+coroutine.wrap(ZKZHAGH_fake_script)()
+local function IIRYG_fake_script() -- FOV100.LocalScript 
 	local script = Instance.new('LocalScript', FOV100)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		workspace.CurrentCamera.FieldOfView = 100
 	end)
 end
-coroutine.wrap(KDCTRY_fake_script)()
-local function OIQSK_fake_script() -- FOV120.LocalScript 
+coroutine.wrap(IIRYG_fake_script)()
+local function SXMU_fake_script() -- FOV120.LocalScript 
 	local script = Instance.new('LocalScript', FOV120)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		workspace.CurrentCamera.FieldOfView = 120
 	end)
 end
-coroutine.wrap(OIQSK_fake_script)()
-local function PAMPUE_fake_script() -- NightMode.LocalScript 
+coroutine.wrap(SXMU_fake_script)()
+local function MFPAD_fake_script() -- NightMode.LocalScript 
 	local script = Instance.new('LocalScript', NightMode)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1336,16 +1361,16 @@ local function PAMPUE_fake_script() -- NightMode.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PAMPUE_fake_script)()
-local function JPJXK_fake_script() -- NoobPack.LocalScript 
+coroutine.wrap(MFPAD_fake_script)()
+local function LRKWKX_fake_script() -- NoobPack.LocalScript 
 	local script = Instance.new('LocalScript', NoobPack)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/EquipNoob.lua'))()
 	end)
 end
-coroutine.wrap(JPJXK_fake_script)()
-local function BGWDNBH_fake_script() -- Transparentbody.LocalScript 
+coroutine.wrap(LRKWKX_fake_script)()
+local function ARPHL_fake_script() -- Transparentbody.LocalScript 
 	local script = Instance.new('LocalScript', Transparentbody)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1357,8 +1382,8 @@ local function BGWDNBH_fake_script() -- Transparentbody.LocalScript
 		game.Players.LocalPlayer.Character.Torso.Transparency = 0.5
 	end)
 end
-coroutine.wrap(BGWDNBH_fake_script)()
-local function FSYQZSV_fake_script() -- XRay.LocalScript 
+coroutine.wrap(ARPHL_fake_script)()
+local function MCRO_fake_script() -- XRay.LocalScript 
 	local script = Instance.new('LocalScript', XRay)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1369,8 +1394,8 @@ local function FSYQZSV_fake_script() -- XRay.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FSYQZSV_fake_script)()
-local function KSFSFUJ_fake_script() -- Headless.LocalScript 
+coroutine.wrap(MCRO_fake_script)()
+local function KDQQ_fake_script() -- Headless.LocalScript 
 	local script = Instance.new('LocalScript', Headless)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1378,24 +1403,24 @@ local function KSFSFUJ_fake_script() -- Headless.LocalScript
 		game.Players.LocalPlayer.Character.Head.face:Destroy()
 	end)
 end
-coroutine.wrap(KSFSFUJ_fake_script)()
-local function TYON_fake_script() -- Fpsboost.LocalScript 
+coroutine.wrap(KDQQ_fake_script)()
+local function GJHHVAT_fake_script() -- Fpsboost.LocalScript 
 	local script = Instance.new('LocalScript', Fpsboost)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/NoLag.lua'))()
 	end)
 end
-coroutine.wrap(TYON_fake_script)()
-local function TQOVK_fake_script() -- noShadows.LocalScript 
+coroutine.wrap(GJHHVAT_fake_script)()
+local function IEBQ_fake_script() -- noShadows.LocalScript 
 	local script = Instance.new('LocalScript', noShadows)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Lighting.GlobalShadows = false
 	end)
 end
-coroutine.wrap(TQOVK_fake_script)()
-local function WRDZ_fake_script() -- BetterGraphics.LocalScript 
+coroutine.wrap(IEBQ_fake_script)()
+local function PICZ_fake_script() -- BetterGraphics.LocalScript 
 	local script = Instance.new('LocalScript', BetterGraphics)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1490,24 +1515,16 @@ local function WRDZ_fake_script() -- BetterGraphics.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WRDZ_fake_script)()
-local function AITOX_fake_script() -- NextPageVisualTab.LocalScript 
+coroutine.wrap(PICZ_fake_script)()
+local function PQTJDI_fake_script() -- NextPageVisualTab.LocalScript 
 	local script = Instance.new('LocalScript', NextPageVisualTab)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/visuals2tab'))()
 	end)
 end
-coroutine.wrap(AITOX_fake_script)()
-local function RAVSSM_fake_script() -- OldGui.LocalScript 
-	local script = Instance.new('LocalScript', OldGui)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua'))()
-	end)
-end
-coroutine.wrap(RAVSSM_fake_script)()
-local function CXQUQEP_fake_script() -- Airstuck.LocalScript 
+coroutine.wrap(PQTJDI_fake_script)()
+local function CASO_fake_script() -- Airstuck.LocalScript 
 	local script = Instance.new('LocalScript', Airstuck)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1543,24 +1560,8 @@ local function CXQUQEP_fake_script() -- Airstuck.LocalScript
 	
 	
 end
-coroutine.wrap(CXQUQEP_fake_script)()
-local function EUQD_fake_script() -- ChatSpam.LocalScript 
-	local script = Instance.new('LocalScript', ChatSpam)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/ChatSpam.lua'))()
-	end)
-end
-coroutine.wrap(EUQD_fake_script)()
-local function RZEPCJ_fake_script() -- MousePosition.LocalScript 
-	local script = Instance.new('LocalScript', MousePosition)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/mousePosPrint.lua'))()
-	end)
-end
-coroutine.wrap(RZEPCJ_fake_script)()
-local function VRRFI_fake_script() -- Antiban.LocalScript 
+coroutine.wrap(CASO_fake_script)()
+local function PRTSII_fake_script() -- Antiban.LocalScript 
 	local script = Instance.new('LocalScript', Antiban)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1568,8 +1569,27 @@ local function VRRFI_fake_script() -- Antiban.LocalScript
 		game.Players.LocalPlayer.PlayerGui.GameUI.Menu.MainMenuUI.Banned:Destroy()
 	end)
 end
-coroutine.wrap(VRRFI_fake_script)()
-local function SWAOM_fake_script() -- MapVoteSpam.LocalScript 
+coroutine.wrap(PRTSII_fake_script)()
+local function SHWS_fake_script() -- Bhop.LocalScript 
+	local script = Instance.new('LocalScript', Bhop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			wait(0.01)
+			game.Players.LocalPlayer.Character.Humanoid.Jump = true
+		end
+	end)
+end
+coroutine.wrap(SHWS_fake_script)()
+local function ZBGF_fake_script() -- ChatSpam.LocalScript 
+	local script = Instance.new('LocalScript', ChatSpam)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/ChatSpam.lua'))()
+	end)
+end
+coroutine.wrap(ZBGF_fake_script)()
+local function RAMG_fake_script() -- MapVoteSpam.LocalScript 
 	local script = Instance.new('LocalScript', MapVoteSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1630,8 +1650,28 @@ local function SWAOM_fake_script() -- MapVoteSpam.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SWAOM_fake_script)()
-local function IKKGXZ_fake_script() -- SpeedBoost.LocalScript 
+coroutine.wrap(RAMG_fake_script)()
+local function ACKHEW_fake_script() -- Removals.LocalScript 
+	local script = Instance.new('LocalScript', Removals)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.RagdollCache:Destroy()
+		game.Workspace.FollowerModel:Destroy()
+	end)
+end
+coroutine.wrap(ACKHEW_fake_script)()
+local function OVGVWK_fake_script() -- RemoveBarrier.LocalScript 
+	local script = Instance.new('LocalScript', RemoveBarrier)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			wait(10)
+			game.Workspace.WorldIgnore.Barriers:Destroy() -- incase it comes back next map
+		end
+	end)
+end
+coroutine.wrap(OVGVWK_fake_script)()
+local function JDYB_fake_script() -- SpeedBoost.LocalScript 
 	local script = Instance.new('LocalScript', SpeedBoost)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1641,31 +1681,8 @@ local function IKKGXZ_fake_script() -- SpeedBoost.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IKKGXZ_fake_script)()
-local function YJUAF_fake_script() -- Bhop.LocalScript 
-	local script = Instance.new('LocalScript', Bhop)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		while true do
-			wait(0.01)
-			game.Players.LocalPlayer.Character.Humanoid.Jump = true
-		end
-	end)
-end
-coroutine.wrap(YJUAF_fake_script)()
-local function AWDYQ_fake_script() -- Miscellaneous.LocalScript 
-	local script = Instance.new('LocalScript', Miscellaneous)
-
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.AimbotTab.Visible = false
-		script.Parent.Parent.VisualsTab.Visible = false
-		script.Parent.Parent.CreditsTab.Visible = false
-		script.Parent.Parent.MiscTab.Visible = true
-		script.Parent.Parent.SettingsTab.Visible = false
-	end)
-end
-coroutine.wrap(AWDYQ_fake_script)()
-local function NQTP_fake_script() -- RainbowFrame.LocalScript 
+coroutine.wrap(JDYB_fake_script)()
+local function ASUKUXT_fake_script() -- RainbowFrame.LocalScript 
 	local script = Instance.new('LocalScript', RainbowFrame)
 
 	local t = 10;
@@ -1680,8 +1697,8 @@ local function NQTP_fake_script() -- RainbowFrame.LocalScript
 	
 	end
 end
-coroutine.wrap(NQTP_fake_script)()
-local function RQVJ_fake_script() -- Close.LocalScript 
+coroutine.wrap(ASUKUXT_fake_script)()
+local function STFH_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1692,20 +1709,8 @@ local function RQVJ_fake_script() -- Close.LocalScript
 	
 	
 end
-coroutine.wrap(RQVJ_fake_script)()
-local function OKVAVRM_fake_script() -- Settings.LocalScript 
-	local script = Instance.new('LocalScript', Settings)
-
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.AimbotTab.Visible = false
-		script.Parent.Parent.VisualsTab.Visible = false
-		script.Parent.Parent.CreditsTab.Visible = false
-		script.Parent.Parent.MiscTab.Visible = false
-		script.Parent.Parent.SettingsTab.Visible = true
-	end)
-end
-coroutine.wrap(OKVAVRM_fake_script)()
-local function AERA_fake_script() -- InviteDiscord.LocalScript 
+coroutine.wrap(STFH_fake_script)()
+local function QYLY_fake_script() -- InviteDiscord.LocalScript 
 	local script = Instance.new('LocalScript', InviteDiscord)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1714,16 +1719,8 @@ local function AERA_fake_script() -- InviteDiscord.LocalScript
 	end)
 	
 end
-coroutine.wrap(AERA_fake_script)()
-local function NRWGRVJ_fake_script() -- LoadMiscScripts.LocalScript 
-	local script = Instance.new('LocalScript', LoadMiscScripts)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://pastebin.com/7GHT6T9N'))()
-	end)
-end
-coroutine.wrap(NRWGRVJ_fake_script)()
-local function XAXMYR_fake_script() -- ShowFPS.LocalScript 
+coroutine.wrap(QYLY_fake_script)()
+local function WNKAVNK_fake_script() -- ShowFPS.LocalScript 
 	local script = Instance.new('LocalScript', ShowFPS)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1731,8 +1728,8 @@ local function XAXMYR_fake_script() -- ShowFPS.LocalScript
 	end)
 	
 end
-coroutine.wrap(XAXMYR_fake_script)()
-local function GRROKCS_fake_script() -- AntiAfk.LocalScript 
+coroutine.wrap(WNKAVNK_fake_script)()
+local function KVVHIW_fake_script() -- AntiAfk.LocalScript 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1746,14 +1743,98 @@ local function GRROKCS_fake_script() -- AntiAfk.LocalScript
 	end)
 	
 end
-coroutine.wrap(GRROKCS_fake_script)()
-local function BVUEBF_fake_script() -- LocalUsername.LocalScript 
+coroutine.wrap(KVVHIW_fake_script)()
+local function FBQAO_fake_script() -- OldGui.LocalScript 
+	local script = Instance.new('LocalScript', OldGui)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua'))()
+	end)
+end
+coroutine.wrap(FBQAO_fake_script)()
+local function LFYD_fake_script() -- MousePosition.LocalScript 
+	local script = Instance.new('LocalScript', MousePosition)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/mousePosPrint.lua'))()
+	end)
+end
+coroutine.wrap(LFYD_fake_script)()
+local function JRBURG_fake_script() -- MousePosition_2.LocalScript 
+	local script = Instance.new('LocalScript', MousePosition_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/wnreSiVX'))()
+	end)
+end
+coroutine.wrap(JRBURG_fake_script)()
+local function CDUGXG_fake_script() -- LocalUsername.LocalScript 
 	local script = Instance.new('LocalScript', LocalUsername)
 
 	script.Parent.Text = "User: "..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(BVUEBF_fake_script)()
-local function JFIXAI_fake_script() -- ScreenGui.Keybind 
+coroutine.wrap(CDUGXG_fake_script)()
+local function KGTSJMG_fake_script() -- Aimbot.LocalScript 
+	local script = Instance.new('LocalScript', Aimbot)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.AimbotTab.Visible = true
+		script.Parent.Parent.Parent.VisualsTab.Visible = false
+		script.Parent.Parent.Parent.CreditsTab.Visible = false
+		script.Parent.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.Parent.SettingsTab.Visible = false
+	end)
+end
+coroutine.wrap(KGTSJMG_fake_script)()
+local function XAHXDJR_fake_script() -- Visuals.LocalScript 
+	local script = Instance.new('LocalScript', Visuals)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.AimbotTab.Visible = false
+		script.Parent.Parent.Parent.VisualsTab.Visible = true
+		script.Parent.Parent.Parent.CreditsTab.Visible = false
+		script.Parent.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.Parent.SettingsTab.Visible = false
+	end)
+end
+coroutine.wrap(XAHXDJR_fake_script)()
+local function EGSKIW_fake_script() -- Miscellaneous.LocalScript 
+	local script = Instance.new('LocalScript', Miscellaneous)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.AimbotTab.Visible = false
+		script.Parent.Parent.Parent.VisualsTab.Visible = false
+		script.Parent.Parent.Parent.CreditsTab.Visible = false
+		script.Parent.Parent.Parent.MiscTab.Visible = true
+		script.Parent.Parent.Parent.SettingsTab.Visible = false
+	end)
+end
+coroutine.wrap(EGSKIW_fake_script)()
+local function DPRNZ_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.AimbotTab.Visible = false
+		script.Parent.Parent.Parent.VisualsTab.Visible = false
+		script.Parent.Parent.Parent.CreditsTab.Visible = false
+		script.Parent.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.Parent.SettingsTab.Visible = true
+	end)
+end
+coroutine.wrap(DPRNZ_fake_script)()
+local function WKJWS_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.AimbotTab.Visible = false
+		script.Parent.Parent.Parent.VisualsTab.Visible = false
+		script.Parent.Parent.Parent.CreditsTab.Visible = true
+		script.Parent.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.Parent.SettingsTab.Visible = false
+	end)
+end
+coroutine.wrap(WKJWS_fake_script)()
+local function LBBKXG_fake_script() -- ScreenGui.Keybind 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Frame = script.Parent.Frame
@@ -1776,8 +1857,8 @@ local function JFIXAI_fake_script() -- ScreenGui.Keybind
 		end
 	end)
 end
-coroutine.wrap(JFIXAI_fake_script)()
-local function RDMKI_fake_script() -- Open.LocalScript 
+coroutine.wrap(LBBKXG_fake_script)()
+local function QNTLC_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local frame = script.Parent.Parent.Frame  -- change “Test” to the name of the frane
@@ -1790,4 +1871,4 @@ local function RDMKI_fake_script() -- Open.LocalScript
 	end)
 	
 end
-coroutine.wrap(RDMKI_fake_script)()
+coroutine.wrap(QNTLC_fake_script)()
