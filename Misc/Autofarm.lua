@@ -1,6 +1,5 @@
-while true do
 repeat until false
-wait(1)
+wait(5)
 for i,v in pairs(game.Players:GetChildren()) do
      if v ~= game.Players.LocalPlayer then
           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1)
