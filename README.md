@@ -1,5 +1,4 @@
-*Script will continue to get updates, just not too often*
-**But i do have some things to add**
+*Script is undetected (Always has been)*
 
 If you'd like to give me any ideas, contact me on discord: cOpEtriNe#2745
 
