@@ -28,3 +28,40 @@ NewUI
 ## Things to be added next update
 
 - really cool new things
+
+## Features
+Here are the features of the cheat:
+ 
+ * Aimbot (Silent)
+ * 2 hitbox extenders
+ * knife bot
+ * Airstuck
+ * Chat Spam
+ * Remove Barriers
+ * infinite Jump
+ * Autofarm
+ * Anti Ban
+ * BHop
+ * Map Vote Spam
+ * Speed Boost
+ * BTools / F3X
+ * no Character Rotate
+ * ESP
+ * Chams
+ * FoV Changers
+ * night mode
+ * Xray
+ * turn into the ultimate noob
+ * transparent body
+ * headless
+ * FPS Booster
+ * Shadow remover
+ * Graphics Enhancer
+ * Force Quit
+ * Anti-Afk
+ * Show FPS
+ * Anti Message Uploader (messages dont get sent to roblox servers)
+ * Use the old KATWare ui
+ * Server Rejoin
+
+There are many other features, i'm just too lazy to type them all up.
