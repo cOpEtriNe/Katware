@@ -62,5 +62,6 @@ Here are the features of the cheat:
  * Anti Message Uploader (messages dont get sent to roblox servers)
  * Use the old KATWare ui
  * Server Rejoin
+ * View Angles
 
 There are many other features, i'm just too lazy to type them all up.
