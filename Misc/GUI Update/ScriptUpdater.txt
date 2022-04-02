@@ -1,0 +1,7 @@
+while true do
+wait(60)
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Updates"; -- the title (ofc)
+	Text = "No Current Updates Available., -  "; -- 
+	Duration = 10; -- how long the notification should in secounds
+})
