@@ -63,5 +63,6 @@ Here are the features of the cheat:
  * Use the old KATWare ui
  * Server Rejoin
  * View Angles
+ * Freecam
 
 There are many other features, i'm just too lazy to type them all up.
