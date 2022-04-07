@@ -42,6 +42,7 @@ Here are the features of the cheat:
  * infinite Jump
  * Autofarm
  * Anti Ban
+ * Skin Changer
  * BHop
  * Map Vote Spam
  * Speed Boost
