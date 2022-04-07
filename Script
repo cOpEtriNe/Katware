@@ -1,4 +1,4 @@
--- dev note: the info pannel is 40/50% done. it will be added to more frames soon.. I'm just too tired to add more.
+-- KATWare V3.3
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -76,9 +76,34 @@ local Miscellaneous = Instance.new("TextButton")
 local Credits = Instance.new("TextButton")
 local Settings = Instance.new("TextButton")
 local Server = Instance.new("TextButton")
+local Skins = Instance.new("TextButton")
 local ServerTab = Instance.new("Frame")
 local TitleServer = Instance.new("TextLabel")
 local AntiAfk_2 = Instance.new("TextButton")
+local SkinsTab = Instance.new("Frame")
+local ScrollingFrame_4 = Instance.new("ScrollingFrame")
+local NoobCharacter = Instance.new("TextButton")
+local DaveCharacter = Instance.new("TextButton")
+local BOF = Instance.new("TextButton")
+local Rasta = Instance.new("TextButton")
+local Icy = Instance.new("TextButton")
+local john = Instance.new("TextButton")
+local Tabby = Instance.new("TextButton")
+local ayowhat = Instance.new("TextButton")
+local Shamus = Instance.new("TextButton")
+local Jack = Instance.new("TextButton")
+local Max = Instance.new("TextButton")
+local Sergei = Instance.new("TextButton")
+local Ace = Instance.new("TextButton")
+local Xbox = Instance.new("TextButton")
+local Kasodus = Instance.new("TextButton")
+local yukki = Instance.new("TextButton")
+local Jax = Instance.new("TextButton")
+local Warden = Instance.new("TextButton")
+local Tom = Instance.new("TextButton")
+local Harry = Instance.new("TextButton")
+local Spengy = Instance.new("TextButton")
+local TitleVisual_2 = Instance.new("TextLabel")
 local Open = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 
@@ -104,7 +129,7 @@ WelcomeTitle.BorderSizePixel = 0
 WelcomeTitle.Position = UDim2.new(0.0685543939, 0, -0.00238663494, 0)
 WelcomeTitle.Size = UDim2.new(0, 580, 0, 43)
 WelcomeTitle.Font = Enum.Font.SourceSans
-WelcomeTitle.Text = "KATWare V3.2"
+WelcomeTitle.Text = "KATWare V3.3"
 WelcomeTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 WelcomeTitle.TextScaled = true
 WelcomeTitle.TextSize = 14.000
@@ -209,7 +234,6 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 ScrollingFrame.Position = UDim2.new(-4.56849989e-08, 0, -0.00343642617, 0)
 ScrollingFrame.Size = UDim2.new(0, 668, 0, 291)
-ScrollingFrame.CanvasPosition = Vector2.new(0, 150)
 
 ESP.Name = "ESP"
 ESP.Parent = ScrollingFrame
@@ -834,7 +858,8 @@ ScrollingFrame_3.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 Aimbot.Name = "Aimbot"
 Aimbot.Parent = ScrollingFrame_3
 Aimbot.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Aimbot.Position = UDim2.new(-0.000745156489, 0, 0.0184942391, 0)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(-0.00298062596, 0, -0.00324489176, 0)
 Aimbot.Size = UDim2.new(0, 186, 0, 42)
 Aimbot.Font = Enum.Font.SourceSans
 Aimbot.Text = "Aimbot"
@@ -846,7 +871,8 @@ Aimbot.TextWrapped = true
 Visuals.Name = "Visuals"
 Visuals.Parent = ScrollingFrame_3
 Visuals.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Visuals.Position = UDim2.new(0.137334764, 0, 0.0153309274, 0)
+Visuals.BorderSizePixel = 0
+Visuals.Position = UDim2.new(0.135844454, 0, -0.00640820339, 0)
 Visuals.Size = UDim2.new(0, 186, 0, 42)
 Visuals.Font = Enum.Font.SourceSans
 Visuals.Text = "Visuals"
@@ -858,7 +884,8 @@ Visuals.TextWrapped = true
 Miscellaneous.Name = "Miscellaneous"
 Miscellaneous.Parent = ScrollingFrame_3
 Miscellaneous.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Miscellaneous.Position = UDim2.new(0.415624171, 0, 0.0192307699, 0)
+Miscellaneous.BorderSizePixel = 0
+Miscellaneous.Position = UDim2.new(0.412643582, 0, -0.00250835344, 0)
 Miscellaneous.Size = UDim2.new(0, 186, 0, 42)
 Miscellaneous.Font = Enum.Font.SourceSans
 Miscellaneous.Text = "Misc"
@@ -870,7 +897,8 @@ Miscellaneous.TextWrapped = true
 Credits.Name = "Credits"
 Credits.Parent = ScrollingFrame_3
 Credits.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Credits.Position = UDim2.new(0.553043246, 0, 0.0152857322, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.687916577, 0, -0.00645339862, 0)
 Credits.Size = UDim2.new(0, 186, 0, 42)
 Credits.Font = Enum.Font.SourceSans
 Credits.Text = "Credits"
@@ -882,7 +910,8 @@ Credits.TextWrapped = true
 Settings.Name = "Settings"
 Settings.Parent = ScrollingFrame_3
 Settings.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Settings.Position = UDim2.new(0.276737183, 0, 0.018648006, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.549464464, 0, -0.00309112296, 0)
 Settings.Size = UDim2.new(0, 186, 0, 42)
 Settings.Font = Enum.Font.SourceSans
 Settings.Text = "Settings"
@@ -894,7 +923,8 @@ Settings.TextWrapped = true
 Server.Name = "Server"
 Server.Parent = ScrollingFrame_3
 Server.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Server.Position = UDim2.new(0.691807151, 0, 0.0186480097, 0)
+Server.BorderSizePixel = 0
+Server.Position = UDim2.new(0.825935304, 0, -0.0248302538, 0)
 Server.Size = UDim2.new(0, 186, 0, 42)
 Server.Font = Enum.Font.SourceSans
 Server.Text = "Server"
@@ -902,6 +932,19 @@ Server.TextColor3 = Color3.fromRGB(255, 255, 255)
 Server.TextScaled = true
 Server.TextSize = 14.000
 Server.TextWrapped = true
+
+Skins.Name = "Skins"
+Skins.Parent = ScrollingFrame_3
+Skins.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Skins.BorderSizePixel = 0
+Skins.Position = UDim2.new(0.274443537, 0, -0.00640820339, 0)
+Skins.Size = UDim2.new(0, 186, 0, 42)
+Skins.Font = Enum.Font.SourceSans
+Skins.Text = "Skins"
+Skins.TextColor3 = Color3.fromRGB(255, 255, 255)
+Skins.TextScaled = true
+Skins.TextSize = 14.000
+Skins.TextWrapped = true
 
 ServerTab.Name = "ServerTab"
 ServerTab.Parent = Frame
@@ -934,6 +977,283 @@ AntiAfk_2.TextScaled = true
 AntiAfk_2.TextSize = 14.000
 AntiAfk_2.TextWrapped = true
 
+SkinsTab.Name = "SkinsTab"
+SkinsTab.Parent = Frame
+SkinsTab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+SkinsTab.Position = UDim2.new(0.00344825885, 0, 0.310189396, 0)
+SkinsTab.Size = UDim2.new(0, 668, 0, 290)
+SkinsTab.Visible = false
+
+ScrollingFrame_4.Parent = SkinsTab
+ScrollingFrame_4.Active = true
+ScrollingFrame_4.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+ScrollingFrame_4.Position = UDim2.new(-4.47034836e-08, 0, -0.00688470202, 0)
+ScrollingFrame_4.Size = UDim2.new(0, 668, 0, 291)
+
+NoobCharacter.Name = "NoobCharacter"
+NoobCharacter.Parent = ScrollingFrame_4
+NoobCharacter.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+NoobCharacter.Position = UDim2.new(0.0586666688, 0, 0.0463965274, 0)
+NoobCharacter.Size = UDim2.new(0, 135, 0, 32)
+NoobCharacter.Font = Enum.Font.SourceSans
+NoobCharacter.Text = "Noob"
+NoobCharacter.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoobCharacter.TextScaled = true
+NoobCharacter.TextSize = 14.000
+NoobCharacter.TextWrapped = true
+
+DaveCharacter.Name = "DaveCharacter"
+DaveCharacter.Parent = ScrollingFrame_4
+DaveCharacter.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+DaveCharacter.Position = UDim2.new(0.715245783, 0, 0.0463965274, 0)
+DaveCharacter.Size = UDim2.new(0, 135, 0, 32)
+DaveCharacter.Font = Enum.Font.SourceSans
+DaveCharacter.Text = "Dave"
+DaveCharacter.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaveCharacter.TextScaled = true
+DaveCharacter.TextSize = 14.000
+DaveCharacter.TextWrapped = true
+
+BOF.Name = "BOF"
+BOF.Parent = ScrollingFrame_4
+BOF.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+BOF.Position = UDim2.new(0.0586666688, 0, 0.199775696, 0)
+BOF.Size = UDim2.new(0, 135, 0, 32)
+BOF.Font = Enum.Font.SourceSans
+BOF.Text = "BOF"
+BOF.TextColor3 = Color3.fromRGB(255, 255, 255)
+BOF.TextScaled = true
+BOF.TextSize = 14.000
+BOF.TextWrapped = true
+
+Rasta.Name = "Rasta"
+Rasta.Parent = ScrollingFrame_4
+Rasta.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Rasta.Position = UDim2.new(0.715245903, 0, 0.122450173, 0)
+Rasta.Size = UDim2.new(0, 135, 0, 32)
+Rasta.Font = Enum.Font.SourceSans
+Rasta.Text = "Rasta"
+Rasta.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rasta.TextScaled = true
+Rasta.TextSize = 14.000
+Rasta.TextWrapped = true
+
+Icy.Name = "Icy"
+Icy.Parent = ScrollingFrame_4
+Icy.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Icy.Position = UDim2.new(0.0586666688, 0, 0.275966167, 0)
+Icy.Size = UDim2.new(0, 135, 0, 32)
+Icy.Font = Enum.Font.SourceSans
+Icy.Text = "Icy"
+Icy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Icy.TextScaled = true
+Icy.TextSize = 14.000
+Icy.TextWrapped = true
+
+john.Name = "john"
+john.Parent = ScrollingFrame_4
+john.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+john.Position = UDim2.new(0.716742814, 0, 0.274831146, 0)
+john.Size = UDim2.new(0, 135, 0, 32)
+john.Font = Enum.Font.SourceSans
+john.Text = "John"
+john.TextColor3 = Color3.fromRGB(255, 255, 255)
+john.TextScaled = true
+john.TextSize = 14.000
+john.TextWrapped = true
+
+Tabby.Name = "Tabby"
+Tabby.Parent = ScrollingFrame_4
+Tabby.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Tabby.Position = UDim2.new(0.0586666465, 0, 0.359029502, 0)
+Tabby.Size = UDim2.new(0, 135, 0, 32)
+Tabby.Font = Enum.Font.SourceSans
+Tabby.Text = "Tabby"
+Tabby.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tabby.TextScaled = true
+Tabby.TextSize = 14.000
+Tabby.TextWrapped = true
+
+ayowhat.Name = "ayowhat"
+ayowhat.Parent = ScrollingFrame_4
+ayowhat.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ayowhat.Position = UDim2.new(0.716742814, 0, 0.358958125, 0)
+ayowhat.Size = UDim2.new(0, 135, 0, 32)
+ayowhat.Font = Enum.Font.SourceSans
+ayowhat.Text = "lolwat"
+ayowhat.TextColor3 = Color3.fromRGB(255, 255, 255)
+ayowhat.TextScaled = true
+ayowhat.TextSize = 14.000
+ayowhat.TextWrapped = true
+
+Shamus.Name = "Shamus"
+Shamus.Parent = ScrollingFrame_4
+Shamus.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Shamus.Position = UDim2.new(0.0586666465, 0, 0.444874674, 0)
+Shamus.Size = UDim2.new(0, 135, 0, 32)
+Shamus.Font = Enum.Font.SourceSans
+Shamus.Text = "Shamus"
+Shamus.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shamus.TextScaled = true
+Shamus.TextSize = 14.000
+Shamus.TextWrapped = true
+
+Jack.Name = "Jack"
+Jack.Parent = ScrollingFrame_4
+Jack.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Jack.Position = UDim2.new(0.716742754, 0, 0.444672406, 0)
+Jack.Size = UDim2.new(0, 135, 0, 32)
+Jack.Font = Enum.Font.SourceSans
+Jack.Text = "Jack"
+Jack.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jack.TextScaled = true
+Jack.TextSize = 14.000
+Jack.TextWrapped = true
+
+Max.Name = "Max"
+Max.Parent = ScrollingFrame_4
+Max.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Max.Position = UDim2.new(0.0586666465, 0, 0.523597002, 0)
+Max.Size = UDim2.new(0, 135, 0, 32)
+Max.Font = Enum.Font.SourceSans
+Max.Text = "Max"
+Max.TextColor3 = Color3.fromRGB(255, 255, 255)
+Max.TextScaled = true
+Max.TextSize = 14.000
+Max.TextWrapped = true
+
+Sergei.Name = "Sergei"
+Sergei.Parent = ScrollingFrame_4
+Sergei.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Sergei.Position = UDim2.new(0.0586666688, 0, 0.123716116, 0)
+Sergei.Size = UDim2.new(0, 135, 0, 32)
+Sergei.Font = Enum.Font.SourceSans
+Sergei.Text = "Sergei"
+Sergei.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sergei.TextScaled = true
+Sergei.TextSize = 14.000
+Sergei.TextWrapped = true
+
+Ace.Name = "Ace"
+Ace.Parent = ScrollingFrame_4
+Ace.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Ace.Position = UDim2.new(0.716742814, 0, 0.198640659, 0)
+Ace.Size = UDim2.new(0, 135, 0, 32)
+Ace.Font = Enum.Font.SourceSans
+Ace.Text = "Ace"
+Ace.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ace.TextScaled = true
+Ace.TextSize = 14.000
+Ace.TextWrapped = true
+
+Xbox.Name = "Xbox"
+Xbox.Parent = ScrollingFrame_4
+Xbox.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Xbox.Position = UDim2.new(0.717349231, 0, 0.523597002, 0)
+Xbox.Size = UDim2.new(0, 135, 0, 32)
+Xbox.Font = Enum.Font.SourceSans
+Xbox.Text = "Xbox"
+Xbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Xbox.TextScaled = true
+Xbox.TextSize = 14.000
+Xbox.TextWrapped = true
+
+Kasodus.Name = "Kasodus"
+Kasodus.Parent = ScrollingFrame_4
+Kasodus.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Kasodus.Position = UDim2.new(0.0586666465, 0, 0.606355608, 0)
+Kasodus.Size = UDim2.new(0, 135, 0, 32)
+Kasodus.Font = Enum.Font.SourceSans
+Kasodus.Text = "Kasodus"
+Kasodus.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kasodus.TextScaled = true
+Kasodus.TextSize = 14.000
+Kasodus.TextWrapped = true
+
+yukki.Name = "yukki"
+yukki.Parent = ScrollingFrame_4
+yukki.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+yukki.Position = UDim2.new(0.717349291, 0, 0.606355608, 0)
+yukki.Size = UDim2.new(0, 135, 0, 32)
+yukki.Font = Enum.Font.SourceSans
+yukki.Text = "Yukki"
+yukki.TextColor3 = Color3.fromRGB(255, 255, 255)
+yukki.TextScaled = true
+yukki.TextSize = 14.000
+yukki.TextWrapped = true
+
+Jax.Name = "Jax"
+Jax.Parent = ScrollingFrame_4
+Jax.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Jax.Position = UDim2.new(0.0586666465, 0, 0.683941841, 0)
+Jax.Size = UDim2.new(0, 135, 0, 32)
+Jax.Font = Enum.Font.SourceSans
+Jax.Text = "Jax"
+Jax.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jax.TextScaled = true
+Jax.TextSize = 14.000
+Jax.TextWrapped = true
+
+Warden.Name = "Warden"
+Warden.Parent = ScrollingFrame_4
+Warden.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Warden.Position = UDim2.new(0.717349231, 0, 0.683941841, 0)
+Warden.Size = UDim2.new(0, 135, 0, 32)
+Warden.Font = Enum.Font.SourceSans
+Warden.Text = "Warden"
+Warden.TextColor3 = Color3.fromRGB(255, 255, 255)
+Warden.TextScaled = true
+Warden.TextSize = 14.000
+Warden.TextWrapped = true
+
+Tom.Name = "Tom"
+Tom.Parent = ScrollingFrame_4
+Tom.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Tom.Position = UDim2.new(0.0586666465, 0, 0.770148754, 0)
+Tom.Size = UDim2.new(0, 135, 0, 32)
+Tom.Font = Enum.Font.SourceSans
+Tom.Text = "Tom"
+Tom.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tom.TextScaled = true
+Tom.TextSize = 14.000
+Tom.TextWrapped = true
+
+Harry.Name = "Harry"
+Harry.Parent = ScrollingFrame_4
+Harry.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Harry.Position = UDim2.new(0.717349291, 0, 0.770148754, 0)
+Harry.Size = UDim2.new(0, 135, 0, 32)
+Harry.Font = Enum.Font.SourceSans
+Harry.Text = "Harry"
+Harry.TextColor3 = Color3.fromRGB(255, 255, 255)
+Harry.TextScaled = true
+Harry.TextSize = 14.000
+Harry.TextWrapped = true
+
+Spengy.Name = "Spengy"
+Spengy.Parent = ScrollingFrame_4
+Spengy.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Spengy.Position = UDim2.new(0.0586666465, 0, 0.849459112, 0)
+Spengy.Size = UDim2.new(0, 135, 0, 32)
+Spengy.Font = Enum.Font.SourceSans
+Spengy.Text = "Spengy"
+Spengy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spengy.TextScaled = true
+Spengy.TextSize = 14.000
+Spengy.TextWrapped = true
+
+TitleVisual_2.Name = "TitleVisual"
+TitleVisual_2.Parent = SkinsTab
+TitleVisual_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TitleVisual_2.Position = UDim2.new(0, 0, -0.129795045, 0)
+TitleVisual_2.Size = UDim2.new(0, 666, 0, 38)
+TitleVisual_2.Font = Enum.Font.SourceSans
+TitleVisual_2.Text = "Skin Changer"
+TitleVisual_2.TextColor3 = Color3.fromRGB(255, 15, 231)
+TitleVisual_2.TextScaled = true
+TitleVisual_2.TextSize = 14.000
+TitleVisual_2.TextWrapped = true
+
 Open.Name = "Open"
 Open.Parent = ScreenGui
 Open.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
@@ -951,7 +1271,7 @@ UICorner_7.Parent = Open
 
 -- Scripts:
 
-local function NZHOU_fake_script() -- SilentAimButton.LocalScript 
+local function TAODT_fake_script() -- SilentAimButton.LocalScript 
 	local script = Instance.new('LocalScript', SilentAimButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1026,8 +1346,8 @@ local function NZHOU_fake_script() -- SilentAimButton.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(NZHOU_fake_script)()
-local function MURPNPS_fake_script() -- HitboxExtended.LocalScript 
+coroutine.wrap(TAODT_fake_script)()
+local function WABRWBT_fake_script() -- HitboxExtended.LocalScript 
 	local script = Instance.new('LocalScript', HitboxExtended)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1062,8 +1382,8 @@ local function MURPNPS_fake_script() -- HitboxExtended.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MURPNPS_fake_script)()
-local function KMVJI_fake_script() -- HitboxExtended2.LocalScript 
+coroutine.wrap(WABRWBT_fake_script)()
+local function YGIBA_fake_script() -- HitboxExtended2.LocalScript 
 	local script = Instance.new('LocalScript', HitboxExtended2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1111,8 +1431,8 @@ local function KMVJI_fake_script() -- HitboxExtended2.LocalScript
 	
 	
 end
-coroutine.wrap(KMVJI_fake_script)()
-local function EYFMQNG_fake_script() -- KnifeBot.LocalScript 
+coroutine.wrap(YGIBA_fake_script)()
+local function ZHKH_fake_script() -- KnifeBot.LocalScript 
 	local script = Instance.new('LocalScript', KnifeBot)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1120,8 +1440,8 @@ local function EYFMQNG_fake_script() -- KnifeBot.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Roblox-Error-Prompt-Open-Source/main/Error%20Prompt'))()
 	end)
 end
-coroutine.wrap(EYFMQNG_fake_script)()
-local function NKSMF_fake_script() -- ESP.LocalScript 
+coroutine.wrap(ZHKH_fake_script)()
+local function NKNTP_fake_script() -- ESP.LocalScript 
 	local script = Instance.new('LocalScript', ESP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1312,8 +1632,8 @@ local function NKSMF_fake_script() -- ESP.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(NKSMF_fake_script)()
-local function OYTU_fake_script() -- Chams.LocalScript 
+coroutine.wrap(NKNTP_fake_script)()
+local function DZQNIR_fake_script() -- Chams.LocalScript 
 	local script = Instance.new('LocalScript', Chams)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1446,8 +1766,8 @@ local function OYTU_fake_script() -- Chams.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(OYTU_fake_script)()
-local function IGIEM_fake_script() -- FOV100.LocalScript 
+coroutine.wrap(DZQNIR_fake_script)()
+local function IKHB_fake_script() -- FOV100.LocalScript 
 	local script = Instance.new('LocalScript', FOV100)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1455,8 +1775,8 @@ local function IGIEM_fake_script() -- FOV100.LocalScript
 		workspace.CurrentCamera.FieldOfView = 100
 	end)
 end
-coroutine.wrap(IGIEM_fake_script)()
-local function ZJKWIJE_fake_script() -- FOV120.LocalScript 
+coroutine.wrap(IKHB_fake_script)()
+local function IYPGTK_fake_script() -- FOV120.LocalScript 
 	local script = Instance.new('LocalScript', FOV120)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1464,8 +1784,8 @@ local function ZJKWIJE_fake_script() -- FOV120.LocalScript
 		workspace.CurrentCamera.FieldOfView = 120
 	end)
 end
-coroutine.wrap(ZJKWIJE_fake_script)()
-local function VHQQM_fake_script() -- NightMode.LocalScript 
+coroutine.wrap(IYPGTK_fake_script)()
+local function AKDNRLE_fake_script() -- NightMode.LocalScript 
 	local script = Instance.new('LocalScript', NightMode)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1477,8 +1797,8 @@ local function VHQQM_fake_script() -- NightMode.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VHQQM_fake_script)()
-local function THFVNC_fake_script() -- Transparentbody.LocalScript 
+coroutine.wrap(AKDNRLE_fake_script)()
+local function AWSUQ_fake_script() -- Transparentbody.LocalScript 
 	local script = Instance.new('LocalScript', Transparentbody)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1491,8 +1811,8 @@ local function THFVNC_fake_script() -- Transparentbody.LocalScript
 		game.Players.LocalPlayer.Character.Torso.Transparency = 0.5
 	end)
 end
-coroutine.wrap(THFVNC_fake_script)()
-local function IZUNBAG_fake_script() -- XRay.LocalScript 
+coroutine.wrap(AWSUQ_fake_script)()
+local function GXKGU_fake_script() -- XRay.LocalScript 
 	local script = Instance.new('LocalScript', XRay)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1504,8 +1824,8 @@ local function IZUNBAG_fake_script() -- XRay.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IZUNBAG_fake_script)()
-local function HJLE_fake_script() -- Headless.LocalScript 
+coroutine.wrap(GXKGU_fake_script)()
+local function ZTJETH_fake_script() -- Headless.LocalScript 
 	local script = Instance.new('LocalScript', Headless)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1514,8 +1834,8 @@ local function HJLE_fake_script() -- Headless.LocalScript
 		game.Players.LocalPlayer.Character.Head.face:Destroy()
 	end)
 end
-coroutine.wrap(HJLE_fake_script)()
-local function FAIV_fake_script() -- Fpsboost.LocalScript 
+coroutine.wrap(ZTJETH_fake_script)()
+local function WZLXN_fake_script() -- Fpsboost.LocalScript 
 	local script = Instance.new('LocalScript', Fpsboost)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1523,8 +1843,8 @@ local function FAIV_fake_script() -- Fpsboost.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/NoLag.lua'))()
 	end)
 end
-coroutine.wrap(FAIV_fake_script)()
-local function MRPCA_fake_script() -- noShadows.LocalScript 
+coroutine.wrap(WZLXN_fake_script)()
+local function YRRB_fake_script() -- noShadows.LocalScript 
 	local script = Instance.new('LocalScript', noShadows)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1532,8 +1852,8 @@ local function MRPCA_fake_script() -- noShadows.LocalScript
 		game.Lighting.GlobalShadows = false
 	end)
 end
-coroutine.wrap(MRPCA_fake_script)()
-local function TEURTCV_fake_script() -- BetterGraphics.LocalScript 
+coroutine.wrap(YRRB_fake_script)()
+local function FHPOHKM_fake_script() -- BetterGraphics.LocalScript 
 	local script = Instance.new('LocalScript', BetterGraphics)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1629,16 +1949,16 @@ local function TEURTCV_fake_script() -- BetterGraphics.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TEURTCV_fake_script)()
-local function OTHRYFR_fake_script() -- NextPageVisualTab.LocalScript 
+coroutine.wrap(FHPOHKM_fake_script)()
+local function HMKK_fake_script() -- NextPageVisualTab.LocalScript 
 	local script = Instance.new('LocalScript', NextPageVisualTab)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/visuals2tab'))()
 	end)
 end
-coroutine.wrap(OTHRYFR_fake_script)()
-local function VGSUNF_fake_script() -- ESPName.LocalScript 
+coroutine.wrap(HMKK_fake_script)()
+local function MRKTF_fake_script() -- ESPName.LocalScript 
 	local script = Instance.new('LocalScript', ESPName)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1680,8 +2000,8 @@ local function VGSUNF_fake_script() -- ESPName.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(VGSUNF_fake_script)()
-local function DUIYBYI_fake_script() -- NoobPack.LocalScript 
+coroutine.wrap(MRKTF_fake_script)()
+local function NMRHUFR_fake_script() -- NoobPack.LocalScript 
 	local script = Instance.new('LocalScript', NoobPack)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1689,8 +2009,8 @@ local function DUIYBYI_fake_script() -- NoobPack.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/EquipNoob.lua'))()
 	end)
 end
-coroutine.wrap(DUIYBYI_fake_script)()
-local function BLYU_fake_script() -- Airstuck.LocalScript 
+coroutine.wrap(NMRHUFR_fake_script)()
+local function SVLCCPU_fake_script() -- Airstuck.LocalScript 
 	local script = Instance.new('LocalScript', Airstuck)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1702,8 +2022,8 @@ local function BLYU_fake_script() -- Airstuck.LocalScript
 	
 	
 end
-coroutine.wrap(BLYU_fake_script)()
-local function VFFKK_fake_script() -- Antiban.LocalScript 
+coroutine.wrap(SVLCCPU_fake_script)()
+local function TNIPM_fake_script() -- Antiban.LocalScript 
 	local script = Instance.new('LocalScript', Antiban)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1711,8 +2031,8 @@ local function VFFKK_fake_script() -- Antiban.LocalScript
 		game.Players.LocalPlayer.PlayerGui.GameUI.Menu.MainMenuUI.Banned:Destroy()
 	end)
 end
-coroutine.wrap(VFFKK_fake_script)()
-local function ICIL_fake_script() -- Bhop.LocalScript 
+coroutine.wrap(TNIPM_fake_script)()
+local function HGYOPSU_fake_script() -- Bhop.LocalScript 
 	local script = Instance.new('LocalScript', Bhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1722,16 +2042,16 @@ local function ICIL_fake_script() -- Bhop.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ICIL_fake_script)()
-local function TKYM_fake_script() -- ChatSpam.LocalScript 
+coroutine.wrap(HGYOPSU_fake_script)()
+local function OYUYWI_fake_script() -- ChatSpam.LocalScript 
 	local script = Instance.new('LocalScript', ChatSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/ChatSpam.lua'))()
 	end)
 end
-coroutine.wrap(TKYM_fake_script)()
-local function WJPEGVG_fake_script() -- MapVoteSpam.LocalScript 
+coroutine.wrap(OYUYWI_fake_script)()
+local function IMJYJB_fake_script() -- MapVoteSpam.LocalScript 
 	local script = Instance.new('LocalScript', MapVoteSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1792,8 +2112,8 @@ local function WJPEGVG_fake_script() -- MapVoteSpam.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WJPEGVG_fake_script)()
-local function EEJEOX_fake_script() -- RemoveBarrier.LocalScript 
+coroutine.wrap(IMJYJB_fake_script)()
+local function UKGTZ_fake_script() -- RemoveBarrier.LocalScript 
 	local script = Instance.new('LocalScript', RemoveBarrier)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1803,8 +2123,8 @@ local function EEJEOX_fake_script() -- RemoveBarrier.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EEJEOX_fake_script)()
-local function WSQE_fake_script() -- SpeedBoost.LocalScript 
+coroutine.wrap(UKGTZ_fake_script)()
+local function WBYWG_fake_script() -- SpeedBoost.LocalScript 
 	local script = Instance.new('LocalScript', SpeedBoost)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1814,8 +2134,8 @@ local function WSQE_fake_script() -- SpeedBoost.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WSQE_fake_script)()
-local function AAOE_fake_script() -- infJump.LocalScript 
+coroutine.wrap(WBYWG_fake_script)()
+local function BEWXM_fake_script() -- infJump.LocalScript 
 	local script = Instance.new('LocalScript', infJump)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1828,24 +2148,24 @@ local function AAOE_fake_script() -- infJump.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(AAOE_fake_script)()
-local function JPNML_fake_script() -- BTools.LocalScript 
+coroutine.wrap(BEWXM_fake_script)()
+local function WPUZRX_fake_script() -- BTools.LocalScript 
 	local script = Instance.new('LocalScript', BTools)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
 	end)
 end
-coroutine.wrap(JPNML_fake_script)()
-local function FVWK_fake_script() -- Autofarm.LocalScript 
+coroutine.wrap(WPUZRX_fake_script)()
+local function SDAXBU_fake_script() -- Autofarm.LocalScript 
 	local script = Instance.new('LocalScript', Autofarm)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware/main/Misc/Autofarm.lua'))()
 	end)
 end
-coroutine.wrap(FVWK_fake_script)()
-local function DNHRI_fake_script() -- NoRotate.LocalScript 
+coroutine.wrap(SDAXBU_fake_script)()
+local function HUPAEZ_fake_script() -- NoRotate.LocalScript 
 	local script = Instance.new('LocalScript', NoRotate)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1853,8 +2173,8 @@ local function DNHRI_fake_script() -- NoRotate.LocalScript
 			game.Players.LocalPlayer.Character.Humanoid.AutoRotate = false
 	end)
 end
-coroutine.wrap(DNHRI_fake_script)()
-local function PVJRKJM_fake_script() -- ViewAngle.LocalScript 
+coroutine.wrap(HUPAEZ_fake_script)()
+local function SAKTV_fake_script() -- ViewAngle.LocalScript 
 	local script = Instance.new('LocalScript', ViewAngle)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1920,16 +2240,16 @@ local function PVJRKJM_fake_script() -- ViewAngle.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(PVJRKJM_fake_script)()
-local function ASWQ_fake_script() -- Freecam.LocalScript 
+coroutine.wrap(SAKTV_fake_script)()
+local function REGIAC_fake_script() -- Freecam.LocalScript 
 	local script = Instance.new('LocalScript', Freecam)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/RblxScripts/main/Freecam.lua'))()
 	end)
 end
-coroutine.wrap(ASWQ_fake_script)()
-local function JXCJCZ_fake_script() -- RainbowFrame.LocalScript 
+coroutine.wrap(REGIAC_fake_script)()
+local function PEBZ_fake_script() -- RainbowFrame.LocalScript 
 	local script = Instance.new('LocalScript', RainbowFrame)
 
 	local t = 10;
@@ -1944,8 +2264,8 @@ local function JXCJCZ_fake_script() -- RainbowFrame.LocalScript
 	
 	end
 end
-coroutine.wrap(JXCJCZ_fake_script)()
-local function PKCL_fake_script() -- Close.LocalScript 
+coroutine.wrap(PEBZ_fake_script)()
+local function BNRV_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1956,8 +2276,8 @@ local function PKCL_fake_script() -- Close.LocalScript
 	
 	
 end
-coroutine.wrap(PKCL_fake_script)()
-local function HBIEN_fake_script() -- ForceQuit.LocalScript 
+coroutine.wrap(BNRV_fake_script)()
+local function RYVTJEU_fake_script() -- ForceQuit.LocalScript 
 	local script = Instance.new('LocalScript', ForceQuit)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1966,8 +2286,8 @@ local function HBIEN_fake_script() -- ForceQuit.LocalScript
 	end)
 	
 end
-coroutine.wrap(HBIEN_fake_script)()
-local function SDUIW_fake_script() -- ShowFPS.LocalScript 
+coroutine.wrap(RYVTJEU_fake_script)()
+local function ZFZGPC_fake_script() -- ShowFPS.LocalScript 
 	local script = Instance.new('LocalScript', ShowFPS)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1975,8 +2295,8 @@ local function SDUIW_fake_script() -- ShowFPS.LocalScript
 	end)
 	
 end
-coroutine.wrap(SDUIW_fake_script)()
-local function KHLWTQU_fake_script() -- AntiAfk.LocalScript 
+coroutine.wrap(ZFZGPC_fake_script)()
+local function OEIIX_fake_script() -- AntiAfk.LocalScript 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1991,38 +2311,38 @@ local function KHLWTQU_fake_script() -- AntiAfk.LocalScript
 	end)
 	
 end
-coroutine.wrap(KHLWTQU_fake_script)()
-local function PEMHQ_fake_script() -- OldGui.LocalScript 
+coroutine.wrap(OEIIX_fake_script)()
+local function ICPTSGP_fake_script() -- OldGui.LocalScript 
 	local script = Instance.new('LocalScript', OldGui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua'))()
 	end)
 end
-coroutine.wrap(PEMHQ_fake_script)()
-local function YMUIMG_fake_script() -- MousePosition.LocalScript 
+coroutine.wrap(ICPTSGP_fake_script)()
+local function RGXOD_fake_script() -- MousePosition.LocalScript 
 	local script = Instance.new('LocalScript', MousePosition)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Misc/mousePosPrint.lua'))()
 	end)
 end
-coroutine.wrap(YMUIMG_fake_script)()
-local function RJGGP_fake_script() -- AntiChatLogger.LocalScript 
+coroutine.wrap(RGXOD_fake_script)()
+local function BAHBHM_fake_script() -- AntiChatLogger.LocalScript 
 	local script = Instance.new('LocalScript', AntiChatLogger)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://pastebin.com/raw/wnreSiVX'))()
 	end)
 end
-coroutine.wrap(RJGGP_fake_script)()
-local function WZCGF_fake_script() -- LocalUsername.LocalScript 
+coroutine.wrap(BAHBHM_fake_script)()
+local function IAFL_fake_script() -- LocalUsername.LocalScript 
 	local script = Instance.new('LocalScript', LocalUsername)
 
 	script.Parent.Text = "User: "..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(WZCGF_fake_script)()
-local function PSVL_fake_script() -- Aimbot.LocalScript 
+coroutine.wrap(IAFL_fake_script)()
+local function QGZBT_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2032,10 +2352,11 @@ local function PSVL_fake_script() -- Aimbot.LocalScript
 		script.Parent.Parent.Parent.MiscTab.Visible = false
 		script.Parent.Parent.Parent.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.ServerTab.Visible = false
+		script.Parent.Parent.Parent.SkinsTab.Visible = false
 	end)
 end
-coroutine.wrap(PSVL_fake_script)()
-local function DILB_fake_script() -- Visuals.LocalScript 
+coroutine.wrap(QGZBT_fake_script)()
+local function MIAAOD_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2045,10 +2366,11 @@ local function DILB_fake_script() -- Visuals.LocalScript
 		script.Parent.Parent.Parent.MiscTab.Visible = false
 		script.Parent.Parent.Parent.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.ServerTab.Visible = false
+		script.Parent.Parent.Parent.SkinsTab.Visible = false
 	end)
 end
-coroutine.wrap(DILB_fake_script)()
-local function SJXDVU_fake_script() -- Miscellaneous.LocalScript 
+coroutine.wrap(MIAAOD_fake_script)()
+local function XBDTCGO_fake_script() -- Miscellaneous.LocalScript 
 	local script = Instance.new('LocalScript', Miscellaneous)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2058,11 +2380,12 @@ local function SJXDVU_fake_script() -- Miscellaneous.LocalScript
 		script.Parent.Parent.Parent.MiscTab.Visible = true
 		script.Parent.Parent.Parent.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.ServerTab.Visible = false
+		script.Parent.Parent.Parent.SkinsTab.Visible = false
 	end)
 	
 end
-coroutine.wrap(SJXDVU_fake_script)()
-local function GHGT_fake_script() -- Credits.LocalScript 
+coroutine.wrap(XBDTCGO_fake_script)()
+local function JGTTENT_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2072,10 +2395,11 @@ local function GHGT_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.MiscTab.Visible = false
 		script.Parent.Parent.Parent.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.ServerTab.Visible = false
+		script.Parent.Parent.Parent.SkinsTab.Visible = false
 	end)
 end
-coroutine.wrap(GHGT_fake_script)()
-local function VBRTJCP_fake_script() -- Settings.LocalScript 
+coroutine.wrap(JGTTENT_fake_script)()
+local function JBEA_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2085,10 +2409,11 @@ local function VBRTJCP_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.MiscTab.Visible = false
 		script.Parent.Parent.Parent.SettingsTab.Visible = true
 		script.Parent.Parent.Parent.ServerTab.Visible = false
+		script.Parent.Parent.Parent.SkinsTab.Visible = false
 	end)
 end
-coroutine.wrap(VBRTJCP_fake_script)()
-local function HZNO_fake_script() -- Server.LocalScript 
+coroutine.wrap(JBEA_fake_script)()
+local function QBYIGEQ_fake_script() -- Server.LocalScript 
 	local script = Instance.new('LocalScript', Server)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -2098,10 +2423,25 @@ local function HZNO_fake_script() -- Server.LocalScript
 		script.Parent.Parent.Parent.MiscTab.Visible = false
 		script.Parent.Parent.Parent.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.ServerTab.Visible = true
+		script.Parent.Parent.Parent.SkinsTab.Visible = false
 	end)
 end
-coroutine.wrap(HZNO_fake_script)()
-local function AXTG_fake_script() -- Frame.FrameDrag 
+coroutine.wrap(QBYIGEQ_fake_script)()
+local function DRCN_fake_script() -- Skins.LocalScript 
+	local script = Instance.new('LocalScript', Skins)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.AimbotTab.Visible = false
+		script.Parent.Parent.Parent.VisualsTab.Visible = false
+		script.Parent.Parent.Parent.CreditsTab.Visible = false
+		script.Parent.Parent.Parent.MiscTab.Visible = false
+		script.Parent.Parent.Parent.SettingsTab.Visible = false
+		script.Parent.Parent.Parent.ServerTab.Visible = false
+		script.Parent.Parent.Parent.SkinsTab.Visible = true
+	end)
+end
+coroutine.wrap(DRCN_fake_script)()
+local function MNAOALI_fake_script() -- Frame.FrameDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Credits to Rainbowhoodie On YouTube.
@@ -2141,8 +2481,8 @@ local function AXTG_fake_script() -- Frame.FrameDrag
 		end
 	end)
 end
-coroutine.wrap(AXTG_fake_script)()
-local function MPPTO_fake_script() -- AntiAfk_2.LocalScript 
+coroutine.wrap(MNAOALI_fake_script)()
+local function QRKBME_fake_script() -- AntiAfk_2.LocalScript 
 	local script = Instance.new('LocalScript', AntiAfk_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2157,8 +2497,356 @@ local function MPPTO_fake_script() -- AntiAfk_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(MPPTO_fake_script)()
-local function KUMRCZ_fake_script() -- Open.LocalScript 
+coroutine.wrap(QRKBME_fake_script)()
+local function QGRCJ_fake_script() -- NoobCharacter.LocalScript 
+	local script = Instance.new('LocalScript', NoobCharacter)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Equip",
+			[2] = "6",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(QGRCJ_fake_script)()
+local function AABM_fake_script() -- DaveCharacter.LocalScript 
+	local script = Instance.new('LocalScript', DaveCharacter)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "68",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(AABM_fake_script)()
+local function KAUNFZY_fake_script() -- BOF.LocalScript 
+	local script = Instance.new('LocalScript', BOF)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Equip",
+			[2] = "71",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(KAUNFZY_fake_script)()
+local function TTSW_fake_script() -- Rasta.LocalScript 
+	local script = Instance.new('LocalScript', Rasta)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "70",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(TTSW_fake_script)()
+local function KZZCE_fake_script() -- Icy.LocalScript 
+	local script = Instance.new('LocalScript', Icy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "73",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(KZZCE_fake_script)()
+local function YBKO_fake_script() -- john.LocalScript 
+	local script = Instance.new('LocalScript', john)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "74",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(YBKO_fake_script)()
+local function MGHIKY_fake_script() -- Tabby.LocalScript 
+	local script = Instance.new('LocalScript', Tabby)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "75",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(MGHIKY_fake_script)()
+local function MXPJ_fake_script() -- ayowhat.LocalScript 
+	local script = Instance.new('LocalScript', ayowhat)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "76",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(MXPJ_fake_script)()
+local function GMZOT_fake_script() -- Shamus.LocalScript 
+	local script = Instance.new('LocalScript', Shamus)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "77",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(GMZOT_fake_script)()
+local function UBAYOF_fake_script() -- Jack.LocalScript 
+	local script = Instance.new('LocalScript', Jack)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "77",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(UBAYOF_fake_script)()
+local function VGCFYQL_fake_script() -- Max.LocalScript 
+	local script = Instance.new('LocalScript', Max)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "78",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(VGCFYQL_fake_script)()
+local function NQUL_fake_script() -- Sergei.LocalScript 
+	local script = Instance.new('LocalScript', Sergei)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	-- nice one
+		local args = {
+			[1] = "Equip",
+			[2] = "69",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(NQUL_fake_script)()
+local function ETVOD_fake_script() -- Ace.LocalScript 
+	local script = Instance.new('LocalScript', Ace)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Equip",
+			[2] = "72",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(ETVOD_fake_script)()
+local function TJFCVM_fake_script() -- Xbox.LocalScript 
+	local script = Instance.new('LocalScript', Xbox)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "79",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(TJFCVM_fake_script)()
+local function EKYHWCQ_fake_script() -- Kasodus.LocalScript 
+	local script = Instance.new('LocalScript', Kasodus)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "80",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(EKYHWCQ_fake_script)()
+local function ZRKM_fake_script() -- yukki.LocalScript 
+	local script = Instance.new('LocalScript', yukki)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "81",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(ZRKM_fake_script)()
+local function RCZV_fake_script() -- Jax.LocalScript 
+	local script = Instance.new('LocalScript', Jax)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "82",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(RCZV_fake_script)()
+local function BJBMJJ_fake_script() -- Warden.LocalScript 
+	local script = Instance.new('LocalScript', Warden)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "83",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(BJBMJJ_fake_script)()
+local function HIMQQ_fake_script() -- Tom.LocalScript 
+	local script = Instance.new('LocalScript', Tom)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "84",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(HIMQQ_fake_script)()
+local function QKUGPSA_fake_script() -- Harry.LocalScript 
+	local script = Instance.new('LocalScript', Harry)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "85",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(QKUGPSA_fake_script)()
+local function VNSS_fake_script() -- Spengy.LocalScript 
+	local script = Instance.new('LocalScript', Spengy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Equip",
+			[2] = "50",
+			[3] = 1
+		}
+	
+		game:GetService("ReplicatedStorage").GameEvents.Misk.InventoryChange:FireServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(VNSS_fake_script)()
+local function MBLZH_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2166,4 +2854,4 @@ local function KUMRCZ_fake_script() -- Open.LocalScript
 	end)
 	
 end
-coroutine.wrap(KUMRCZ_fake_script)()
+coroutine.wrap(MBLZH_fake_script)()
