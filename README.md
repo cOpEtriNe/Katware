@@ -6,7 +6,7 @@ If you'd like to give me any ideas, contact me on discord: cOpEtriNe#2745
 GUI For the ROBLOX Game KAT! It's Free And Open Source!
 
 ## Information
-**Info pannel is 40% done**
+**Info pannel is 40% done (Working on soon)**
 
 Q: Can I Edit This Script A: Yes, you can.
 This script will not get you banned.
