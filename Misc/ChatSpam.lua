@@ -47,4 +47,13 @@ local args = {
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
+wait(1)
+
+local args = {
+    [1] = "Better than king scripts!", --honestly, a key system and detected. Dissapointing.
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
 end
