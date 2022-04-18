@@ -3,13 +3,13 @@
 If you'd like to give me any ideas, contact me on discord: cOpEtriNe#2745
 
 # KATWare
-GUI For the ROBLOX Game KAT! It's Free And Open Source!
+GUI For the Roblox Game KAT! If you would like to paste these scripts into your own cheat, make sure to leave credit to the original owner.
 
 ## Information
-**Info pannel is 40% done (Working on soon)**
-
 Q: Can I Edit This Script A: Yes, you can.
+
 This script will not get you banned.
+
 One of my accounts has been up to Level 105 with this script!
 
 If you prefer to use the loadstring, here it is: loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Script'))()
@@ -21,14 +21,7 @@ If you want the old ui, copy the code and put into ur hax
 https://raw.githubusercontent.com/BoatRollerz/special-disco/main/LegacyKAT.lua
 
 ## Changelog
-NewUI
-- new UI Design (Again)
-- Added No Barriers
-- Added more things
-
-## Things to be added next update
-
-- really cool new things
+* go visit discord server*
 
 ## Features
 Here are the features of the cheat:
