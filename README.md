@@ -36,6 +36,7 @@ Here are the features of the cheat:
  * Autofarm
  * Anti Ban
  * Skin Changer
+ * Skin change spam (Makes your character equip different skins.)
  * BHop
  * Map Vote Spam
  * Speed Boost
