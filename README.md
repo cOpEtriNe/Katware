@@ -14,7 +14,7 @@ One of my accounts has been up to Level 105 with this script!
 
 If you prefer to use the loadstring, here it is: loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Script'))()
 
-https://discord.gg/2k3aTWNEgq  Discord server
+https://discord.gg/a6F7drjcgg  Discord server
 
 If you want the old ui, copy the code and put into ur hax
 
