@@ -63,3 +63,4 @@ Here are the features of the cheat:
  * Freecam
 
 There are many other features, i'm just too lazy to type them all up.
+Anyone is welcome to contribute (Unless it's a stupid or dumb update.)
