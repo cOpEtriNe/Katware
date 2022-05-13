@@ -10,7 +10,7 @@ Q: Can I Edit This Script A: Yes, you can.
 
 This script will not get you banned.
 
-One of my accounts has been up to Level 105 with this script!
+One of my accounts has been up to Level 170+ with this script!
 
 If you prefer to use the loadstring, here it is: loadstring(game:HttpGet('https://raw.githubusercontent.com/cOpEtriNe/Katware-/main/Script'))()
 
