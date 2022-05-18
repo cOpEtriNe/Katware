@@ -1,0 +1,105 @@
+-- UI that displays your: Username, Avatar profile picture
+
+local ScreenGui = Instance.new("ScreenGui")
+local PlayerLocalFrame = Instance.new("Frame")
+local PlayerImage = Instance.new("ImageLabel")
+local PlayerName = Instance.new("TextLabel")
+local UsrLocal = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+PlayerLocalFrame.Name = "PlayerLocalFrame"
+PlayerLocalFrame.Parent = ScreenGui
+PlayerLocalFrame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+PlayerLocalFrame.BackgroundTransparency = 0.500
+PlayerLocalFrame.Position = UDim2.new(0.452019483, 0, 0.502932966, 0)
+PlayerLocalFrame.Size = UDim2.new(0, 334, 0, 116)
+PlayerLocalFrame.Visible = true
+PlayerLocalFrame.Active = true
+PlayerLocalFrame.Draggable = true
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = PlayerLocalFrame
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.Position = UDim2.new(0.0194342546, 0, 0.0648080185, 0)
+PlayerImage.Size = UDim2.new(0, 100, 0, 100)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = PlayerLocalFrame
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(0.367088586, 0, 0.491379321, 0)
+PlayerName.Size = UDim2.new(0, 200, 0, 50)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+UsrLocal.Name = "UsrLocal"
+UsrLocal.Parent = PlayerLocalFrame
+UsrLocal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UsrLocal.BackgroundTransparency = 1.000
+UsrLocal.Position = UDim2.new(0.367088586, 0, 0.06034486, 0)
+UsrLocal.Size = UDim2.new(0, 200, 0, 26)
+UsrLocal.Font = Enum.Font.SourceSans
+UsrLocal.Text = "Local Player"
+UsrLocal.TextColor3 = Color3.fromRGB(0, 0, 0)
+UsrLocal.TextScaled = true
+UsrLocal.TextSize = 14.000
+UsrLocal.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = PlayerLocalFrame
+Close.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.895209789, 0, 0.0344827585, 0)
+Close.Size = UDim2.new(0, 35, 0, 29)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+-- Scripts:
+
+local function XQEPZA_fake_script() -- PlayerLocalFrame.LocalScript 
+	local script = Instance.new('LocalScript', PlayerLocalFrame)
+
+	local frame = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	frame.PlayerImage.Image = content
+	
+	frame.PlayerName.Text = player.Name
+end
+coroutine.wrap(XQEPZA_fake_script)()
+local function ORBGLF_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.PlayerLocalFrame.Visible = false
+	end)
+end
+coroutine.wrap(ORBGLF_fake_script)()
