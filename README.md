@@ -1,4 +1,6 @@
-*Script is undetected as of 15/05/2022 (Always has been)*
+## Script is broken
+fixed soon
+
 
 If you'd like to give me any ideas, contact me on discord: cOpEtriNe#2745
 
