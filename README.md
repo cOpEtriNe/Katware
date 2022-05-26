@@ -1,4 +1,4 @@
-## Script is undetected (23/05/2022)
+## Script is undetected
 
 If you'd like to give me any ideas, contact me on discord: cOpEtriNe#2745
 
