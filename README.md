@@ -45,6 +45,7 @@ Here are the features of the cheat:
  * BTools / F3X
  * no Character Rotate
  * ESP
+ * Glow
  * Chams
  * FoV Changers
  * night mode
