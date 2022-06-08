@@ -6,6 +6,8 @@ If you'd like to give me any ideas, contact me on discord: cOpEtriNe#2745
 GUI For the Roblox Game KAT! If you would like to paste these scripts into your own cheat, make sure to leave credit to the original owner.
 
 ## Information
+You will need a executor for Roblox to run this script.
+
 Q: Can I Edit This Script 
 
 A: Yes, you can.
