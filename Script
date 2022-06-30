@@ -2311,7 +2311,7 @@ local function AQAHQVV_fake_script() -- SpeedBoost.LocalScript
 
 	script.Parent.MouseButton1Click:Connect(function()
 		while true do
-			wait(1)
+			wait()
 			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 22
 		end
 	end)
