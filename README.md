@@ -1,3 +1,5 @@
+## THIS SCRIPT IS NO LONGER BEING MAINTANINED
+
 ## Script is undetected
 
 If you'd like to give me any ideas, join the Discord server https://discord.gg/a6F7drjcgg 
