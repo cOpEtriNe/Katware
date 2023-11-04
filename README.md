@@ -1,4 +1,4 @@
-## cheat is dead (probably still undetected)
+## cheat is dead and so is exploiting for lego game
 
 If you'd like to give me any ideas, join the Discord server https://discord.gg/a6F7drjcgg 
 
