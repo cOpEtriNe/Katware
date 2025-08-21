@@ -1,9 +1,11 @@
 > [!NOTE]
 > The main gui is now available for all to edit inside the "studiosource" folder.
 > For compiling your own build, use roblox studio plugins such as gui to lua to convert the gui into a script for your executor.
+>
+> If lego hax fully return (or if I can be bothered), this cheat will recieve a decent enough update so there's
+> less bugs and issues and a actual functioning UI that doesn't look like shit.
 
 ## cheat is dead and so is lego cheats
-
 If you'd like to give me any ideas, join the Discord server https://discord.gg/a6F7drjcgg 
 
 # KATWare
