@@ -1,6 +1,6 @@
-[!NOTE]
->The main gui is now available for all to edit inside the "studiosource" folder.
->For compiling your own build, use roblox studio plugins such as gui to lua to convert the gui into a script for your executor.
+> [!NOTE]
+> The main gui is now available for all to edit inside the "studiosource" folder.
+> For compiling your own build, use roblox studio plugins such as gui to lua to convert the gui into a script for your executor.
 
 ## cheat is dead and so is lego cheats
 
