@@ -5,6 +5,9 @@ If you'd like to give me any ideas, join the Discord server https://discord.gg/a
 # KATWare
 GUI For the Roblox Game KAT! If you would like to paste these scripts into your own cheat, make sure to leave credit to the original owner.
 
+The main gui is now available for all to edit inside the "studiosource" folder.
+For compiling your own build, use roblox studio plugins such as gui to lua to convert the gui into a script for your executor.
+
 ## Information
 You will need a executor for Roblox to run this script.
 
